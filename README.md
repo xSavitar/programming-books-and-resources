@@ -1,7 +1,8 @@
-# programming-books-and-resources
-This repo has a collection of programming books of all languages. 
-I shall try as much as possible to abstract them to suite your taste. 
-The books will be classified in terms of programming languages only.
+# Programming books and resources
+This repo has a collection of programming books for various programming languages. 
+I shall try as much as possible to abstract them to suite your taste by getting books 
+that are very recommended and of standard, to ensure that get the best programming skills. 
+The books will be classified in terms of programming languages and technologies.
 
 # Sources
 These resources are downloaded from various sources online. I am not 
