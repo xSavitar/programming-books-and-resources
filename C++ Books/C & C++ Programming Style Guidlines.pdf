@@ -1,0 +1,4901 @@
+%PDF-1.2
+2 0 obj
+<< /S /GoTo /D [1 0 R  /Fit ] >>
+endobj
+17 0 obj <<
+/Length 18 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -392.41 -69.52 cm
+BT
+/F24 29.75 Tf 0 0 Td[(C/C++)-278(Pr)20(ogramming)-277(Style)]TJ 107.15 -38.67 Td[(Guidelines)]TJ/F25 20.66 Tf 6.9 -39.77 Td[(Fred)-278(Ric)10(har)20(ds)]TJ/F26 11.96 Tf -104.2 -33.47 Td[(Style)-249(guidelines)-248(and)-249(programming)-248(practices)-248(for)-250(C/C++)-248(code)-250(for)]TJ 0 -15.55 Td[(Dynamic)-248(Softw)11(are)-249(Solutions.)-309(Use)-249(the)-249(checklist)-249(at)-249(the)-250(end)-249(of)-250(this)]TJ 0 -15.54 Td[(document)-248(prior)-249(to)-250(submitting)-248(code)-249(for)-249(peer)-249(re)25(vie)25(w)66(.)]TJ -35.87 -39.45 Td[(“)]TJ/F27 11.96 Tf 8.3 0 Td[(De)-249(gustib)21(us)-250(non)-249(est)-249(disputandum.)]TJ/F26 11.96 Tf 165.19 0 Td[(”)]TJ/F25 20.66 Tf -221.31 -54.3 Td[(1.)-344(Intr)20(oduction)]TJ/F26 11.96 Tf 47.82 -25.88 Td[(This)-249(document)-249(contains)-248(the)-249(guidelines)-249(for)-249(writing)-249(C/C++)-248(code)-250(for)-249(Dynamic)-248(Softw)11(are)]TJ 0 -15.54 Td[(Solutions.)-308(The)-250(point)-249(of)-249(a)-250(style)-249(guide)-249(is)-250(to)-249(greater)-249(uniformity)-248(in)-250(the)-249(appearance)-248(of)]TJ 0 -15.54 Td[(source)-249(code.)-309(The)-249(benet)-249(is)-250(enhanced)-248(readability)-248(and)-249(hence)-249(maintainability)-248(for)-249(the)]TJ 0 -15.54 Td[(code.)-309(Where)26(v)15(er)-249(possible,)-249(we)-249(adopt)-249(stylistic)-249(con)41(v)15(entions)-249(that)-249(ha)20(v)16(e)-250(been)-249(pro)15(v)15(ed)-249(to)]TJ 0 -15.54 Td[(contrib)21(ute)-249(positi)26(v)15(ely)-250(to)-249(readability)-248(and/or)-249(maintainability)67(.)]TJ 0 -21.52 Td[(Before)-249(code)-249(can)-249(be)-250(considered)-248(for)-249(peer)-250(re)26(vie)25(w)-249(the)-250(author)-249(must)-249(check)-249(that)-249(it)-249(adheres)-249(to)]TJ 0 -15.54 Td[(these)-249(guidelines.)-308(This)-249(may)-250(be)-249(considered)-248(a)-250(prerequisite)-248(for)-249(the)-250(re)26(vie)25(w)-249(process.)-309(A)]TJ 0 -15.54 Td[(checklist)-249(is)-249(pro)15(vided)-249(at)-249(the)-250(end)-249(of)-249(this)-250(document)-248(to)-250(aid)-249(in)-249(v)25(alidating)-249(the)-249(source)-249(code')56(s)]TJ 0 -15.55 Td[(style.)-309(Where)-249(code)-249(f)10(ails)-249(to)-250(adhere)-249(to)-249(the)-249(con)40(v)15(entions)-248(prescribed)-249(here)-249(may)-249(be)-249(considered)]TJ 0 -15.54 Td[(a)-250(defect)-249(during)-249(the)-249(re)25(vie)26(w)-250(process.)]TJ 0 -21.52 Td[(If)-250(you)-249(ha)20(v)16(e)-250(not)-250(already)67(,)-250(please)-249(study)]TJ/F27 11.96 Tf 177.43 0 Td[(Code)-249(Complete)]TJ/F26 11.96 Tf 77.03 0 Td[(by)-250(Ste)26(v)15(e)-250(McConnell.)-308(This)-249(book)]TJ -254.46 -15.54 Td[(pro)15(vides)-249(a)-249(detailed)-249(discussion)-248(on)-250(all)-249(things)-249(related)-249(to)-249(b)20(uilding)-249(softw)11(are)-249(systems.)-309(It)-249(also)]TJ 0 -15.54 Td[(includes)-249(references)-248(to)-249(statistical)-249(studies)-248(on)-250(man)16(y)-250(of)-249(the)-250(stylistic)-248(elements)-249(that)-249(af)25(fect)]TJ 0 -15.54 Td[(program)-249(maintainability)68(.)-310(Another)-248(v)25(aluable)-249(source)-249(of)-249(solid)-249(programming)-248(practice)-249(tips)-249(is)]TJ/F27 11.96 Tf 0 -15.54 Td[(The)-249(Pr)15(actice)-249(of)-249(Pr)45(o)10(gr)16(amming)]TJ/F26 11.96 Tf 145.76 0 Td[(by)-249(Brian)-249(W)92(.)-250(K)26(ernighan)-249(and)-249(Rob)-249(Pik)10(e.)-309(Scott)-249(Me)15(yers')]TJ
+ET
+1 0 0 1 -73.84 -552.14 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 460.27 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(1)]TJ
+ET
+1 0 0 1 5.98 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+18 0 obj
+3601
+endobj
+16 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F24 19 0 R /F25 20 0 R /F26 21 0 R /F27 22 0 R >>
+>> endobj
+1 0 obj <<
+/Type /Page
+/Contents 17 0 R
+/Resources 16 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+3 0 obj <<
+/D [1 0 R /XYZ 71.73 657.53 null]
+>> endobj
+4 0 obj <<
+/D [1 0 R /XYZ 71.73 657.53 null]
+>> endobj
+5 0 obj <<
+/D [1 0 R /XYZ 71.73 466.32 null]
+>> endobj
+6 0 obj <<
+/D [1 0 R /XYZ 71.73 466.32 null]
+>> endobj
+7 0 obj <<
+/D [1 0 R /XYZ 124.86 453.38 null]
+>> endobj
+8 0 obj <<
+/D [1 0 R /XYZ 71.73 438.98 null]
+>> endobj
+9 0 obj <<
+/D [1 0 R /XYZ 71.73 388.49 null]
+>> endobj
+10 0 obj <<
+/D [1 0 R /XYZ 71.73 302.46 null]
+>> endobj
+11 0 obj <<
+/D [1 0 R /XYZ 71.73 218.77 null]
+>> endobj
+12 0 obj <<
+/D [1 0 R /XYZ 296.98 205.83 null]
+>> endobj
+13 0 obj <<
+/D [1 0 R /XYZ 119.55 143.67 null]
+>> endobj
+51 0 obj <<
+/Length 52 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(books,)]TJ/F27 11.96 Tf 34.54 0 Td[(Ef)18(fective)-248(C++)]TJ/F26 11.96 Tf 71.71 0 Td[(and)]TJ/F27 11.96 Tf 20.25 0 Td[(Mor)38(e)-250(Ef)19(fective)-249(C++)]TJ/F26 11.96 Tf 100.14 0 Td[(should)-249(be)-250(considered)-248(required)-248(reading)]TJ -226.64 -15.54 Td[(for)-250(an)16(y)-250(C++)-249(programmer)57(.)]TJ 0 -21.52 Td[(And)-249(what)-249(person)-249(w)10(ould)-249(be)-250(considered)-248(complete)-248(without)-249(ha)21(ving)-249(read)]TJ/F27 11.96 Tf 331.67 0 Td[(The)-249(Elements)-249(of)]TJ -331.67 -15.54 Td[(Style)]TJ/F26 11.96 Tf 26.23 0 Td[(by)-250(Strunk)-248(and)-250(White?)]TJ/F25 20.66 Tf -74.05 -60.29 Td[(2.)-344(File)-278(Contents)]TJ/F26 11.96 Tf 47.82 -25.87 Td[(Use)-249(les)-250(to)-249(group)-249(functionality)67(.)-310(Each)-249(le)-249(should)-249(contain)-249(only)-249(one)-249(cohesi)26(v)15(e)-250(set)-249(of)]TJ 0 -15.54 Td[(functions.)-308(A)74(v)20(oid)-249(duplicating)-248(functionality)-248(in)-250(separate)-248(les.)-309(If)-250(dif)26(ferent)-249(les)-249(contain)]TJ 0 -15.54 Td[(similar)-249(functions,)-248(consider)-249(generalizing)-247(the)-250(function)-248(suf)25(ciently)-248(and)-250(putting)-248(it)-250(into)-249(its)]TJ 0 -15.54 Td[(o)25(wn)-249(le)-250(so)-249(that)-249(both)-250(function)-248(groups)-249(can)-249(use)-250(the)-249(one)-249(source.)-309(F)15(or)-249(C++)-249(code,)-249(put)-250(only)]TJ 0 -15.54 Td[(one)-249(class)-249(or)-250(closely)-249(related)-248(set)-250(of)-249(classes)-249(in)-250(each)-249(le.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(strong)-249(coupling)-248(between)-249(functions)-248(and)-249(classes)-249(implemented)-248(in)-249(separate)-249(les.)-309(If)]TJ 0 -15.54 Td[(tw)10(o)-249(objects)-249(are)-249(so)-250(strongly)-249(coupled)-248(that)-249(one)-250(can)-249(only)-249(be)-250(used)-249(in)-249(conjunction)-248(with)-249(the)]TJ 0 -15.55 Td[(other)-249(then)-249(the)15(y)-250(belong)-248(in)-250(the)-249(same)-249(le.)]TJ 0 -21.52 Td[(Use)-243(header)-243(les)-243(\050)]TJ/F29 10.76 Tf 83.1 0 Td[(.h)]TJ/F26 11.96 Tf 15.83 0 Td[(suf)26(x\051)-243(to)-244(declare)-242(public)-243(interf)11(aces,)-244(use)-243(code)-243(les)-243(\050)]TJ/F29 10.76 Tf 239.7 0 Td[(.c)]TJ/F26 11.96 Tf 12.91 0 Td[(,)]TJ/F29 10.76 Tf 5.91 0 Td[(.cc)]TJ/F26 11.96 Tf 22.29 0 Td[(or)]TJ/F29 10.76 Tf 12.87 0 Td[(.cpp)]TJ/F26 11.96 Tf -392.61 -15.54 Td[(suf)25(x\051)-249(to)-249(dene)-249(implementations.)-307(T)80(ypically)-249(each)-249(cohesi)26(v)15(e)-249(set)-250(of)-249(functions)-249(you)-249(write)-249(in)]TJ 0 -15.54 Td[(a)-250(single)-249(le)-249(will)-249(ha)20(v)15(e)-249(one)-250(accompan)17(ying)-249(header/interf)12(ace)-249(le)-250(pair)56(.)-310(Code)-249(that)-249(uses)-249(your)]TJ 0 -15.54 Td[(implementation)-247(will)]TJ/F29 10.76 Tf 99.63 0 Td[(#include)]TJ/F26 11.96 Tf 54.64 0 Td[(the)-249(header)-249(le.)]TJ -154.27 -21.52 Td[(Be)-250(precise)-248(with)]TJ/F29 10.76 Tf 77.36 0 Td[(#include)]TJ/F26 11.96 Tf 54.64 0 Td[(statements.)-308(Explicitly)-248(include)-249(the)]TJ/F29 10.76 Tf 163.1 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(les)-249(you)-249(require,)-249(and)]TJ -311 -15.54 Td[(only)-249(where)-249(you)-249(require)-249(them.)-309(If,)-250(for)-249(e)15(xample,)-248(your)-250(code)-249(calls)-249(a)-250(function)-248(dened)]TJ 0 -15.54 Td[(e)15(xternally)67(,)-250(include)-249(that)-249(function')56(s)-249(associated)]TJ/F29 10.76 Tf 214.87 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(in)-249(your)-250(implementation)-247(le)-249(not)-250(in)-249(your)]TJ -230.77 -15.54 Td[(code')56(s)-250(associated)]TJ/F29 10.76 Tf 85.66 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(le.)-309(Y)110(ou)-249(should)-249(only)-249(need)-249(to)-250(include)-249(other)-249(les)-249(in)-250(your)]TJ/F29 10.76 Tf 267.05 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(le)-249(if)]TJ -384.51 -15.55 Td[(your)-249(public)-249(function)-249(interf)11(ace)-249(or)-250(data)-249(type)-249(denitions)-248(require)-249(the)-249(denitions)-248(contained)]TJ 0 -15.54 Td[(therein.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(using)-249(header)-249(les)-249(to)-250(contain)-248(a)-250(set)-249(of)]TJ/F29 10.76 Tf 206.4 0 Td[(#include)]TJ/F26 11.96 Tf 54.64 0 Td[(directi)26(v)15(es)-249(simply)-249(for)]TJ -261.04 -15.54 Td[(con)40(v)16(enience.)-309(This)-249(“nesting”)-248(of)]TJ/F29 10.76 Tf 151.12 0 Td[(#include)]TJ/F26 11.96 Tf 54.64 0 Td[(constructs)-248(obscures)-249(le)-249(dependencies)-248(from)]TJ -205.76 -15.54 Td[(the)-249(reader)56(.)-310(It)-250(also)-249(creates)-249(a)-250(coupling)-248(between)-249(modules)-248(including)-248(the)-250(top-le)26(v)15(el)-249(header)]TJ 0 -15.54 Td[(le.)-309(Unless)-249(the)-249(modules)-249(are)-249(cohesi)26(v)15(ely)-249(coupled)-249(functionally)67(,)-250(and)-249(each)-249(requires)]TJ/F27 11.96 Tf 380.29 0 Td[(all)]TJ/F26 11.96 Tf 15.63 0 Td[(the)]TJ/F29 10.76 Tf -395.92 -15.54 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(les)-249(included)-249(in)-249(the)-250(con)41(v)15(enience)-249(header)41(,)-249(it)-250(is)-250(preferable)-248(to)-249(instead)-249(include)-249(all)-249(the)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(2)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+52 0 obj
+5401
+endobj
+49 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F25 20 0 R /F29 53 0 R >>
+>> endobj
+50 0 obj <<
+/Type /Page
+/Contents 51 0 R
+/Resources 49 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+48 0 obj <<
+/D [50 0 R /XYZ 71.73 717.31 null]
+>> endobj
+14 0 obj <<
+/D [50 0 R /XYZ 154.09 647.57 null]
+>> endobj
+15 0 obj <<
+/D [50 0 R /XYZ 246.05 647.57 null]
+>> endobj
+24 0 obj <<
+/D [50 0 R /XYZ 71.73 623.45 null]
+>> endobj
+25 0 obj <<
+/D [50 0 R /XYZ 451.22 610.51 null]
+>> endobj
+26 0 obj <<
+/D [50 0 R /XYZ 71.73 574.43 null]
+>> endobj
+27 0 obj <<
+/D [50 0 R /XYZ 71.73 524.1 null]
+>> endobj
+28 0 obj <<
+/D [50 0 R /XYZ 71.73 438.07 null]
+>> endobj
+29 0 obj <<
+/D [50 0 R /XYZ 71.73 385.47 null]
+>> endobj
+30 0 obj <<
+/D [50 0 R /XYZ 202.65 372.52 null]
+>> endobj
+31 0 obj <<
+/D [50 0 R /XYZ 458.18 372.52 null]
+>> endobj
+32 0 obj <<
+/D [50 0 R /XYZ 477 372.52 null]
+>> endobj
+33 0 obj <<
+/D [50 0 R /XYZ 512.16 372.52 null]
+>> endobj
+34 0 obj <<
+/D [50 0 R /XYZ 219.18 325.9 null]
+>> endobj
+35 0 obj <<
+/D [50 0 R /XYZ 71.73 317.32 null]
+>> endobj
+36 0 obj <<
+/D [50 0 R /XYZ 196.91 304.38 null]
+>> endobj
+37 0 obj <<
+/D [50 0 R /XYZ 414.65 304.38 null]
+>> endobj
+38 0 obj <<
+/D [50 0 R /XYZ 334.42 273.3 null]
+>> endobj
+39 0 obj <<
+/D [50 0 R /XYZ 205.21 257.76 null]
+>> endobj
+40 0 obj <<
+/D [50 0 R /XYZ 488.16 257.76 null]
+>> endobj
+41 0 obj <<
+/D [50 0 R /XYZ 71.73 220.53 null]
+>> endobj
+42 0 obj <<
+/D [50 0 R /XYZ 325.95 205.15 null]
+>> endobj
+43 0 obj <<
+/D [50 0 R /XYZ 209.58 189.61 null]
+>> endobj
+44 0 obj <<
+/D [50 0 R /XYZ 270.67 189.61 null]
+>> endobj
+45 0 obj <<
+/D [50 0 R /XYZ 499.84 158.53 null]
+>> endobj
+46 0 obj <<
+/D [50 0 R /XYZ 119.55 142.99 null]
+>> endobj
+90 0 obj <<
+/Length 91 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(indi)26(vidual)]TJ/F29 10.76 Tf 51.18 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(les)-249(e)25(v)15(erywhere)-248(the)15(y)-249(are)-250(required.)]TJ/F33 17.22 Tf -114.9 -47.25 Td[(2.1.)-343(Header)-277(\050Interface\051)-277(File)-277(Content)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(Header)-249(les)-249(should)-249(contain)-248(the)-250(follo)26(wing)-249(items)-249(in)-250(the)-249(gi)25(v)15(en)-249(order)56(.)]TJ
+ET
+1 0 0 1 8.85 -112.76 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(1.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Cop)11(yright)-249(statement)-249(comment)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(2.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Module)-249(abstract)-248(comment)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(3.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Re)25(vision-string)-247(comment)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(4.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Multiple)-248(inclusion)]TJ/F29 10.76 Tf 91 0 Td[(#ifdef)]TJ/F26 11.96 Tf 48.18 0 Td[(\050a.k.a.)-309("include)-248(guard"\051)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(5.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Other)-249(preprocessor)-248(directi)26(v)15(es,)]TJ/F29 10.76 Tf 146.26 0 Td[(#include)]TJ/F26 11.96 Tf 61.09 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(#define)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(6.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(C/C++)]TJ/F29 10.76 Tf 35.75 0 Td[(#ifdef)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(7.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Data)-249(type)-249(denitions)-248(\050classes)-249(and)-249(structures\051)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(8.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F29 10.76 Tf 0 0 Td[(typedef)]TJ/F26 11.96 Tf 45.19 0 Td[(s)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(9.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Function)-248(declarations)]TJ
+ET
+1 0 0 1 -18.65 -21.51 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(10.)]TJ
+ET
+1 0 0 1 18.65 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(C/C++)]TJ/F29 10.76 Tf 35.75 0 Td[(#endif)]TJ
+ET
+1 0 0 1 -18.65 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(11.)]TJ
+ET
+1 0 0 1 18.65 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Multiple)-248(inclusion)]TJ/F29 10.76 Tf 91 0 Td[(#endif)]TJ/F34 11.96 Tf -112.52 -39.46 Td[(Example)-248(1.)-310(Standard)-248(\050C\051)-250(header)-248(le)-250(lay)26(out)]TJ/F29 10.76 Tf 0 -25.94 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(Copyright)-599(\050c\051)-600(1999)-600(Fred)-600(C.)-600(Richards.)]TJ 0 -13.98 Td[(*)-600(All)-600(rights)-599(reserved.)]TJ 0 -13.99 Td[(*)]TJ 0 -13.99 Td[(*)-600(Module)-600(for)-599(computing)-600(basic)-600(statistical)-600(measures)-600(on)]TJ 0 -13.99 Td[(*)-600(an)-600(array)-599(of)-600(real)-600(values.)]TJ 0 -13.98 Td[(*)]TJ 0 -13.99 Td[(*)-600($Id$)]TJ 0 -13.99 Td[(*/)]TJ
+ET
+1 0 0 1 -69.34 -235.93 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 460.27 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(3)]TJ
+ET
+1 0 0 1 5.98 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+91 0 obj
+4114
+endobj
+88 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F33 92 0 R /F34 93 0 R >>
+>> endobj
+89 0 obj <<
+/Type /Page
+/Contents 90 0 R
+/Resources 88 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+47 0 obj <<
+/D [89 0 R /XYZ 170.73 647.57 null]
+>> endobj
+54 0 obj <<
+/D [89 0 R /XYZ 71.73 588.25 null]
+>> endobj
+55 0 obj <<
+/D [89 0 R /XYZ 71.73 564.97 null]
+>> endobj
+56 0 obj <<
+/D [89 0 R /XYZ 71.73 556.36 null]
+>> endobj
+57 0 obj <<
+/D [89 0 R /XYZ 141.07 534.81 null]
+>> endobj
+58 0 obj <<
+/D [89 0 R /XYZ 71.73 532.21 null]
+>> endobj
+59 0 obj <<
+/D [89 0 R /XYZ 141.07 513.29 null]
+>> endobj
+60 0 obj <<
+/D [89 0 R /XYZ 71.73 513.12 null]
+>> endobj
+61 0 obj <<
+/D [89 0 R /XYZ 141.07 491.77 null]
+>> endobj
+62 0 obj <<
+/D [89 0 R /XYZ 71.73 489.17 null]
+>> endobj
+63 0 obj <<
+/D [89 0 R /XYZ 141.07 470.25 null]
+>> endobj
+64 0 obj <<
+/D [89 0 R /XYZ 232.07 470.25 null]
+>> endobj
+65 0 obj <<
+/D [89 0 R /XYZ 71.73 467.65 null]
+>> endobj
+66 0 obj <<
+/D [89 0 R /XYZ 141.07 448.73 null]
+>> endobj
+67 0 obj <<
+/D [89 0 R /XYZ 287.33 448.73 null]
+>> endobj
+68 0 obj <<
+/D [89 0 R /XYZ 368.67 448.73 null]
+>> endobj
+69 0 obj <<
+/D [89 0 R /XYZ 71.73 446.13 null]
+>> endobj
+70 0 obj <<
+/D [89 0 R /XYZ 141.07 427.21 null]
+>> endobj
+71 0 obj <<
+/D [89 0 R /XYZ 176.82 427.21 null]
+>> endobj
+72 0 obj <<
+/D [89 0 R /XYZ 71.73 426.99 null]
+>> endobj
+73 0 obj <<
+/D [89 0 R /XYZ 141.07 405.69 null]
+>> endobj
+74 0 obj <<
+/D [89 0 R /XYZ 71.73 403.09 null]
+>> endobj
+75 0 obj <<
+/D [89 0 R /XYZ 141.07 384.17 null]
+>> endobj
+76 0 obj <<
+/D [89 0 R /XYZ 141.07 384.17 null]
+>> endobj
+77 0 obj <<
+/D [89 0 R /XYZ 71.73 382.61 null]
+>> endobj
+78 0 obj <<
+/D [89 0 R /XYZ 141.07 362.65 null]
+>> endobj
+79 0 obj <<
+/D [89 0 R /XYZ 71.73 362.49 null]
+>> endobj
+80 0 obj <<
+/D [89 0 R /XYZ 141.07 341.14 null]
+>> endobj
+81 0 obj <<
+/D [89 0 R /XYZ 176.82 341.14 null]
+>> endobj
+82 0 obj <<
+/D [89 0 R /XYZ 71.73 340.91 null]
+>> endobj
+83 0 obj <<
+/D [89 0 R /XYZ 141.07 319.62 null]
+>> endobj
+84 0 obj <<
+/D [89 0 R /XYZ 232.07 319.62 null]
+>> endobj
+85 0 obj <<
+/D [89 0 R /XYZ 71.73 305.06 null]
+>> endobj
+86 0 obj <<
+/D [89 0 R /XYZ 71.73 305.06 null]
+>> endobj
+87 0 obj <<
+/D [89 0 R /XYZ 71.73 265.71 null]
+>> endobj
+97 0 obj <<
+/Length 98 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -71.77 cm
+BT
+/F29 10.76 Tf 0 0 Td[(#ifndef)-600(STATISTICS_H)]TJ 0 -13.99 Td[(#define)-600(STATISTICS_H)]TJ 0 -27.97 Td[(#include)-600(<math.h>)]TJ 0 -13.99 Td[(#include)-600(<values.h>)]TJ 0 -27.97 Td[(#define)-600(MAXCOMPLEX)-600({)-600(MAXINT,)-599(MAXINT)-600(})]TJ 0 -27.98 Td[(#ifdef)-600(_cplusplus)]TJ 0 -13.99 Td[(extern)-600("C")-600({)]TJ 0 -13.98 Td[(#endif)]TJ 0 -27.98 Td[(struct)-600(complex)-600({)]TJ 25.82 -13.99 Td[(int)-600(r;)-600(/*)-600(real)-600(part)-600(*/)]TJ 0 -13.98 Td[(int)-600(i;)-600(/*)-600(imaginary)-600(part)-600(*/)]TJ -25.82 -13.99 Td[(};)]TJ 0 -13.99 Td[(typedef)-600(struct)-600(complex)-600(Complex;)]TJ 32.28 -27.97 Td[(...)]TJ -32.28 -27.98 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(Compute)-600(the)-599(average)-600(of)-600(a)-600(given)-600(set.)]TJ 0 -13.98 Td[(*)-1800(Input)-600(-)-599(array)-600(of)-600(real)-600(values,)-600(array)-600(length.)]TJ 0 -13.99 Td[(*)-1800(Output)-599(-)-600(average,)-600(0)-600(for)-600(empty)-600(array.)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -13.99 Td[(float)]TJ 0 -13.98 Td[(ave\050float*)-600(v,)-600(unsigned)-600(long)-600(length\051;)]TJ 6.46 -27.98 Td[(...)]TJ -6.46 -27.97 Td[(#ifdef)-600(_cplusplus)]TJ 0 -13.99 Td[(})]TJ 0 -13.99 Td[(#endif)]TJ 0 -27.97 Td[(#endif)-600(/*)-600(STATUS_H)-600(*/)]TJ
+ET
+1 0 0 1 -47.82 -549.89 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(4)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+98 0 obj
+1582
+endobj
+95 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R >>
+>> endobj
+96 0 obj <<
+/Type /Page
+/Contents 97 0 R
+/Resources 95 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+94 0 obj <<
+/D [96 0 R /XYZ 71.73 717.31 null]
+>> endobj
+129 0 obj <<
+/Length 130 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -466.25 -60.38 cm
+BT
+/F33 17.22 Tf 0 0 Td[(2.2.)-343(Code)-278(Files)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(C)-250(and)-249(C++)-249(code)-249(les)-249(follo)25(w)-249(a)-250(similar)-249(structure)-248(to)-250(the)-249(header)-249(les.)-309(These)-249(les)-249(should)]TJ 0 -15.54 Td[(contain)-249(the)-249(follo)26(wing)-249(information)-248(in)-250(the)-249(gi)25(v)15(en)-249(order)56(.)]TJ
+ET
+1 0 0 1 56.67 -79.14 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(1.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Cop)11(yright)-249(statement)-249(comment)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(2.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Module)-249(abstract)-248(comment)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(3.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Preprocessor)-248(directi)26(v)15(es,)]TJ/F29 10.76 Tf 116.72 0 Td[(#include)]TJ/F26 11.96 Tf 54.63 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(#define)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(4.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Re)25(vision-string)-247(v)25(ariable)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(5.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Other)-249(module-specic)-247(v)25(ariable)-249(denitions)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(6.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Local)-249(function)-249(interf)11(ace)-249(prototypes)]TJ
+ET
+1 0 0 1 -12.67 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(7.)]TJ
+ET
+1 0 0 1 12.67 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(Class/function)-248(denitions)]TJ -21.52 -27.49 Td[(Unlik)11(e)-250(in)-249(the)-250(header)-249(le,)-249(the)-249(implementation-le)-247(re)25(vision)-248(string)-249(should)-249(be)-250(stored)-249(as)-249(a)]TJ 0 -15.54 Td[(program)-249(v)26(ariable)-249(rather)-249(than)-249(in)-250(a)-250(comment.)-308(This)-249(w)10(ay)]TJ/F34 11.96 Tf 257.94 0 Td[(ident)]TJ/F26 11.96 Tf 28.9 0 Td[(will)-249(be)-250(able)-249(to)-249(identify)-249(the)]TJ -286.84 -15.55 Td[(source)-249(v)15(ersion)-249(from)-249(the)-249(compiled)-248(object)-249(le.)-310(F)16(or)-250(C)-249(les)-250(use:)]TJ/F29 10.76 Tf 0 -25.94 Td[(static)-600(const)-600(char)-600(rcs_id[])-600(__attribute__)-599(\050\050unused\051\051)-600(=)]TJ 0 -13.99 Td[("$Id$";)]TJ/F26 11.96 Tf 0 -41.48 Td[(The)]TJ/F29 10.76 Tf 21.58 0 Td[(__attribute__)]TJ/F26 11.96 Tf 86.91 0 Td[(modier)-249(is)-249(a)-250(GNU)-249(C)-250(feature)-248(that)-250(k)10(eeps)-249(the)-249(compiler)-249(from)]TJ -108.49 -15.54 Td[(complaining)-248(about)-249(the)-249(unused)-249(v)25(ariable.)-308(This)-250(may)-249(be)-249(omitted)-249(for)-249(non-GNU)-249(projects.)]TJ 0 -15.54 Td[(F)15(or)-249(C++)-250(les,)-249(use)-249(the)-249(follo)25(wing)-249(form)-249(for)-249(the)-250(re)26(vision)-249(string:)]TJ/F29 10.76 Tf 0 -25.95 Td[(namespace)-600({)-600(const)-600(char)-600(rcs_id[])-599(=)-600("$Id$";)-600(})]TJ/F26 11.96 Tf 0 -47.46 Td[(Precede)-249(each)-249(function)-248(or)-250(class)-249(method)-249(implementation)-247(with)-249(a)-250(form-feed)-248(character)]TJ 0 -15.54 Td[(\050Ctrl-L\051)-249(so)-249(that)-249(when)-249(printed)-249(the)-250(function)-248(starts)-249(at)-250(the)-249(start)-249(of)-250(a)-249(ne)25(w)-250(page.)]TJ
+ET
+1 0 0 1 -69.34 -353.02 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 460.27 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(5)]TJ
+ET
+1 0 0 1 5.98 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+130 0 obj
+4128
+endobj
+127 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F33 92 0 R /F26 21 0 R /F29 53 0 R /F34 93 0 R >>
+>> endobj
+128 0 obj <<
+/Type /Page
+/Contents 129 0 R
+/Resources 127 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+99 0 obj <<
+/D [128 0 R /XYZ 71.73 636.15 null]
+>> endobj
+100 0 obj <<
+/D [128 0 R /XYZ 71.73 596.7 null]
+>> endobj
+101 0 obj <<
+/D [128 0 R /XYZ 71.73 590.73 null]
+>> endobj
+102 0 obj <<
+/D [128 0 R /XYZ 71.73 584.75 null]
+>> endobj
+103 0 obj <<
+/D [128 0 R /XYZ 141.07 565.83 null]
+>> endobj
+104 0 obj <<
+/D [128 0 R /XYZ 71.73 563.23 null]
+>> endobj
+105 0 obj <<
+/D [128 0 R /XYZ 141.07 544.31 null]
+>> endobj
+106 0 obj <<
+/D [128 0 R /XYZ 71.73 544.14 null]
+>> endobj
+107 0 obj <<
+/D [128 0 R /XYZ 141.07 522.79 null]
+>> endobj
+108 0 obj <<
+/D [128 0 R /XYZ 257.79 522.79 null]
+>> endobj
+109 0 obj <<
+/D [128 0 R /XYZ 332.67 522.79 null]
+>> endobj
+110 0 obj <<
+/D [128 0 R /XYZ 71.73 520.19 null]
+>> endobj
+111 0 obj <<
+/D [128 0 R /XYZ 141.07 501.27 null]
+>> endobj
+112 0 obj <<
+/D [128 0 R /XYZ 71.73 498.67 null]
+>> endobj
+113 0 obj <<
+/D [128 0 R /XYZ 141.07 479.75 null]
+>> endobj
+114 0 obj <<
+/D [128 0 R /XYZ 71.73 477.15 null]
+>> endobj
+115 0 obj <<
+/D [128 0 R /XYZ 141.07 458.23 null]
+>> endobj
+116 0 obj <<
+/D [128 0 R /XYZ 71.73 455.63 null]
+>> endobj
+117 0 obj <<
+/D [128 0 R /XYZ 141.07 436.71 null]
+>> endobj
+118 0 obj <<
+/D [128 0 R /XYZ 71.73 424.59 null]
+>> endobj
+119 0 obj <<
+/D [128 0 R /XYZ 377.49 393.68 null]
+>> endobj
+120 0 obj <<
+/D [128 0 R /XYZ 71.73 363.58 null]
+>> endobj
+121 0 obj <<
+/D [128 0 R /XYZ 141.13 296.72 null]
+>> endobj
+122 0 obj <<
+/D [128 0 R /XYZ 71.73 251.08 null]
+>> endobj
+123 0 obj <<
+/D [128 0 R /XYZ 71.73 207.77 null]
+>> endobj
+124 0 obj <<
+/D [128 0 R /XYZ 71.73 168.11 null]
+>> endobj
+125 0 obj <<
+/D [128 0 R /XYZ 71.73 168.11 null]
+>> endobj
+138 0 obj <<
+/Length 139 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F34 11.96 Tf 0 0 Td[(Example)-248(2.)-310(Standard)-248(\050C++\051)-249(implementation/code)-246(le)]TJ/F29 10.76 Tf 0 -25.94 Td[(//)]TJ 0 -13.99 Td[(//)-600(Copyright)-600(\050c\051)-600(1999)-600(Fred)-600(C.)-599(Richards.)]TJ 0 -13.99 Td[(//)-600(All)-600(rights)-600(reserved.)]TJ 0 -13.99 Td[(//)]TJ 0 -13.98 Td[(//)-600(Module)-600(for)-600(computing)-600(basic)-599(statistical)-600(measures)-600(on)]TJ 0 -13.99 Td[(//)-600(an)-600(array)-600(of)-600(real)-600(values.)]TJ 0 -13.99 Td[(//)]TJ 0 -27.97 Td[(#include)-600("Class.h")]TJ 0 -13.99 Td[(#include)-600(<string>)]TJ 0 -27.98 Td[(namespace)-600({)]TJ 25.82 -13.98 Td[(const)-600(char)-600(rcs_id[])-600(=)-600("$Id$";)]TJ -25.82 -13.99 Td[(})]TJ 0 -27.98 Td[(//)-600(Utility)-600(for)-600(prompting)-600(user)-599(for)-600(input.)]TJ 0 -13.98 Td[(string)]TJ 0 -13.99 Td[(get_user_response\050\051;)]TJ 0 -27.98 Td[(^L)]TJ 0 -13.98 Td[(Class::Class\050const)-600(int)-600(len\051)]TJ 0 -13.99 Td[({)]TJ 25.82 -13.99 Td[(private_array_)-600(=)-600(new[len];)]TJ -25.82 -13.99 Td[(})]TJ 0 -27.97 Td[(Class::~Class\050\051)]TJ 0 -13.99 Td[({)]TJ 25.82 -13.99 Td[(delete)-600(private_array_;)]TJ -25.82 -13.98 Td[(})]TJ 0 -27.98 Td[(^L)]TJ 6.46 -13.99 Td[(...)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(6)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+139 0 obj
+1546
+endobj
+136 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F34 93 0 R /F29 53 0 R >>
+>> endobj
+137 0 obj <<
+/Type /Page
+/Contents 138 0 R
+/Resources 136 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 23 0 R
+>> endobj
+135 0 obj <<
+/D [137 0 R /XYZ 71.73 717.31 null]
+>> endobj
+126 0 obj <<
+/D [137 0 R /XYZ 71.73 633.12 null]
+>> endobj
+131 0 obj <<
+/D [137 0 R /XYZ 71.73 132.18 null]
+>> endobj
+155 0 obj <<
+/Length 156 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -466.25 -62.89 cm
+BT
+/F25 20.66 Tf 0 0 Td[(3.)-344(File)-278(Format)]TJ/F26 11.96 Tf 47.82 -25.87 Td[(The)-249(formatting)-248(style)-250(presented)-248(here)-249(is)-250(essentially)-248(that)-249(used)-249(by)-250(Stroustrup)-248(in)]TJ/F27 11.96 Tf 363.27 0 Td[(The)-249(C++)]TJ -363.27 -15.54 Td[(Pr)45(o)10(gr)16(amming)-249(Langua)12(g)10(e)]TJ/F26 11.96 Tf 116.81 0 Td[(.)-310(If)-250(you)-249(use)-249(Emacs)-249(you)-249(can)-250(mak)11(e)-250(this)-249(your)-249(def)10(ault)-249(editing)]TJ -116.81 -15.54 Td[(mode)-249(by)-250(adding)-248(the)-250(follo)26(wing)-249(to)-250(your)]TJ/F29 10.76 Tf 184 0 Td[(.emacs)]TJ/F26 11.96 Tf 41.72 0 Td[(le:)]TJ/F29 10.76 Tf -225.72 -36.27 Td[(\050defun)-600(my-c-mode-common-hook)-599(\050\051)]TJ 12.91 -13.99 Td[(\050c-set-style)-600("stroustrup"\051\051)]TJ -12.91 -27.98 Td[(\050add-hook)-600('c-mode-common-hook)-599('my-c-mode-common-hook\051)]TJ/F26 11.96 Tf 0 -47.46 Td[(F)15(ormat)-249(your)-249(code)-249(so)-250(that)-249(the)-249(spatial)-249(structure)-248(illustrates)-249(the)-249(logical)-249(structure.)-308(Use)-249(blank)]TJ 0 -15.54 Td[(lines)-249(to)-250(help)-249(separate)-248(dif)25(ferent)-249(ideas,)-249(use)-249(indentation)-248(to)-250(sho)26(w)-250(logical)-249(relationships,)-247(and)]TJ 0 -15.54 Td[(use)-249(spaces)-249(to)-250(separate)-248(functionality)67(.)-310(Each)-249(block)-249(of)-250(code)-249(should)-249(do)-249(e)15(xactly)-249(one)-249(thing.)]TJ 0 -21.52 Td[(Start)-249(all)-250(function)-248(denitions)-248(and)-250(declarations)-247(in)-250(column)-249(zero.)-309(Put)-249(the)-249(return)-249(v)25(alue)-249(type,)]TJ 0 -15.54 Td[(the)-249(function)-249(interf)11(ace)-249(signature)-249(\050name)-249(and)-249(ar)18(gument)-248(list\051,)-249(and)-250(the)-249(function)-249(body)-249(open)]TJ 0 -15.54 Td[(brack)11(et)-250(each)-249(on)-249(a)-250(separate)-249(line.)-309(F)15(or)-249(functions)-248(that)-250(are)-249(more)-249(than)-249(a)-250(fe)25(w)-249(lines)-249(long,)-249(put)]TJ 0 -15.55 Td[(the)-249(function)-249(name)-249(after)-249(the)-250(closing)-248(brack)11(et)-250(in)-249(a)-250(comment.)]TJ/F34 11.96 Tf 0 -27.49 Td[(Example)-248(3.)-310(F)25(ormatting)-248(function)-248(declarations)-248(and)-249(denitions)]TJ/F29 10.76 Tf 0 -25.95 Td[(void)]TJ 0 -13.98 Td[(debug\050const)-600(string&)-600(message\051;)]TJ 0 -27.98 Td[(int)]TJ 0 -13.99 Td[(Class::method\050const)-600(int)-600(x,)-600(const)-599(string&)-600(str\051)]TJ 0 -13.98 Td[({)]TJ 25.82 -13.99 Td[(.)]TJ 0 -13.99 Td[(.)]TJ 0 -13.99 Td[(.)]TJ -25.82 -27.97 Td[(})-600(//)-600(method)]TJ
+ET
+1 0 0 1 0 -558.77 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 459.83 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(7)]TJ
+ET
+1 0 0 1 6.42 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+156 0 obj
+2896
+endobj
+153 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F25 20 0 R /F26 21 0 R /F29 53 0 R /F34 93 0 R >>
+>> endobj
+154 0 obj <<
+/Type /Page
+/Contents 155 0 R
+/Resources 153 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+132 0 obj <<
+/D [154 0 R /XYZ 71.73 631.87 null]
+>> endobj
+133 0 obj <<
+/D [154 0 R /XYZ 482.82 616.59 null]
+>> endobj
+134 0 obj <<
+/D [154 0 R /XYZ 303.55 585.51 null]
+>> endobj
+140 0 obj <<
+/D [154 0 R /XYZ 71.73 475.35 null]
+>> endobj
+141 0 obj <<
+/D [154 0 R /XYZ 71.73 420.15 null]
+>> endobj
+142 0 obj <<
+/D [154 0 R /XYZ 398.71 360.58 null]
+>> endobj
+143 0 obj <<
+/D [154 0 R /XYZ 71.73 318.63 null]
+>> endobj
+166 0 obj <<
+/Length 167 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Use)-249(a)-250(single)-249(space)-249(to)-249(separate)-249(all)-249(operators)-249(from)-249(their)-249(operands.)-308(The)-250(e)16(xceptions)-249(to)-249(this)]TJ 0 -15.54 Td[(rule)-249(are)-250(the)-249(“)]TJ/F29 10.76 Tf 62.07 0 Td[(->)]TJ/F26 11.96 Tf 12.91 0 Td[(”,)-250(“)]TJ/F29 10.76 Tf 16.6 0 Td[(.)]TJ/F26 11.96 Tf 6.45 0 Td[(”,)-250(“)]TJ/F29 10.76 Tf 16.6 0 Td[(\050\051)]TJ/F26 11.96 Tf 12.91 0 Td[(”)-250(and)-249(“)]TJ/F29 10.76 Tf 33.85 0 Td[([])]TJ/F26 11.96 Tf 12.92 0 Td[(”)-249(operators.)-309(Lea)21(v)15(e)-249(no)-250(space)-249(between)-248(these)]TJ -174.31 -15.54 Td[(operators)-248(and)-250(their)-249(operands.)-308(When)-249(breaking)-249(operations)-248(across)-249(lines,)-249(put)-249(the)-249(operator)]TJ 0 -15.55 Td[(at)-250(the)-249(end)-249(of)-250(the)-249(brok)10(en)-249(line)-249(rather)-249(than)-249(at)-250(the)-249(start)-250(of)-249(the)-250(continuation)-247(line.)]TJ 0 -21.51 Td[(Use)-249(four)-250(spaces)-248(for)-250(each)-249(le)25(v)16(el)-250(of)-250(indentation.)-307(A)74(v)20(oid)-249(making)-249(lines)-249(longer)-249(than)-249(80)]TJ 0 -15.55 Td[(characters.)-308(When)-249(breaking)-249(lines,)-249(use)-249(the)-249(natural)-249(logical)-249(breaks)-249(to)-249(determine)-248(where)-249(the)]TJ 0 -15.54 Td[(ne)25(wline)-249(goes.)-309(Indent)-249(the)-249(continuation)-248(line)-249(to)-250(illustrate)-248(its)-249(logical)-249(relationship)-248(to)-250(the)-249(rest)]TJ 0 -15.54 Td[(of)-250(the)-249(code)-249(in)-250(the)-249(line.)-309(F)15(or)-250(functions,)-248(for)-249(e)15(xample,)-249(this)-249(means)-249(aligning)-248(ar)18(guments)-248(with)]TJ 0 -15.54 Td[(the)-249(opening)-249(parenthesis)-248(of)-250(the)-249(ar)18(gument)-248(list.)]TJ/F34 11.96 Tf 0 -27.5 Td[(Example)-248(4.)-310(Br)18(eaking)-248(statements)-248(acr)18(oss)-249(multiple)-248(lines)]TJ/F29 10.76 Tf 0 -25.94 Td[(new_shape)-600(=)-600(affine_transform\050coords,)-599(translation,)]TJ 187.22 -13.99 Td[(rotation\051;)]TJ -187.22 -27.97 Td[(if)-600(\050)-600(\050)-600(\050new_shape.x)-600(>)-600(left_border\051)-599(&&)]TJ 45.19 -13.99 Td[(\050new_shape.x)-600(<)-600(right_border\051)-600(\051)-599(&&)]TJ -12.91 -13.99 Td[(\050)-600(\050new_shape.y)-600(>)-600(bottom_border\051)-599(&&)]TJ 12.91 -13.99 Td[(\050new_shape.y)-600(<)-600(top_border\051)-600(\051)-600(\051)]TJ -45.19 -13.98 Td[({)]TJ 25.82 -13.99 Td[(draw\050new_shape\051;)]TJ -25.82 -13.99 Td[(})]TJ/F26 11.96 Tf 0 -47.46 Td[(Use)-249(a)-250(pure-block,)-248(fully)-249(brack)11(eted)-249(style)-250(for)-249(blocks)-249(of)-249(code.)-309(This)-249(means)-249(put)-250(brack)11(ets)]TJ 0 -15.54 Td[(around)-242(all)-243(conditional)-242(code)-242(blocks,)-244(e)25(v)16(en)-243(one-line)-242(blocks,)-244(and)-242(put)-243(the)-243(opening)-242(brack)11(et)-243(at)]TJ 0 -15.54 Td[(the)-249(end)-250(of)-249(the)-250(line)-249(with)-249(the)-250(opening)-248(statement.)-308(The)-250(e)16(xception)-249(to)-249(this)-250(rule)-249(is)-250(for)]TJ 0 -15.55 Td[(conditions)-248(that)-250(are)-249(brok)11(en)-250(across)-249(multiple)-248(lines.)-309(In)-250(this)-249(case)-249(put)-249(the)-250(open)-249(brack)11(et)-250(on)-249(a)]TJ 0 -15.54 Td[(line)-249(by)-250(itself)-249(aligned)-249(with)-249(the)-249(start)-249(of)-250(the)-249(opening)-249(statement)-248(\050as)-249(sho)25(wn)-249(abo)15(v)15(e\051.)]TJ/F34 11.96 Tf 0 -27.49 Td[(Example)-248(5.)-310(Fully)-249(brack)11(eted,)-249(pur)19(e)-250(block)-249(style)]TJ/F29 10.76 Tf 0 -25.95 Td[(if)-600(\050value)-600(<)-600(max\051)-1200({)]TJ 25.82 -13.98 Td[(if)-600(\050value)-600(!=)-600(0\051)-1200({)]TJ 25.83 -13.99 Td[(func\050value\051;)]TJ -25.83 -13.99 Td[(})]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(8)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+167 0 obj
+4006
+endobj
+164 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F34 93 0 R >>
+>> endobj
+165 0 obj <<
+/Type /Page
+/Contents 166 0 R
+/Resources 164 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+144 0 obj <<
+/D [165 0 R /XYZ 71.73 657.53 null]
+>> endobj
+145 0 obj <<
+/D [165 0 R /XYZ 176.31 632.03 null]
+>> endobj
+146 0 obj <<
+/D [165 0 R /XYZ 181.62 632.03 null]
+>> endobj
+147 0 obj <<
+/D [165 0 R /XYZ 205.82 632.03 null]
+>> endobj
+148 0 obj <<
+/D [165 0 R /XYZ 211.13 632.03 null]
+>> endobj
+149 0 obj <<
+/D [165 0 R /XYZ 228.87 632.03 null]
+>> endobj
+150 0 obj <<
+/D [165 0 R /XYZ 234.18 632.03 null]
+>> endobj
+151 0 obj <<
+/D [165 0 R /XYZ 275.64 632.03 null]
+>> endobj
+152 0 obj <<
+/D [165 0 R /XYZ 280.94 632.03 null]
+>> endobj
+158 0 obj <<
+/D [165 0 R /XYZ 71.73 594.8 null]
+>> endobj
+159 0 obj <<
+/D [165 0 R /XYZ 335.22 517.26 null]
+>> endobj
+160 0 obj <<
+/D [165 0 R /XYZ 71.73 475.31 null]
+>> endobj
+161 0 obj <<
+/D [165 0 R /XYZ 71.73 306.01 null]
+>> endobj
+162 0 obj <<
+/D [165 0 R /XYZ 496.48 228.3 null]
+>> endobj
+163 0 obj <<
+/D [165 0 R /XYZ 71.73 186.35 null]
+>> endobj
+184 0 obj <<
+/Length 185 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F29 10.76 Tf 0 0 Td[(})-600(else)-600({)]TJ 25.82 -13.99 Td[(error\050"The)-600(value)-600(is)-600(too)-600(big."\051;)]TJ -25.82 -13.99 Td[(})]TJ/F26 11.96 Tf 0 -41.48 Td[(Although)-248(the)-250(brack)11(ets)-249(may)-250(seem)-249(tedious)-248(for)-250(one-line)-248(blocks,)-249(the)16(y)-250(greatly)-249(reduce)-249(the)]TJ 0 -15.54 Td[(probability)-248(of)-250(errors)-249(being)-249(introduced)-248(when)-249(the)-249(block)-249(is)-250(e)15(xpanded)-248(later)-249(in)-250(the)-249(code')56(s)]TJ 0 -15.54 Td[(life.)]TJ/F33 17.22 Tf -47.82 -47.25 Td[(3.1.)-343(Unique)-277(to)-278(C++)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(Start)]TJ/F29 10.76 Tf 25.57 0 Td[(public)]TJ/F26 11.96 Tf 38.74 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(protected)]TJ/F26 11.96 Tf 58.11 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(private)]TJ/F26 11.96 Tf 45.19 0 Td[(,)-250(and)]TJ/F29 10.76 Tf 26.23 0 Td[(friend)]TJ/F26 11.96 Tf 41.73 0 Td[(labels)-249(in)-249(column)-249(zero)-249(of)-250(class)]TJ -247.51 -15.54 Td[(declarations.)-308(Use)-249(e)15(xplicit)]TJ/F29 10.76 Tf 124.72 0 Td[(public)]TJ/F26 11.96 Tf 41.72 0 Td[(labels)-249(for)-249(all)]TJ/F29 10.76 Tf 62.75 0 Td[(struct)]TJ/F26 11.96 Tf 41.72 0 Td[(public)-249(elds)-249(and)-249(use)-250(e)15(xplicit)]TJ/F29 10.76 Tf -270.91 -15.54 Td[(private)]TJ/F26 11.96 Tf 48.18 0 Td[(labels)-249(for)-249(all)-250(pri)26(v)25(ate)-250(class)-249(members.)]TJ -48.18 -21.52 Td[(The)-249(members)-249(of)-249(a)-250(class)-249(should)-249(be)-249(declared)-249(in)-249(the)-250(follo)26(wing)-249(order)56(.)-310(Declare)-249(all)-249(public)]TJ 0 -15.54 Td[(data)-249(members)-249(and)-249(type)-249(denitions)-248(rst.)-309(Declare)-249(pri)25(v)26(ate)-250(or)-249(protected)-249(data)-249(members)-248(or)]TJ 0 -15.55 Td[(type)-249(denitions)-248(used)-250(in)-249(function)-249(member)-248(initialization)-248(lists)-249(or)-250(inline)-249(implementations)]TJ 0 -15.54 Td[(ne)15(xt.)-309(Declare)-249(all)-249(public)-249(member)-249(functions)-248(ne)15(xt,)-249(starting)-249(with)-249(the)-249(constructors)-248(and)]TJ 0 -15.54 Td[(destructor)57(.)-305(Declare)-232(all)-233(remaining)-232(pri)26(v)25(ate)-233(or)-233(protected)-232(data)-233(members)-232(and)-233(type)-233(denitions)]TJ 0 -15.54 Td[(ne)15(xt.)-309(Declare)-249(all)-249(pri)25(v)25(ate)-249(or)-250(protected)-248(function)-248(members)-249(ne)16(xt.)-310(Declare)-248(all)-250(friends)-249(last.)]TJ 0 -21.52 Td[(Put)-249(simple)-249(inline)-249(function)-249(denitions)-248(on)-249(the)-250(same)-249(line)-249(as)-249(their)-250(declaration.)-308(F)16(or)-250(inline)]TJ 0 -15.54 Td[(functions)-248(spanning)-249(multiple)-248(lines,)-249(use)-250(a)-249(pure-block)-248(style)-250(with)-249(four)21(-space)-249(indentation.)]TJ 0 -15.54 Td[(In)-250(general,)-248(a)20(v)20(oid)-249(putting)-249(comple)16(x)-249(function)-249(implementations)]TJ/F29 10.76 Tf 289.56 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(les.)]TJ/F34 11.96 Tf -305.46 -27.5 Td[(Example)-248(6.)-310(Class)-249(declaration)-248(f)25(ormat)]TJ/F29 10.76 Tf 0 -25.94 Td[(class)-600(Type)-600(:)-600(public)-600(Parent)-600({)]TJ 0 -13.99 Td[(private:)]TJ 25.82 -13.99 Td[(int)-600(x_;)]TJ 0 -13.98 Td[(int)-600(y_;)]TJ -25.82 -13.99 Td[(public:)]TJ 25.82 -13.99 Td[(Type\050\051;)]TJ 0 -13.99 Td[(Type\050int)-600(x\051)-600(:)-600(x_\050x\051)-600({)-600(})]TJ 0 -13.98 Td[(~Type\050\051;)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 460.27 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(9)]TJ
+ET
+1 0 0 1 5.98 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+185 0 obj
+3713
+endobj
+182 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R /F26 21 0 R /F33 92 0 R /F34 93 0 R >>
+>> endobj
+183 0 obj <<
+/Type /Page
+/Contents 184 0 R
+/Resources 182 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+168 0 obj <<
+/D [183 0 R /XYZ 71.73 534.9 null]
+>> endobj
+169 0 obj <<
+/D [183 0 R /XYZ 71.73 487.7 null]
+>> endobj
+170 0 obj <<
+/D [183 0 R /XYZ 145.12 475.63 null]
+>> endobj
+171 0 obj <<
+/D [183 0 R /XYZ 189.83 475.63 null]
+>> endobj
+172 0 obj <<
+/D [183 0 R /XYZ 253.91 475.63 null]
+>> endobj
+173 0 obj <<
+/D [183 0 R /XYZ 325.33 475.63 null]
+>> endobj
+174 0 obj <<
+/D [183 0 R /XYZ 244.27 460.09 null]
+>> endobj
+175 0 obj <<
+/D [183 0 R /XYZ 348.74 460.09 null]
+>> endobj
+176 0 obj <<
+/D [183 0 R /XYZ 119.55 444.55 null]
+>> endobj
+177 0 obj <<
+/D [183 0 R /XYZ 71.73 435.97 null]
+>> endobj
+178 0 obj <<
+/D [183 0 R /XYZ 71.73 336.74 null]
+>> endobj
+179 0 obj <<
+/D [183 0 R /XYZ 409.11 292.72 null]
+>> endobj
+180 0 obj <<
+/D [183 0 R /XYZ 451.64 292.72 null]
+>> endobj
+181 0 obj <<
+/D [183 0 R /XYZ 71.73 250.77 null]
+>> endobj
+207 0 obj <<
+/Length 208 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -392.61 -71.77 cm
+BT
+/F29 10.76 Tf 0 0 Td[(int)-600(get_x\050\051)-600(const)-600({)-600(return)-600(x_;)-600(})]TJ 0 -13.99 Td[(void)-600(set_x\050const)-600(int)-600(new_x\051)-600({)-600(x_)-600(=)-600(new_x;)-600(})]TJ 0 -13.98 Td[(...)]TJ 0 -13.99 Td[(void)-600(display\050\051)-600({)]TJ 25.83 -13.99 Td[(...)]TJ -25.83 -13.99 Td[(})]TJ -25.82 -13.98 Td[(})]TJ/F25 20.66 Tf -47.82 -98.18 Td[(4.)-344(Choosing)-278(Meaningful)-277(Names)]TJ/F33 17.22 Tf 0 -47.25 Td[(4.1.)-343(V)60(ariab)10(le)-277(Names)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(The)-249(name)-249(formatting)-248(con)40(v)15(entions)-248(described)-249(here)-249(are)-249(essentially)-248(the)-250(GNU)-249(coding)]TJ 0 -15.54 Td[(standards.)-308(These)-249(are)-250(a)21(v)25(ailable)-249(online)-249(using)]TJ/F29 10.76 Tf 208.35 0 Td[(info)]TJ/F26 11.96 Tf 25.83 0 Td[(.)]TJ -234.18 -21.52 Td[(Use)-249(lo)25(wer)-249(case)-249(for)-250(all)-249(v)25(ariable)-249(names.)-309(F)16(or)-250(multi-w)11(ord)-249(names,)-249(use)-249(an)-250(underscore)-248(as)-249(the)]TJ 0 -15.54 Td[(separator)56(.)-309(Use)-249(all)-248(capitals)-248(for)-249(the)-249(names)-248(of)-248(constants)-248(\050i.e.)-309(v)25(ariables)-248(declared)]TJ/F29 10.76 Tf 365.91 0 Td[(const)]TJ/F26 11.96 Tf 35.26 0 Td[(and)]TJ -401.17 -15.54 Td[(enumerated)-248(types\051.)-309(Use)-249(an)-250(underscore)-248(as)-249(a)-250(w)10(ord)-249(separator)57(.)]TJ 0 -21.52 Td[(Choose)-249(v)25(ariable)-248(names)-249(carefully)66(.)-309(While)-249(studies)-249(sho)26(w)-250(that)-249(the)-250(choice)-249(of)-249(v)25(ariable)-249(names)]TJ 0 -15.54 Td[(has)-249(a)-250(strong)-249(inuence)-248(on)-250(the)-249(time)-249(required)-249(to)-249(deb)20(ug)-249(code,)-249(there)-249(are)-250(unfortunately)-248(no)]TJ 0 -15.55 Td[(clear)-249(and)-249(x)15(ed)-250(rules)-249(for)-249(ho)25(w)-249(to)-250(choose)-249(good)-249(names.)-308(Re)25(vie)26(w)-250(Chapter)-249(9)-249(of)]TJ/F27 11.96 Tf 353.91 0 Td[(Code)]TJ -353.91 -15.54 Td[(Complete)]TJ/F26 11.96 Tf 48.81 0 Td[(periodically)67(.)-310(In)-250(the)-249(mean)-249(time,)-249(here)-249(are)-250(some)-249(general)-248(guidelines)-249(to)-249(follo)26(w:)]TJ
+ET
+1 0 0 1 -25.82 -429.24 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Be)-249(consistent!)-308(The)-249(most)-250(important)-248(thing)-249(is)-249(to)-250(establish)-248(a)-250(clear)41(,)-250(easily)-249(recognizable)]TJ 0 -15.54 Td[(pattern)-248(to)-250(your)-249(code)-249(so)-250(that)-249(others)-249(will)-249(be)-250(able)-249(to)-249(understand)-249(your)-249(implementation)]TJ 0 -15.54 Td[(and)-249(intent)-249(as)-249(quickly)-249(and)-249(reliably)-249(as)-250(possible.)]TJ
+ET
+1 0 0 1 -11.96 -52.6 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Use)-249(similar)-249(names)-248(for)-250(similar)-249(data)-249(types,)-249(dissimilar)-248(names)-249(for)-249(dissimilar)-248(types.)]TJ
+ET
+1 0 0 1 -59.78 -68.05 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(10)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+208 0 obj
+3421
+endobj
+205 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R /F25 20 0 R /F33 92 0 R /F26 21 0 R /F37 209 0 R >>
+>> endobj
+206 0 obj <<
+/Type /Page
+/Contents 207 0 R
+/Resources 205 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+186 0 obj <<
+/D [206 0 R /XYZ 71.73 493.83 null]
+>> endobj
+187 0 obj <<
+/D [206 0 R /XYZ 71.73 434.96 null]
+>> endobj
+188 0 obj <<
+/D [206 0 R /XYZ 71.73 395.41 null]
+>> endobj
+189 0 obj <<
+/D [206 0 R /XYZ 327.9 364.54 null]
+>> endobj
+190 0 obj <<
+/D [206 0 R /XYZ 71.73 355.96 null]
+>> endobj
+191 0 obj <<
+/D [206 0 R /XYZ 485.46 327.48 null]
+>> endobj
+192 0 obj <<
+/D [206 0 R /XYZ 71.73 303.36 null]
+>> endobj
+193 0 obj <<
+/D [206 0 R /XYZ 473.46 259.33 null]
+>> endobj
+194 0 obj <<
+/D [206 0 R /XYZ 71.73 235.21 null]
+>> endobj
+195 0 obj <<
+/D [206 0 R /XYZ 71.73 229.24 null]
+>> endobj
+196 0 obj <<
+/D [206 0 R /XYZ 71.73 223.26 null]
+>> endobj
+197 0 obj <<
+/D [206 0 R /XYZ 131.51 204.34 null]
+>> endobj
+198 0 obj <<
+/D [206 0 R /XYZ 71.73 170.66 null]
+>> endobj
+199 0 obj <<
+/D [206 0 R /XYZ 131.51 151.74 null]
+>> endobj
+200 0 obj <<
+/D [206 0 R /XYZ 71.73 149.14 null]
+>> endobj
+237 0 obj <<
+/Length 238 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(A)75(v)20(oid)-250(names)-248(that)-250(are)-249(homophones:)-308(e.g.,)]TJ/F29 10.76 Tf 195.16 0 Td[(foo)]TJ/F26 11.96 Tf 19.37 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(fu)]TJ/F26 11.96 Tf 12.91 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(phoo)]TJ/F26 11.96 Tf 25.82 0 Td[(,)-250(etc.)-309(Also,)-249(don')19(t)-250(rely)-249(on)]TJ -265.22 -15.54 Td[(capitalization)-247(to)-250(distinguish)-248(between)-248(v)25(ariables.)]TJ
+ET
+1 0 0 1 -11.96 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Use)-249(names)-249(that)-249(say)]TJ/F27 11.96 Tf 94.95 0 Td[(what)-249(the)-250(variable)-248(r)37(epr)37(esents)]TJ/F26 11.96 Tf 138.59 0 Td[(rather)-249(than)-249(ho)26(w)-250(it)-250(is)-249(used)-249(\050i.e.)-310(use)]TJ/F27 11.96 Tf -233.54 -15.54 Td[(nouns)]TJ/F26 11.96 Tf 31.55 0 Td[(for)-249(v)25(ariable)-249(names\051;)-248(use)-250(terminology)-247(from)-249(the)-250(application)-248(domain)-249(and)-249(a)20(v)20(oid)]TJ -31.55 -15.54 Td[(computer)-248(jar)18(gon)-249(that)-249(reects)-249(programming)-247(details.)]TJ
+ET
+1 0 0 1 -11.96 -52.6 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(A)75(v)20(oid)-250(generic)-248(names)-249(such)-249(as)]TJ/F29 10.76 Tf 141.3 0 Td[(tmp)]TJ/F26 11.96 Tf 19.37 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(buf)]TJ/F26 11.96 Tf 19.37 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(reg)]TJ/F26 11.96 Tf 19.37 0 Td[(.)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(A)75(v)20(oid)-250(intentionally)-247(misspelled)-248(w)10(ords)-249(such)-249(as)]TJ/F29 10.76 Tf 219.25 0 Td[(lo)]TJ/F26 11.96 Tf 15.9 0 Td[(or)]TJ/F29 10.76 Tf 12.95 0 Td[(lite)]TJ/F26 11.96 Tf 25.82 0 Td[(.)]TJ -285.88 -27.5 Td[(In)-250(general,)-248(short)-249(names)-249(are)-250(acceptable)-248(for)-249(v)25(ariables)-248(that)-250(serv)16(e)-250(a)-249(short-li)26(v)15(ed)-250(purpose)-248(or)]TJ 0 -15.54 Td[(that)-249(ha)20(v)15(e)-250(a)-249(common)-249(usage)-249(in)-249(C/C++)-249(\050e.g.,)-249(inde)16(x)-250(v)25(ariables)-248(called)]TJ/F29 10.76 Tf 311.42 0 Td[(i)]TJ/F26 11.96 Tf 6.45 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(j)]TJ/F26 11.96 Tf 6.46 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(k)]TJ/F26 11.96 Tf 6.46 0 Td[(,)-250(etc.\051.)-309(Being)]TJ -342.74 -15.54 Td[(concise)-249(can)-249(contrib)21(ute)-249(to)-250(the)-249(readability)-248(of)-250(code.)-309(Ho)26(we)25(v)15(er)41(,)-250(for)-250(v)26(ariables)-249(that)-249(serv)15(e)-249(a)]TJ 0 -15.55 Td[(unique)-249(and)-249(important)-248(purpose,)-249(or)-249(v)25(ariables)-249(that)-249(persist)-249(o)15(v)15(er)-249(a)-250(signicant)-248(re)15(gion)-249(of)-249(your)]TJ 0 -15.54 Td[(code,)-249(use)-249(descripti)26(v)15(e)-250(and)-249(complete)-248(names.)-309(Studies)-249(ha)21(v)15(e)-250(sho)26(wn)-250(that)-249(minimal)-248(deb)20(ugging)]TJ 0 -15.54 Td[(time)-249(correlates)-249(with)-249(a)21(v)15(erage)-249(v)25(ariable)-249(name)-249(lengths)-249(of)-249(10-16)-249(characters.)]TJ/F33 17.22 Tf -47.82 -53.22 Td[(4.2.)-343(Function)-277(Names)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(Use)-249(lo)25(wer)21(-case)-249(letters)-249(for)-250(public)-249(function)-248(names.)-309(Use)-249(an)-250(underscore)-248(as)-249(a)-250(w)10(ord)]TJ 0 -15.54 Td[(separator)56(.)]TJ 0 -21.52 Td[(F)15(or)-239(functions)-239(that)-239(return)-239(no)-239(v)25(alues)-239(\050i.e.)-306(return)-239(type)]TJ/F29 10.76 Tf 243.95 0 Td[(void)]TJ/F26 11.96 Tf 25.82 0 Td[(\051,)-242(use)-239(strong)-239(v)15(erbs)-239(that)-239(indicate)]TJ -269.77 -15.54 Td[(the)-249(function')56(s)-250(purpose.)-308(T)80(ypically)-249(you)-249(will)-249(w)10(ant)-249(to)-250(include)-248(the)-250(object)-249(of)-249(the)-250(v)16(erb)-250(in)-249(the)]TJ 0 -15.55 Td[(name.)-309(F)15(or)-249(e)15(xample,)]TJ/F29 10.76 Tf 0 -31.92 Td[(void)]TJ 0 -13.98 Td[(remove_dc_offset\050short)-600(*signal,)-599(const)-600(unsigned)-600(long)-600(length\051;)]TJ 0 -27.98 Td[(void)]TJ 0 -13.99 Td[(set_output_gain\050const)-600(float)-600(gain\051;)]TJ/F26 11.96 Tf 0 -41.48 Td[(Because)-249(functions)-248(tend)-249(to)-250(serv)16(e)-250(a)-249(more)-249(comple)16(x)-250(purpose)-249(than)-249(v)25(ariables,)-248(longer)-249(names)]TJ 0 -15.54 Td[(are)-249(more)-250(acceptable.)]TJ
+ET
+1 0 0 1 -59.78 -452.7 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(11)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+238 0 obj
+5061
+endobj
+235 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F37 209 0 R /F26 21 0 R /F29 53 0 R /F33 92 0 R >>
+>> endobj
+236 0 obj <<
+/Type /Page
+/Contents 237 0 R
+/Resources 235 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+234 0 obj <<
+/D [236 0 R /XYZ 71.73 717.31 null]
+>> endobj
+201 0 obj <<
+/D [236 0 R /XYZ 131.51 647.57 null]
+>> endobj
+202 0 obj <<
+/D [236 0 R /XYZ 326.67 647.57 null]
+>> endobj
+203 0 obj <<
+/D [236 0 R /XYZ 352.02 647.57 null]
+>> endobj
+204 0 obj <<
+/D [236 0 R /XYZ 370.91 647.57 null]
+>> endobj
+210 0 obj <<
+/D [236 0 R /XYZ 71.73 629.43 null]
+>> endobj
+211 0 obj <<
+/D [236 0 R /XYZ 131.51 610.51 null]
+>> endobj
+212 0 obj <<
+/D [236 0 R /XYZ 226.46 610.51 null]
+>> endobj
+213 0 obj <<
+/D [236 0 R /XYZ 131.51 594.97 null]
+>> endobj
+214 0 obj <<
+/D [236 0 R /XYZ 71.73 576.82 null]
+>> endobj
+215 0 obj <<
+/D [236 0 R /XYZ 131.51 557.91 null]
+>> endobj
+216 0 obj <<
+/D [236 0 R /XYZ 272.81 557.91 null]
+>> endobj
+217 0 obj <<
+/D [236 0 R /XYZ 298.16 557.91 null]
+>> endobj
+218 0 obj <<
+/D [236 0 R /XYZ 323.5 557.91 null]
+>> endobj
+219 0 obj <<
+/D [236 0 R /XYZ 71.73 555.31 null]
+>> endobj
+220 0 obj <<
+/D [236 0 R /XYZ 131.51 536.39 null]
+>> endobj
+221 0 obj <<
+/D [236 0 R /XYZ 350.76 536.39 null]
+>> endobj
+222 0 obj <<
+/D [236 0 R /XYZ 379.61 536.39 null]
+>> endobj
+223 0 obj <<
+/D [236 0 R /XYZ 71.73 521.83 null]
+>> endobj
+224 0 obj <<
+/D [236 0 R /XYZ 430.97 493.35 null]
+>> endobj
+225 0 obj <<
+/D [236 0 R /XYZ 443.4 493.35 null]
+>> endobj
+226 0 obj <<
+/D [236 0 R /XYZ 455.83 493.35 null]
+>> endobj
+227 0 obj <<
+/D [236 0 R /XYZ 71.73 410.65 null]
+>> endobj
+228 0 obj <<
+/D [236 0 R /XYZ 71.73 369.13 null]
+>> endobj
+229 0 obj <<
+/D [236 0 R /XYZ 71.73 329.69 null]
+>> endobj
+230 0 obj <<
+/D [236 0 R /XYZ 363.5 316.75 null]
+>> endobj
+231 0 obj <<
+/D [236 0 R /XYZ 71.73 271.11 null]
+>> endobj
+232 0 obj <<
+/D [236 0 R /XYZ 71.73 265.13 null]
+>> endobj
+256 0 obj <<
+/Length 257 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(If)-250(a)-249(function)-249(returns)-249(a)-249(v)25(alue)-249(it)-250(is)-250(sometimes)-248(better)-249(to)-249(use)-250(a)-249(name)-249(that)-250(indicates)-248(the)]TJ 0 -15.54 Td[(meaning)-249(of)-249(the)-250(v)26(alue)-250(returned.)-308(F)15(or)-249(instance,)]TJ/F29 10.76 Tf 0 -31.92 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(Compute)-600(the)-599(DC)-600(offset)-600(of)-600(the)-600(given)-600(signal.)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -13.99 Td[(float)]TJ 0 -13.98 Td[(dc_offset\050const)-600(short)-600(*)-600(const)-599(signal,)]TJ 64.56 -13.99 Td[(const)-600(unsigned)-600(long)-599(length\051;)]TJ -64.56 -27.97 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(Poll)-600(the)-599(D/A)-600(and)-600(return)-600(the)-600(current)-600(gain)-600(setting.)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -13.99 Td[(float)]TJ 0 -13.98 Td[(gain\050void\051;)]TJ/F26 11.96 Tf 0 -41.49 Td[(In)-250(general,)-248(be)-250(consistent)-248(and)-249(be)-250(informati)27(v)15(e.)-310(Choose)-248(names)-249(that)-249(mak)10(e)-249(your)-250(code)-249(easy)]TJ 0 -15.54 Td[(to)-250(read)-249(and)-249(understand.)]TJ/F33 17.22 Tf -47.82 -53.23 Td[(4.3.)-343(Classes,)-277(Structures)-277(and)-277(T)60(ype)-277(Denitions)]TJ/F26 11.96 Tf 47.82 -24.14 Td[(The)-249(name)-249(formatting)-248(con)40(v)15(entions)-248(described)-249(here)-249(are)-249(essentially)-248(those)-249(used)-250(by)]TJ 0 -15.55 Td[(Stroustrup)-248(in)-250(his)-249(book)-249(on)-250(C++.)]TJ 0 -21.52 Td[(Capitalize)-247(the)-247(rst)-248(letter)-247(of)-248(the)-247(name)-248(of)-248(each)-247(data)-247(type)-248(that)-247(you)-248(dene.)-308(This)-248(includes)-246(all)]TJ/F29 10.76 Tf 0 -15.54 Td[(struct)]TJ/F26 11.96 Tf 38.74 0 Td[(,)]TJ/F29 10.76 Tf 5.95 0 Td[(class)]TJ/F26 11.96 Tf 32.28 0 Td[(,)]TJ/F29 10.76 Tf 5.96 0 Td[(typedef)]TJ/F26 11.96 Tf 48.16 0 Td[(and)]TJ/F29 10.76 Tf 20.23 0 Td[(enum)]TJ/F26 11.96 Tf 28.79 0 Td[(types.)-308(Use)-247(an)-248(underscore)-246(as)-248(a)-247(w)10(ord)-247(separator)41(,)-248(just)]TJ -180.11 -15.54 Td[(as)-250(for)-249(C)-250(v)26(ariables)-249(and)-249(function)-249(names.)]TJ 0 -21.52 Td[(F)15(or)-249(class)]TJ/F27 11.96 Tf 45.65 0 Td[(instance)]TJ/F26 11.96 Tf 42.83 0 Td[(v)25(ariables,)-248(start)-249(all)-250(names)-249(with)-249(lo)25(wer)21(-case)-249(letters.)-309(Again,)-244(use)-249(an)]TJ -88.48 -15.54 Td[(underscore)-248(as)-250(a)-249(w)10(ord)-250(separator)57(.)-310(Apply)-249(the)-249(same)-249(rules)-249(to)]TJ/F29 10.76 Tf 270.52 0 Td[(public)]TJ/F26 11.96 Tf 41.72 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(protected)]TJ/F26 11.96 Tf -332.49 -15.54 Td[(members,)-248(both)-250(v)26(ariables)-249(and)-249(functions.)-308(Add)-250(a)-249(trailing)-249(underscore)-248(to)]TJ/F29 10.76 Tf 328.47 0 Td[(private)]TJ/F26 11.96 Tf 48.17 0 Td[(member)]TJ -376.64 -15.54 Td[(names.)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(12)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+257 0 obj
+3139
+endobj
+254 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F33 92 0 R >>
+>> endobj
+255 0 obj <<
+/Type /Page
+/Contents 256 0 R
+/Resources 254 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 157 0 R
+>> endobj
+233 0 obj <<
+/D [255 0 R /XYZ 71.73 657.53 null]
+>> endobj
+239 0 obj <<
+/D [255 0 R /XYZ 71.73 371.12 null]
+>> endobj
+240 0 obj <<
+/D [255 0 R /XYZ 71.73 323.58 null]
+>> endobj
+241 0 obj <<
+/D [255 0 R /XYZ 71.73 287.73 null]
+>> endobj
+242 0 obj <<
+/D [255 0 R /XYZ 119.55 259.24 null]
+>> endobj
+243 0 obj <<
+/D [255 0 R /XYZ 164.24 259.24 null]
+>> endobj
+244 0 obj <<
+/D [255 0 R /XYZ 202.48 259.24 null]
+>> endobj
+245 0 obj <<
+/D [255 0 R /XYZ 270.87 259.24 null]
+>> endobj
+246 0 obj <<
+/D [255 0 R /XYZ 71.73 237.56 null]
+>> endobj
+247 0 obj <<
+/D [255 0 R /XYZ 165.2 222.18 null]
+>> endobj
+248 0 obj <<
+/D [255 0 R /XYZ 390.07 206.64 null]
+>> endobj
+249 0 obj <<
+/D [255 0 R /XYZ 452.04 206.64 null]
+>> endobj
+250 0 obj <<
+/D [255 0 R /XYZ 448.02 191.1 null]
+>> endobj
+251 0 obj <<
+/D [255 0 R /XYZ 71.73 169.41 null]
+>> endobj
+252 0 obj <<
+/D [255 0 R /XYZ 71.73 169.41 null]
+>> endobj
+262 0 obj <<
+/Length 263 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F34 11.96 Tf 0 0 Td[(Example)-248(7.)-310(Capitalization)-247(of)-250(user)38(-dened)-249(types)]TJ/F29 10.76 Tf 0 -25.94 Td[(/*)-600(Straight)-600(C)-600(*/)]TJ 0 -27.98 Td[(struct)-600(complex)-600({)]TJ 25.82 -13.99 Td[(int)-600(r;)-2400(/*)-600(real)-600(*/)]TJ 0 -13.98 Td[(int)-600(i;)-2400(/*)-600(imaginary)-600(*/)]TJ -25.82 -13.99 Td[(};)]TJ 0 -13.99 Td[(typedef)-600(struct)-600(complex)-600(Complex;)]TJ 0 -27.97 Td[(//)-600(C++)-600(interface)-600(example)]TJ 0 -27.98 Td[(class)-600(Canvas)-600({)]TJ 0 -13.99 Td[(public:)]TJ 25.82 -13.98 Td[(enum)-600(Pen_style)-600({)]TJ 25.83 -13.99 Td[(NONE)-600(=)-600(0,)]TJ 0 -13.99 Td[(PENCIL,)]TJ 0 -13.99 Td[(BRUSH,)]TJ 0 -13.98 Td[(BUCKET)]TJ -25.83 -13.99 Td[(};)]TJ 0 -27.98 Td[(Canvas\050\051;)]TJ 0 -13.98 Td[(~Canvas\050\051;)]TJ 0 -27.98 Td[(void)-600(set_pen_style\050Pen_style)-600(p\051;)]TJ 0 -13.99 Td[(...)]TJ -25.82 -13.98 Td[(private:)]TJ 25.82 -13.99 Td[(int)-600(cached_x_;)-2400(//)-600(to)-600(avoid)-600(recomputing)-599(coordinates)]TJ 0 -13.99 Td[(int)-600(cached_y_;)]TJ -25.82 -13.99 Td[(};)]TJ 0 -27.97 Td[(//)-600(C++)-600(usage)-600(example)]TJ 0 -27.98 Td[(Canvas)-600(sketch_pad;)]TJ 0 -27.97 Td[(sketch_pad.set_pen_style\050Canvas::BRUSH\051;)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(13)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+263 0 obj
+1577
+endobj
+260 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F34 93 0 R /F29 53 0 R >>
+>> endobj
+261 0 obj <<
+/Type /Page
+/Contents 262 0 R
+/Resources 260 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+253 0 obj <<
+/D [261 0 R /XYZ 71.73 633.12 null]
+>> endobj
+275 0 obj <<
+/Length 276 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(When)-249(w)10(orking)-249(with)-249(C++)-249(classes)-249(and)-249(objects)-249(be)-249(mindful)-249(of)-249(redundant)-248(name)-249(elements.)]TJ 0 -15.54 Td[(Remember)-248(that)-249(class)-250(members)-248(are)-249(identied)-249(by)-249(their)-249(class)-249(instance)-249(name.)-309(Thus)-249(you)-249(do)]TJ 0 -15.54 Td[(not)-249(ha)20(v)15(e)-250(to)-249(repeat)-249(information)-248(about)-249(the)-249(class)-249(in)-250(the)-249(member)-249(element')57(s)-250(names.)]TJ/F34 11.96 Tf 0 -27.5 Td[(Example)-248(8.)-310(P)20(oor)-249(v)10(ariable)-249(names)]TJ/F29 10.76 Tf 0 -25.94 Td[(//)-600(Notice)-600(how)-600(redundant)-600("stack")-599(becomes.)]TJ 0 -27.98 Td[(template)-600(<Type>)]TJ 0 -13.99 Td[(class)-600(Stack)-600({)]TJ 0 -13.98 Td[(public:)]TJ 25.82 -13.99 Td[(int)-600(stack_size;)]TJ 0 -13.99 Td[(add_item_to_stack\050Type)-600(item\051;)]TJ 0 -13.99 Td[(...)]TJ -25.82 -13.98 Td[(};)]TJ 0 -27.98 Td[(Stack)-600(my_stack;)]TJ 0 -27.97 Td[(my_stack.add_item_to_stack\0504\051;)]TJ 0 -13.99 Td[(int)-600(tmp)-600(=)-600(my_stack.stack_size;)]TJ/F25 20.66 Tf -47.82 -98.18 Td[(5.)-344(Comments)]TJ/F26 11.96 Tf 47.82 -25.87 Td[(In)-250(general,)-248(well)-249(written)-249(code)-249(should)-249(document)-248(itself.)-309(Clear)41(,)-250(concise)-249(v)25(ariable)-248(and)]TJ 0 -15.54 Td[(function)-249(names,)-248(consistent)-249(formatting)-248(and)-249(spatial)-249(structure,)-248(and)-249(clean)-249(syntactical)]TJ 0 -15.55 Td[(structure)-249(all)-249(contrib)21(ute)-249(to)-250(readable)-248(code.)-309(Occasionally)67(,)-250(ho)25(we)26(v)15(er)40(,)-249(comple)16(x)-250(logic)-249(will)]TJ 0 -15.54 Td[(benet)-249(from)-249(e)15(xplicit)-249(description.)-308(Be)-249(careful)-249(not)-249(to)-250(use)-249(comments)-248(to)-250(compensate)-248(for)]TJ 0 -15.54 Td[(poorly)-249(written)-249(code.)-309(If)-249(you)-250(nd)-249(that)-249(your)-249(code)-249(requires)-249(man)16(y)-250(comments)-248(or)-250(is)-249(often)]TJ 0 -15.54 Td[(dif)25(cult)-249(to)-249(describe,)-249(perhaps)-248(you)-250(should)-248(be)-250(re)25(writing)-248(the)-250(code)-249(to)-249(mak)10(e)-249(it)-250(simpler)-249(and)]TJ 0 -15.54 Td[(clearer)56(.)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(14)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+276 0 obj
+2520
+endobj
+273 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F34 93 0 R /F29 53 0 R /F25 20 0 R >>
+>> endobj
+274 0 obj <<
+/Type /Page
+/Contents 275 0 R
+/Resources 273 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+272 0 obj <<
+/D [274 0 R /XYZ 71.73 717.31 null]
+>> endobj
+258 0 obj <<
+/D [274 0 R /XYZ 71.73 657.53 null]
+>> endobj
+259 0 obj <<
+/D [274 0 R /XYZ 498.37 616.49 null]
+>> endobj
+265 0 obj <<
+/D [274 0 R /XYZ 71.73 574.54 null]
+>> endobj
+266 0 obj <<
+/D [274 0 R /XYZ 71.73 325.38 null]
+>> endobj
+267 0 obj <<
+/D [274 0 R /XYZ 71.73 272.44 null]
+>> endobj
+268 0 obj <<
+/D [274 0 R /XYZ 71.73 151.79 null]
+>> endobj
+288 0 obj <<
+/Length 289 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -466.25 -60.38 cm
+BT
+/F33 17.22 Tf 0 0 Td[(5.1.)-343(Style)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(F)15(or)-249(straight)-249(C)-250(code,)-249(use)]TJ/F29 10.76 Tf 116.71 0 Td[(/*)-600(...)-1199(*/)]TJ/F26 11.96 Tf 67.54 0 Td[(style)-249(comments.)-308(F)15(or)-250(C++)-249(code,)-249(use)]TJ/F29 10.76 Tf 172.75 0 Td[(//)-600(...)]TJ/F26 11.96 Tf -357 -15.54 Td[(style)-249(comments.)-308(Adhering)-249(to)-249(these)-249(con)40(v)16(entions,)-249(you)-249(can)-250(quickly)-248(estimate)-249(the)-249(number)]TJ 0 -15.54 Td[(of)-250(lines)-249(of)-249(comments)-248(in)-250(your)-249(code)-249(with)-249(the)-250(follo)26(wing)-249(commands:)]TJ/F41 13.45 Tf 53.8 -31.38 Td[(%)]TJ/F42 14.94 Tf 17.04 0 Td[(grep)-600("^[)-601(\134t]*\134*)-601(")]TJ/F41 13.45 Tf -17.04 -19.43 Td[(%)]TJ/F42 14.94 Tf 17.04 0 Td[(grep)-600("^[)-601(\134t]*\134/\134/")]TJ/F26 11.96 Tf -70.84 -46.92 Td[(T)80(oo)-249(fe)25(w)-250(or)-249(too)-250(man)16(y)-250(comments)-248(is)-249(an)-250(indicator)-248(of)-250(code)-249(that)-249(is)-250(lik)11(ely)-250(to)-249(be)-250(dif)26(cult)-249(to)]TJ 0 -15.54 Td[(maintain.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(the)-249(use)-250(of)-249(end-line)-249(comments)-248(e)15(xcept)-249(for)-249(v)25(ariable)-249(declarations)-248(and)-249(for)-249(marking)]TJ/F29 10.76 Tf 0 -15.55 Td[(#if/#endif)]TJ/F26 11.96 Tf 67.55 0 Td[(statements.)-308(Mak)11(e)-250(comments)-248(be)-249(the)-250(only)-249(thing)-249(on)-250(a)-249(line.)-309(F)15(or)-250(longer)]TJ -67.55 -15.54 Td[(comments)-248(describing)-248(more)-249(comple)16(x)-250(logic,)-249(use)-249(a)]TJ/F27 11.96 Tf 233.58 0 Td[(bloc)21(k)]TJ/F26 11.96 Tf 28.85 0 Td[(style)-249(to)-249(of)25(fset)-249(them)-249(from)-249(the)]TJ -262.43 -15.54 Td[(code)-249(better)56(.)-310(Use)-249(block-style)-248(comments)-249(to)-249(describe)-249(functions.)-308(Use)]TJ/F27 11.96 Tf 316.53 0 Td[(bold)]TJ/F26 11.96 Tf 24.57 0 Td[(comments)-248(to)]TJ -341.1 -15.54 Td[(delimit)-249(major)-249(sections)-248(of)-250(your)-249(code)-249(le.)-309(Pref)10(ace)-249(all)-249(bold)-250(comments)-248(and)-249(block)]TJ 0 -15.54 Td[(comments)-248(that)-250(introduce)-248(functions)-248(with)-249(a)-250(form-feed)-248(character)-249(so)-249(that)-249(the)15(y)-250(appear)-248(at)-250(the)]TJ 0 -15.54 Td[(start)-249(of)-250(the)-249(printed)-249(page.)-309(The)-249(follo)26(wing)-249(e)15(xample)-249(sho)26(ws)-250(the)-249(v)25(arious)-249(comment)-248(types)-249(in)]TJ 0 -15.55 Td[(the)-249(C)-250(style.)]TJ/F34 11.96 Tf 0 -27.49 Td[(Example)-248(9.)-310(C)-250(comment)-248(types)]TJ/F29 10.76 Tf 0 -25.94 Td[(^L)]TJ 0 -13.99 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(************************************************)]TJ 0 -13.99 Td[(*)-600(Bold)-600(comment.)]TJ 0 -13.98 Td[(*)-600(************************************************)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -27.98 Td[(/*)]TJ 6.46 -13.98 Td[(*)-600(Block)-600(comment.)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -27.98 Td[(/*)-600(Short)-600(\050single-line\051)-600(comment.)-599(*/)]TJ
+ET
+1 0 0 1 0 -561.28 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(15)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+289 0 obj
+3311
+endobj
+286 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F33 92 0 R /F26 21 0 R /F29 53 0 R /F41 290 0 R /F42 291 0 R /F34 93 0 R >>
+>> endobj
+287 0 obj <<
+/Type /Page
+/Contents 288 0 R
+/Resources 286 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+269 0 obj <<
+/D [287 0 R /XYZ 71.73 632.56 null]
+>> endobj
+270 0 obj <<
+/D [287 0 R /XYZ 236.26 620.82 null]
+>> endobj
+271 0 obj <<
+/D [287 0 R /XYZ 476.55 620.82 null]
+>> endobj
+277 0 obj <<
+/D [287 0 R /XYZ 190.39 558.36 null]
+>> endobj
+278 0 obj <<
+/D [287 0 R /XYZ 173.35 538.93 null]
+>> endobj
+279 0 obj <<
+/D [287 0 R /XYZ 190.39 538.93 null]
+>> endobj
+280 0 obj <<
+/D [287 0 R /XYZ 71.73 470.32 null]
+>> endobj
+281 0 obj <<
+/D [287 0 R /XYZ 119.55 439.4 null]
+>> endobj
+282 0 obj <<
+/D [287 0 R /XYZ 353.13 423.86 null]
+>> endobj
+283 0 obj <<
+/D [287 0 R /XYZ 436.08 408.32 null]
+>> endobj
+284 0 obj <<
+/D [287 0 R /XYZ 177.39 346.15 null]
+>> endobj
+285 0 obj <<
+/D [287 0 R /XYZ 71.73 304.2 null]
+>> endobj
+306 0 obj <<
+/Length 307 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -71.77 cm
+BT
+/F29 10.76 Tf 0 0 Td[(int)-600(i;)-600(/*)-600(end-line)-600(comment)-600(*/)]TJ/F33 17.22 Tf -47.82 -79.17 Td[(5.2.)-343(Content)]TJ/F26 11.96 Tf 47.82 -24.14 Td[(End-line)-249(comments)-248(are)-249(acceptable)-248(for)-250(describing)-248(v)25(ariable)-248(declarations.)-308(Use)-249(a)-250(comment)]TJ 0 -15.55 Td[(to)-250(describe)-248(an)15(y)-250(v)26(ariable)-249(whose)-249(purpose)-248(is)-250(not)-249(ob)15(vious)-249(from)-249(its)-250(name.)]TJ 0 -21.52 Td[(Use)-249(comments)-249(to)-249(document)-248(your)-250(intent.)-308(Do)-250(not)-249(describe)]TJ/F27 11.96 Tf 273.66 0 Td[(how)]TJ/F26 11.96 Tf 22.92 0 Td[(your)-249(code)-249(w)10(orks,)-249(that)]TJ -296.58 -15.54 Td[(should)-249(be)-249(ob)15(vious)-249(from)-249(the)-249(implementation.)-308(Instead)-248(describe)]TJ/F27 11.96 Tf 295.73 0 Td[(why)]TJ/F26 11.96 Tf 22.25 0 Td[(your)-249(code)-249(does)-249(what)]TJ -317.98 -15.54 Td[(it)-250(does.)-309(A)75(v)20(oid)-250(e)15(xplaining)-248(especially)-248(trick)16(y)-250(code)-249(in)-250(comments.)-308(Instead,)-248(re)25(write)-249(the)-249(code)]TJ 0 -15.54 Td[(to)-250(mak)11(e)-250(it)-249(intrinsically)-248(more)-249(ob)15(vious.)-309(Use)-249(complete)-248(sentences)-249(with)-249(proper)-249(spelling)-248(and)]TJ 0 -15.54 Td[(punctuation)-248(in)-250(all)-249(comments.)]TJ 0 -21.52 Td[(Write)-249(your)-249(comments)-248(before)-249(and)-250(as)-249(you)-249(write)-249(your)-250(code,)-249(not)-249(after)56(.)-310(If)-250(you)-249(start)-249(by)]TJ 0 -15.54 Td[(writing)-249(comments)-248(you)-249(gi)25(v)15(e)-249(yourself)-249(a)-250(lo)26(w-le)25(v)16(el)-250(design)-249(for)-249(the)-250(implementation.)-307(When)]TJ 0 -15.54 Td[(you)-249(are)-250(nished)-248(testing)-249(your)-249(code,)-249(go)-250(back)-249(and)-249(re)25(vie)26(w)-250(all)-249(comments)-249(to)-249(mak)11(e)-250(sure)-249(the)15(y)]TJ 0 -15.55 Td[(are)-249(still)-250(accurate.)]TJ 0 -21.52 Td[(Comment)-248(things)-249(that)-249(ha)20(v)15(e)-250(wide)-249(impact.)-308(If)-250(a)-250(function)-248(mak)11(es)-250(assumptions)-248(about)-249(the)]TJ 0 -15.54 Td[(condition)-248(of)-250(v)25(ariable)-249(on)-249(input,)-249(document)-248(that.)-309(If)-250(a)-250(required)-248(speed)-249(optimization)-248(mak)11(es)]TJ 0 -15.54 Td[(the)-249(code)-250(dif)26(cult)-249(to)-250(read,)-249(e)15(xplain)-249(the)-249(need)-249(for)-249(the)-250(code)-249(in)-250(a)-249(comment.)-308(If)-250(your)-249(code)-249(uses)]TJ 0 -15.54 Td[(or)-250(changes)-248(an)15(y)-250(global)-248(v)25(ariables,)-249(comment)-248(that.)]TJ 0 -21.52 Td[(Use)]TJ/F27 11.96 Tf 21.58 0 Td[(bold)]TJ/F26 11.96 Tf 24.57 0 Td[(comments)-248(to)-250(delimit)-248(major)-249(sections)-249(in)-249(your)-249(code)-250(le.)-309(Y)110(ou)-249(may)66(,)-250(for)-250(instance,)]TJ -46.15 -15.54 Td[(implement)-248(a)-250(number)-249(of)-249(pri)25(v)26(ate)-250(utility)-249(functions.)-308(Use)-249(a)-250(bold)-249(comment)-248(to)-250(mark)-249(the)-249(start)]TJ 0 -15.54 Td[(of)-250(that)-249(code.)-309(Pref)11(ace)-250(each)-249(function)-248(with)-249(a)]TJ/F27 11.96 Tf 202.11 0 Td[(bloc)20(k)]TJ/F26 11.96 Tf 28.85 0 Td[(comment)-248(describing)-249(the)-249(function')57(s)]TJ -230.96 -15.54 Td[(purpose,)-247(the)-248(meaning)-246(of)-248(an)16(y)-248(input)-247(v)25(ariables,)-247(and)-248(the)-247(signicance)-246(of)-248(an)16(y)-248(return)-247(v)25(alue\050s\051.)]TJ 0 -15.55 Td[(There)-249(is)-250(no)-249(need)-249(to)-250(include)-248(the)-250(function)-248(name)-249(since)-249(it)-250(immediately)-248(follo)26(ws)-250(the)]TJ 0 -15.54 Td[(comment.)]TJ/F34 11.96 Tf 0 -27.49 Td[(Example)-248(10.)-310(Commenting)-247(functions)-249(and)-249(function)-248(gr)18(oups)]TJ/F29 10.76 Tf 0 -25.95 Td[(^L)]TJ
+ET
+1 0 0 1 -47.82 -549.89 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(16)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+307 0 obj
+4048
+endobj
+304 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R /F33 92 0 R /F26 21 0 R /F34 93 0 R >>
+>> endobj
+305 0 obj <<
+/Type /Page
+/Contents 306 0 R
+/Resources 304 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+292 0 obj <<
+/D [305 0 R /XYZ 71.73 589.71 null]
+>> endobj
+293 0 obj <<
+/D [305 0 R /XYZ 71.73 545.59 null]
+>> endobj
+294 0 obj <<
+/D [305 0 R /XYZ 71.73 506.15 null]
+>> endobj
+295 0 obj <<
+/D [305 0 R /XYZ 393.21 493.2 null]
+>> endobj
+296 0 obj <<
+/D [305 0 R /XYZ 415.28 477.66 null]
+>> endobj
+297 0 obj <<
+/D [305 0 R /XYZ 71.73 422.46 null]
+>> endobj
+298 0 obj <<
+/D [305 0 R /XYZ 71.73 356.75 null]
+>> endobj
+299 0 obj <<
+/D [305 0 R /XYZ 71.73 286.17 null]
+>> endobj
+300 0 obj <<
+/D [305 0 R /XYZ 141.13 273.23 null]
+>> endobj
+301 0 obj <<
+/D [305 0 R /XYZ 321.66 242.15 null]
+>> endobj
+302 0 obj <<
+/D [305 0 R /XYZ 170.74 195.52 null]
+>> endobj
+303 0 obj <<
+/D [305 0 R /XYZ 71.73 153.57 null]
+>> endobj
+323 0 obj <<
+/Length 324 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F29 10.76 Tf 0 0 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(****************************************)]TJ 0 -13.99 Td[(*)-600(Statistics)-599(utilities)-600(used)-600(to)]TJ 0 -13.98 Td[(*)-600(optimize)-599(performance)-600(on)-600(the)-600(fly.)]TJ 0 -13.99 Td[(*)-600(****************************************)]TJ 0 -13.99 Td[(*/)]TJ -6.46 -27.97 Td[(/*)]TJ 6.46 -13.99 Td[(*)-600(Compute)-600(the)-599(standard)-600(deviation)-600(or)-600("variance")]TJ 0 -13.99 Td[(*)-600(for)-600(a)-600(set.)]TJ 0 -13.99 Td[(*)]TJ 0 -13.98 Td[(*)-600(Input:)-600(v)-599(-)-600(set)-600(of)-600(values)-600(and)-600(set)-600(size.)]TJ 0 -13.99 Td[(*)-4800(len)-599(-)-600(size)-600(of)-600(input)-600(set.)]TJ 0 -13.99 Td[(*)-600(Output:)-600(Dev)-599(=)-600(Expect)-600(\050x)-600(-)-600(x_ave\051^2)]TJ 0 -13.99 Td[(*)-5400(0)-599(for)-600(the)-600(empty)-600(set)]TJ 0 -13.98 Td[(*/)]TJ -6.46 -13.99 Td[(static)-600(float)]TJ 0 -13.99 Td[(std_dev\050const)-600(float)-600(*v,)-600(const)-599(unsigned)-600(long)-600(len\051)]TJ 0 -13.99 Td[({)]TJ 25.82 -13.98 Td[(...)]TJ -25.82 -13.99 Td[(})]TJ/F26 11.96 Tf 0 -47.46 Td[(Use)-249(an)-250(end-line)-248(comment)-249(to)-249(mark)-249(the)-250(end)-249(of)-250(particularly)-248(long)-249(blocks)-249(of)-249(code.)-309(This)]TJ 0 -15.54 Td[(applies)-249(to)-249(functions)-249(and)-249(conditional)-248(code.)-309(Include)-249(the)-249(control)-249(condition)-248(that)-249(terminates)]TJ 0 -15.55 Td[(control)-249(for)]TJ/F29 10.76 Tf 53.79 0 Td[(if/else)]TJ/F26 11.96 Tf 48.18 0 Td[(branches)-248(and)]TJ/F29 10.76 Tf 65.72 0 Td[(for/while/do)]TJ/F26 11.96 Tf 80.46 0 Td[(loops.)]TJ -248.15 -21.51 Td[(Use)-249(an)-250(end-line)-248(comment)-249(also)-249(to)-250(identify)-248(which)]TJ/F29 10.76 Tf 232.43 0 Td[(#if)]TJ/F26 11.96 Tf 22.36 0 Td[(or)]TJ/F29 10.76 Tf 12.94 0 Td[(#ifdef)]TJ/F26 11.96 Tf 41.73 0 Td[(statement)-248(a)-250(particular)]TJ/F29 10.76 Tf -309.46 -15.55 Td[(#endif)]TJ/F26 11.96 Tf 41.72 0 Td[(statement)-249(closes.)-308(Include)-249(the)-249(condition)-249(in)-249(the)-250(comment)-248(for)-249(blocks)-249(of)-250(code)]TJ -41.72 -15.54 Td[(spanning)-249(more)-249(than)-249(a)-249(fe)25(w)-250(lines.)-309(When)-249(using)]TJ/F29 10.76 Tf 215.91 0 Td[(#else)]TJ/F26 11.96 Tf 35.27 0 Td[(conditions,)-248(mark)-249(both)-249(the)]TJ/F29 10.76 Tf 125.19 0 Td[(#else)]TJ/F26 11.96 Tf -376.37 -15.54 Td[(and)-249(the)]TJ/F29 10.76 Tf 37.85 0 Td[(#endif)]TJ/F26 11.96 Tf 41.72 0 Td[(statements)-248(with)-250(the)-249(ne)15(gated)-244(condition)-248(\050i.e.)-309(pref)10(ace)-249(it)-250(with)-249(“not”\051.)]TJ/F34 11.96 Tf -79.57 -27.5 Td[(Example)-248(11.)-310(Commenting)-247(long)-250(code)-249(blocks)]TJ/F29 10.76 Tf 0 -25.94 Td[(#ifdef)-600(DEBUG)]TJ 25.82 -13.99 Td[(.)]TJ 0 -13.98 Td[(.)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 453.85 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(17)]TJ
+ET
+1 0 0 1 12.4 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+324 0 obj
+3104
+endobj
+321 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R /F26 21 0 R /F34 93 0 R >>
+>> endobj
+322 0 obj <<
+/Type /Page
+/Contents 323 0 R
+/Resources 321 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+308 0 obj <<
+/D [322 0 R /XYZ 71.73 335.9 null]
+>> endobj
+309 0 obj <<
+/D [322 0 R /XYZ 173.34 289.27 null]
+>> endobj
+310 0 obj <<
+/D [322 0 R /XYZ 287.24 289.27 null]
+>> endobj
+311 0 obj <<
+/D [322 0 R /XYZ 71.73 280.7 null]
+>> endobj
+312 0 obj <<
+/D [322 0 R /XYZ 351.98 267.76 null]
+>> endobj
+313 0 obj <<
+/D [322 0 R /XYZ 387.28 267.76 null]
+>> endobj
+314 0 obj <<
+/D [322 0 R /XYZ 119.55 252.21 null]
+>> endobj
+315 0 obj <<
+/D [322 0 R /XYZ 335.46 236.67 null]
+>> endobj
+316 0 obj <<
+/D [322 0 R /XYZ 495.92 236.67 null]
+>> endobj
+317 0 obj <<
+/D [322 0 R /XYZ 157.4 221.13 null]
+>> endobj
+318 0 obj <<
+/D [322 0 R /XYZ 476.73 221.13 null]
+>> endobj
+319 0 obj <<
+/D [322 0 R /XYZ 513.3 221.13 null]
+>> endobj
+320 0 obj <<
+/D [322 0 R /XYZ 71.73 179.18 null]
+>> endobj
+332 0 obj <<
+/Length 333 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -392.61 -57.78 cm
+BT
+/F29 10.76 Tf 0 0 Td[(.)]TJ -25.82 -13.99 Td[(#else)-600(//)-600(not)-600(DEBUG)]TJ 0 -13.99 Td[(void)]TJ 0 -13.98 Td[(function\050\051)]TJ 0 -13.99 Td[({)]TJ 25.82 -27.98 Td[(if)-600(\050position)-600(!=)-600(END\051)]TJ 25.83 -27.97 Td[(.)]TJ 0 -13.99 Td[(.)]TJ 0 -13.99 Td[(.)]TJ -25.83 -27.97 Td[(})-600(//)-600(position)-600(!=)-600(END)]TJ 0 -27.98 Td[(.)]TJ 0 -13.98 Td[(.)]TJ 0 -13.99 Td[(.)]TJ -25.82 -27.98 Td[(})-600(//)-600(function\050\051)]TJ 0 -27.97 Td[(#endif)-600(//)-600(not)-600(DEBUG)]TJ/F25 20.66 Tf -47.82 -98.18 Td[(6.)-344(Syntax)-278(and)-277(Langua)10(g)-10(e)-278(Issues)]TJ/F26 11.96 Tf 47.82 -25.87 Td[(The)-249(follo)25(wing)-249(sections)-248(outline)-249(some)-249(general)-249(practices)-248(of)-250(good)-249(defensi)27(v)15(e)-250(programming.)]TJ 0 -15.54 Td[(Al)10(w)11(ays)-250(assume)-248(that)-250(others)-249(will)-249(ha)21(v)15(e)-250(to)-249(read)-250(and)-249(maintain)-248(your)-250(code,)-249(and)-249(try)-249(to)-250(assist)]TJ 0 -15.55 Td[(them)-249(as)-250(you)-249(write.)-309(Also,)-249(assume)-249(that)-249(errors)-249(and)-249(defects)-249(are)-249(ine)25(vitable,)-248(and)-250(write)-249(so)-249(as)]TJ 0 -15.54 Td[(to)-250(isolate)-248(them)-250(and)-249(limit)-249(their)-249(ef)25(fect)-249(as)-250(quickly)-248(as)-250(possible.)-308(This)-249(latter)-249(practices)-249(is)]TJ 0 -15.54 Td[(sometimes)-235(referred)-234(to)-236(as)-236("re-w)11(alling")-235(code.)-305(Be)-235(liberal)-236(in)-235(checking)-235(the)-236(v)25(alidity)-235(of)-236(input)]TJ 0 -15.54 Td[(ar)18(guments)-248(within)-249(functions,)-248(and)-250(al)11(w)10(ays)-249(check)-249(v)25(alues)-249(returned)-249(by)-249(functions)-249(you)-249(call.)]TJ
+ET
+1 0 0 1 -73.64 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(18)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+333 0 obj
+2012
+endobj
+330 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F29 53 0 R /F25 20 0 R /F26 21 0 R >>
+>> endobj
+331 0 obj <<
+/Type /Page
+/Contents 332 0 R
+/Resources 330 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 264 0 R
+>> endobj
+329 0 obj <<
+/D [331 0 R /XYZ 71.73 717.31 null]
+>> endobj
+325 0 obj <<
+/D [331 0 R /XYZ 71.73 311.99 null]
+>> endobj
+326 0 obj <<
+/D [331 0 R /XYZ 71.73 254.74 null]
+>> endobj
+327 0 obj <<
+/D [331 0 R /XYZ 71.73 151.5 null]
+>> endobj
+343 0 obj <<
+/Length 344 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -466.25 -60.38 cm
+BT
+/F33 17.22 Tf 0 0 Td[(6.1.)-343(General)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(A)74(v)20(oid)-249(putting)-249(multiple)-248(instructions)-248(on)-250(the)-249(same)-249(line.)-309(Each)-249(line)-250(should)-248(do)-250(e)15(xactly)-249(one)]TJ 0 -15.54 Td[(thing.)-309(This)-249(is)-250(applies)-248(in)-250(particular)-248(to)-250(control)-249(statements)-248(for)-249(branch)-249(and)-249(loop)-249(structures.)]TJ 0 -15.54 Td[(Consider)-248(the)-250(follo)26(wing:)]TJ/F29 10.76 Tf 0 -34.55 Td[(/*)-600(Bad)-600(practice!)-600(*/)]TJ 0 -27.97 Td[(if)-600(\050!eof)-600(&&)-600(\050\050count)-600(=)-600(get_more\050\051\051)-599(>)-600(min_required\051)-600({)]TJ 25.82 -13.99 Td[(...)]TJ -25.82 -13.99 Td[(})]TJ/F26 11.96 Tf 0 -41.48 Td[(This)-249(should)-249(be)-250(re)26(written)-249(so)-249(that)-250(the)-249(act)-250(of)-249(getting)-249(more)-249(data)-249(is)-250(separate)-248(from)-249(the)-250(task)-249(of)]TJ 0 -15.55 Td[(checking)-249(that)-249(more)-249(data)-249(remains)-249(to)-249(be)-250(processed:)]TJ/F29 10.76 Tf 0 -37.89 Td[(/*)-600(Safer)-600(version)-600(*/)]TJ 0 -27.98 Td[(if)-600(\050!eof\051)-600({)]TJ 25.82 -13.99 Td[(count)-600(=)-600(get_more\050\051;)]TJ 0 -13.98 Td[(if)-600(\050count)-600(>)-600(min_required\051)-600({)]TJ 25.83 -13.99 Td[(...)]TJ -25.83 -13.99 Td[(})]TJ -25.82 -13.99 Td[(})]TJ/F26 11.96 Tf 0 -47.46 Td[(A)74(v)20(oid)-249(the)-249(use)-250(of)-249(side-ef)26(fects.)-309(The)-249(follo)25(wing)-249(innocuous)-248(line)-249(may)-249(actually)-249(produce)]TJ 0 -15.54 Td[(dif)25(ferent)-249(depending)-248(on)-249(which)-249(compiler)-249(is)-249(used:)]TJ/F29 10.76 Tf 0 -31.92 Td[(a[i])-600(=)-600(i++;)-2400(/*)-600(a[0])-600(or)-600(a[1])-599(==)-600(1)-600(?)-600(*/)]TJ/F26 11.96 Tf 0 -41.48 Td[(Again,)-244(each)-249(line)-249(should)-249(contain)-249(a)-249(single)-249(statement,)-249(and)-249(each)-249(statement)-248(should)-249(do)]TJ 0 -15.55 Td[(e)15(xactly)-249(one)-249(thing.)]TJ
+ET
+1 0 0 1 0 -561.28 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(19)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+344 0 obj
+2290
+endobj
+341 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F33 92 0 R /F26 21 0 R /F29 53 0 R >>
+>> endobj
+342 0 obj <<
+/Type /Page
+/Contents 343 0 R
+/Resources 341 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+328 0 obj <<
+/D [342 0 R /XYZ 71.73 636.15 null]
+>> endobj
+334 0 obj <<
+/D [342 0 R /XYZ 71.73 427.66 null]
+>> endobj
+335 0 obj <<
+/D [342 0 R /XYZ 71.73 415.7 null]
+>> endobj
+336 0 obj <<
+/D [342 0 R /XYZ 71.73 274.48 null]
+>> endobj
+337 0 obj <<
+/D [342 0 R /XYZ 71.73 228.85 null]
+>> endobj
+338 0 obj <<
+/D [342 0 R /XYZ 71.73 222.87 null]
+>> endobj
+370 0 obj <<
+/Length 371 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(A)74(v)20(oid)-249(type)-249(casts)-249(and)-250(ne)26(v)15(er)-250(cast)-249(pointers)-248(to)]TJ/F29 10.76 Tf 206.25 0 Td[(void*)]TJ/F26 11.96 Tf 32.28 0 Td[(.)-310(One)-249(of)-249(the)-250(strengths)-248(of)-250(C++)-249(is)-249(its)]TJ -238.53 -15.54 Td[(strong)-240(typing)-240(and)-240(ability)-240(to)-241(support)-239(arbitrary)-240(user)-240(types.)-306(If)-241(you)-240(feel)-240(the)-241(need)-240(to)-240(cast)-241(data)]TJ 0 -15.54 Td[(to)-250(other)-249(types)-249(in)-249(C++,)-249(perhaps)-249(you)-249(should)-249(be)-250(considering)-248(dening)-248(an)-250(inheritance)]TJ 0 -15.55 Td[(relationship)-248(or)-250(using)-249(templates.)]TJ 0 -21.51 Td[(Do)-250(not)-249(dene)-249(an)16(y)-250(types)-249(from)-249(pointers)-249(\050e.g.,)]TJ/F29 10.76 Tf 211.33 0 Td[(typedef)-600(char*)-600(String)]TJ/F26 11.96 Tf 129.12 0 Td[(\051.)]TJ -340.45 -21.52 Td[(A)74(v)20(oid)-249(using)-249(preprocessor)-248(constants)-248(\050i.e.)]TJ/F29 10.76 Tf 194.5 0 Td[(#define)]TJ/F26 11.96 Tf 45.19 0 Td[(s\051.)-309(Instead)-249(declare)-249(v)26(ariables)-249(of)-250(the)]TJ -239.69 -15.55 Td[(appropriate)-248(C/C++)-249(type)-249(as)]TJ/F29 10.76 Tf 129.7 0 Td[(const)]TJ/F26 11.96 Tf 35.27 0 Td[(and)-249(use)-250(them.)-308(F)15(or)-250(related)-249(sets)-249(of)-249(inte)15(ger)-249(constants,)]TJ -164.97 -15.54 Td[(dene)-249(an)]TJ/F29 10.76 Tf 46.48 0 Td[(enum)]TJ/F26 11.96 Tf 25.83 0 Td[(.)-309(Both)-249(of)-250(these)-249(techniques)-248(let)-250(the)-249(compiler)-248(perform)-249(type)-249(checking)-249(where)]TJ -72.31 -15.54 Td[(the)-249(preprocessor)]TJ/F29 10.76 Tf 81.67 0 Td[(#define)]TJ/F26 11.96 Tf 45.19 0 Td[(s)-249(w)10(ould)-249(not.)]TJ -126.86 -21.52 Td[(Limit)-249(v)25(ariable)-249(scope)-249(as)-249(much)-249(as)-250(possible.)-308(In)-250(C++,)-249(use)-249(brack)11(ets)-249(to)-250(group)-249(functionality)]TJ 0 -15.54 Td[(and)-249(temporary)-249(v)26(ariables.)-309(Declare)-248(a)-250(v)25(ariable)-249(just)-249(prior)-249(to)-250(using)-249(it)-249(and)-250(destro)11(y)-249(it)-250(when)]TJ 0 -15.54 Td[(you)-249(are)-250(nished)-248(with)-250(it.)]TJ 0 -21.52 Td[(Use)-249(parentheses)-248(to)-250(group)-249(logic)-249(in)-249(branch)-249(and)-250(loop)-249(control)-248(structures.)-309(Most)-249(people)-248(are)]TJ 0 -15.54 Td[(not)-249(intimately)-249(f)10(amiliar)-248(with)-249(operator)-249(precedence,)-248(and)-249(parentheses)-248(can)-249(mak)10(e)-249(logic)]TJ 0 -15.54 Td[(operations)-248(much)-249(easier)-249(for)-250(people)-248(to)-250(parse)-249(and)-249(understand.)-308(W)40(ithout)-249(the)-249(additional)]TJ 0 -15.55 Td[(parentheses)-244(it)-245(is)-245(not)-245(ob)16(vious)-245(that)-245(the)-244(rst)-245(case)-245(belo)26(w)-245(dif)25(fers)-244(from)-245(the)-245(other)-244(three)-245(\050which)]TJ 0 -15.54 Td[(are)-249(equi)25(v)25(alent\051)-249(for)-249(only)-249(one)-249(of)-250(the)-249(eight)-249(combinations)-248(of)-250(the)-249(booleans)]TJ/F29 10.76 Tf 336.08 0 Td[(x)]TJ/F26 11.96 Tf 6.46 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(y)]TJ/F26 11.96 Tf 9.45 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(z)]TJ/F26 11.96 Tf 6.46 0 Td[(:)]TJ/F34 11.96 Tf -384.67 -27.49 Td[(Example)-248(12.)-310(One)-249(of)-250(these)-248(things)-249(is)-250(not)-249(lik)10(e)-249(the)-250(other)]TJ/F29 10.76 Tf 0 -25.95 Td[(\050x)-600(||)-600(y)-1200(&&)-600(y)-600(||)-600(z\051)]TJ 0 -27.97 Td[(\050x)-600(&&)-600(y)-600(||)-600(z\051)]TJ 0 -13.99 Td[(\050)-600(\050x)-600(&&)-600(y\051)-600(||)-600(z)-600(\051)]TJ 0 -13.99 Td[(\050)-600(\050x)-600(||)-600(z\051)-600(&&)-600(\050y)-600(||)-600(z\051)-600(\051)]TJ/F33 17.22 Tf -47.82 -79.16 Td[(6.2.)-343(Structured)-277(Pr)20(ogramming)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(K)25(eep)-249(the)-250(structure)-248(of)-250(your)-249(code)-249(as)-249(clear)-249(as)-250(possible.)-308(Do)-250(not)-249(call)]TJ/F44 11.96 Tf 307.85 0 Td[(exit\050\051)]TJ/F26 11.96 Tf 46.03 0 Td[(from)-249(library)]TJ -353.88 -15.54 Td[(functions.)-308(Instead)]TJ/F29 10.76 Tf 88.71 0 Td[(return)]TJ/F26 11.96 Tf 41.72 0 Td[(with)-249(an)-250(appropriate)-248(error)-249(condition.)-308(Call)]TJ/F29 10.76 Tf 196.95 0 Td[(return)]TJ/F26 11.96 Tf 41.72 0 Td[(only)-249(once)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(20)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+371 0 obj
+4527
+endobj
+368 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F34 93 0 R /F33 92 0 R /F44 372 0 R >>
+>> endobj
+369 0 obj <<
+/Type /Page
+/Contents 370 0 R
+/Resources 368 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+339 0 obj <<
+/D [369 0 R /XYZ 71.73 657.53 null]
+>> endobj
+340 0 obj <<
+/D [369 0 R /XYZ 325.8 647.57 null]
+>> endobj
+346 0 obj <<
+/D [369 0 R /XYZ 71.73 592.37 null]
+>> endobj
+347 0 obj <<
+/D [369 0 R /XYZ 330.88 579.43 null]
+>> endobj
+348 0 obj <<
+/D [369 0 R /XYZ 71.73 570.85 null]
+>> endobj
+349 0 obj <<
+/D [369 0 R /XYZ 314.05 557.91 null]
+>> endobj
+350 0 obj <<
+/D [369 0 R /XYZ 249.25 542.36 null]
+>> endobj
+351 0 obj <<
+/D [369 0 R /XYZ 166.03 526.82 null]
+>> endobj
+352 0 obj <<
+/D [369 0 R /XYZ 201.22 511.28 null]
+>> endobj
+353 0 obj <<
+/D [369 0 R /XYZ 71.73 502.7 null]
+>> endobj
+354 0 obj <<
+/D [369 0 R /XYZ 71.73 450.1 null]
+>> endobj
+355 0 obj <<
+/D [369 0 R /XYZ 455.63 374.99 null]
+>> endobj
+356 0 obj <<
+/D [369 0 R /XYZ 468.06 374.99 null]
+>> endobj
+357 0 obj <<
+/D [369 0 R /XYZ 497.76 374.99 null]
+>> endobj
+358 0 obj <<
+/D [369 0 R /XYZ 511.25 374.99 null]
+>> endobj
+359 0 obj <<
+/D [369 0 R /XYZ 71.73 333.04 null]
+>> endobj
+360 0 obj <<
+/D [369 0 R /XYZ 71.73 221.73 null]
+>> endobj
+361 0 obj <<
+/D [369 0 R /XYZ 71.73 174.02 null]
+>> endobj
+362 0 obj <<
+/D [369 0 R /XYZ 427.4 162.29 null]
+>> endobj
+363 0 obj <<
+/D [369 0 R /XYZ 208.26 146.75 null]
+>> endobj
+364 0 obj <<
+/D [369 0 R /XYZ 446.93 146.75 null]
+>> endobj
+391 0 obj <<
+/Length 392 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(for)-250(each)-249(function)-248(longer)-249(than)-249(a)-250(fe)25(w)-249(lines.)-309(A)74(v)20(oid)-249(using)]TJ/F29 10.76 Tf 260.6 0 Td[(break)]TJ/F26 11.96 Tf 35.26 0 Td[(and)]TJ/F29 10.76 Tf 20.26 0 Td[(continue)]TJ/F26 11.96 Tf 54.63 0 Td[(to)-250(escape)]TJ -370.75 -15.54 Td[(loop)-249(and)-250(branch)-248(code.)-309(Consider)-249(instead)-248(adding)-249(or)-250(changing)-248(the)-250(e)16(xit)-250(conditions)-248(of)-250(the)]TJ 0 -15.54 Td[(the)-249(control)-249(statement.)-308(Do)-250(not)-249(use)]TJ/F29 10.76 Tf 161.76 0 Td[(goto)]TJ/F26 11.96 Tf 25.83 0 Td[(.)]TJ -187.59 -21.52 Td[(Prefer)-249(using)]TJ/F29 10.76 Tf 61.09 0 Td[(if/else/else/...)]TJ/F26 11.96 Tf 107 0 Td[(o)15(v)15(er)-249(the)]TJ/F29 10.76 Tf 41.47 0 Td[(switch/case/case/...)]TJ/F26 11.96 Tf 132.82 0 Td[(with)-249(non-tri)26(vial)]TJ -342.38 -15.54 Td[(branch)-249(conditions.)-308(F)15(or)-249(both)-249(constructs)-249(use)-249(def)11(ault)-250(conditions)-248(only)-249(to)-250(detect)-248(le)15(gitimate)]TJ 0 -15.55 Td[(def)10(aults,)-249(or)-249(to)-250(generate)-248(an)-250(error)-249(condition)-248(when)-249(there)-249(is)-250(no)-249(def)10(ault)-249(beha)21(vior)55(.)-309(Using)-249(a)]TJ/F29 10.76 Tf 0 -15.54 Td[(switch/case)]TJ/F26 11.96 Tf 74 0 Td[(block)-249(with)-249(o)15(v)15(erlapping)-248(conditions)-249(only)-249(when)-249(the)-249(cases)-249(ha)20(v)15(e)-249(identical)]TJ -74 -15.54 Td[(code)-249(so)-250(that)-249(f)10(all-through)-248(is)-250(ob)16(vious.)]TJ 0 -21.52 Td[(Prefer)-243(using)]TJ/F29 10.76 Tf 60.94 0 Td[(while\050\051)-600({)-600(...)-1200(})]TJ/F26 11.96 Tf 106.21 0 Td[(instead)-242(of)]TJ/F29 10.76 Tf 49.66 0 Td[(do)-599({)-600(...)-1200(})-600(while\050\051;)]TJ/F26 11.96 Tf 129.11 0 Td[(.)-308(It)-243(is)-244(easier)-242(for)]TJ -345.92 -15.54 Td[(humans)-249(to)-249(parse)-249(the)-250(control)-248(structure)-249(if)-249(the)15(y)-250(kno)26(w)-250(the)-249(e)15(xit)-249(condition)-249(upon)-249(entering)-248(the)]TJ 0 -15.54 Td[(block)-249(of)-250(code.)-309(The)]TJ/F29 10.76 Tf 93.35 0 Td[(do)-600({)-600(...)-1199(})-600(while\050\051;)]TJ/F26 11.96 Tf 132.1 0 Td[(form)-249(b)20(uries)-249(the)-249(e)15(xit)-250(criterion)-248(at)-250(the)-249(end)]TJ -225.45 -15.54 Td[(of)-250(the)-249(loop.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(o)15(v)15(erly)-249(long)-249(control)-249(structures.)-308(If)-250(you)-249(nd)-249(loop)-249(or)-250(branch)-249(constructs)-248(spanning)]TJ 0 -15.55 Td[(se)25(v)15(eral)-249(printed)-249(pages)-249(or)-249(screens,)-249(consider)-248(re)25(writing)-248(the)-250(structure)-248(or)-250(creating)-248(a)-250(ne)25(w)]TJ 0 -15.54 Td[(function.)-308(At)-250(the)-249(v)15(ery)-250(least)-249(place)-249(a)-249(comment)-249(at)-249(the)-250(end)-249(of)-250(the)-249(structure)-248(to)-250(indicate)-248(the)]TJ 0 -15.54 Td[(e)15(xit)-249(conditions.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(deeply)-249(nested)-249(code.)-309(Humans)-248(ha)20(v)15(e)-249(a)-250(hard)-249(time)-249(k)10(eeping)-249(track)-249(of)-250(more)-249(than)-249(three)]TJ 0 -15.54 Td[(or)-250(four)-249(things)-249(at)-249(a)-250(time.)-309(T)35(ry)-249(to)-250(a)20(v)20(oid)-249(code)-249(structure)-249(that)-249(requires)-248(more)-249(than)-250(three)-249(or)]TJ 0 -15.54 Td[(four)-249(le)25(v)15(els)-249(of)-250(indentation)-248(as)-249(a)-250(general)-249(rule.)-309(Again,)-244(consider)-248(creating)-249(a)-249(ne)25(w)-250(function)-248(if)]TJ 0 -15.54 Td[(you)-249(ha)20(v)15(e)-250(too)-249(man)16(y)-250(embedded)-248(le)25(v)15(els)-249(of)-250(logic)-249(in)-249(your)-249(code.)]TJ 0 -21.52 Td[(A)74(v)20(oid)-249(the)-249(use)-250(of)-249(global)-249(v)25(ariables.)-308(The)15(y)-249(mak)10(e)-249(your)-250(code)-249(hard)-249(to)-249(support)-249(in)-250(a)]TJ 0 -15.54 Td[(multi-threaded)-248(en)41(vironment.)-308(If)-250(you)-249(do)-250(use)-249(global)-249(v)25(ariables,)-248(understand)-248(ho)25(w)-249(the)15(y)-250(af)26(fect)]TJ 0 -15.55 Td[(the)-249(ability)-249(of)-250(your)-249(module)-249(to)-249(be)-250(reentrant.)]TJ/F33 17.22 Tf -47.82 -53.22 Td[(6.3.)-343(Functions)-277(and)-277(Err)20(or)-278(Chec)21(king)]TJ/F26 11.96 Tf 47.82 -24.15 Td[(Do)-249(not)-250(use)-249(preprocessor)-248(function)-248(macros.)-309(There)-249(are)-249(too)-250(man)16(y)-250(possible)-248(problems)]TJ 0 -15.54 Td[(associated)-248(with)-249(them)-249(and)-250(modern)-248(computer)-249(speeds)-249(and)-249(compiler)-248(optimizations)-248(ob)16(viate)]TJ 0 -15.54 Td[(an)15(y)-249(benet)-249(the)15(y)-249(once)-249(may)-250(ha)21(v)15(e)-250(had.)-309(Dene)-249(a)-250(function)-248(instead.)]TJ 0 -21.52 Td[(Write)-249(function)-249(declarations/prototypes)-246(for)-249(all)-249(functions)-249(and)-249(put)-249(them)-249(either)-249(in)-250(the)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(21)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+392 0 obj
+5103
+endobj
+389 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F33 92 0 R >>
+>> endobj
+390 0 obj <<
+/Type /Page
+/Contents 391 0 R
+/Resources 389 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+365 0 obj <<
+/D [390 0 R /XYZ 380.15 647.57 null]
+>> endobj
+366 0 obj <<
+/D [390 0 R /XYZ 435.67 647.57 null]
+>> endobj
+367 0 obj <<
+/D [390 0 R /XYZ 281.31 616.49 null]
+>> endobj
+373 0 obj <<
+/D [390 0 R /XYZ 71.73 608.94 null]
+>> endobj
+374 0 obj <<
+/D [390 0 R /XYZ 180.64 594.97 null]
+>> endobj
+375 0 obj <<
+/D [390 0 R /XYZ 329.11 594.97 null]
+>> endobj
+376 0 obj <<
+/D [390 0 R /XYZ 119.55 548.34 null]
+>> endobj
+377 0 obj <<
+/D [390 0 R /XYZ 71.73 524.22 null]
+>> endobj
+378 0 obj <<
+/D [390 0 R /XYZ 180.49 511.28 null]
+>> endobj
+379 0 obj <<
+/D [390 0 R /XYZ 336.36 511.28 null]
+>> endobj
+380 0 obj <<
+/D [390 0 R /XYZ 212.9 480.2 null]
+>> endobj
+381 0 obj <<
+/D [390 0 R /XYZ 71.73 456.08 null]
+>> endobj
+382 0 obj <<
+/D [390 0 R /XYZ 71.73 390.37 null]
+>> endobj
+383 0 obj <<
+/D [390 0 R /XYZ 71.73 319.79 null]
+>> endobj
+384 0 obj <<
+/D [390 0 R /XYZ 71.73 255.23 null]
+>> endobj
+385 0 obj <<
+/D [390 0 R /XYZ 71.73 210.13 null]
+>> endobj
+386 0 obj <<
+/D [390 0 R /XYZ 71.73 158.73 null]
+>> endobj
+407 0 obj <<
+/Length 408 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(module)]TJ/F29 10.76 Tf 38.86 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(le)-249(for)-249(public)-249(functions)-249(or)-249(at)-250(the)-249(start)-249(of)-250(the)]TJ/F29 10.76 Tf 211.84 0 Td[(.c)]TJ/F26 11.96 Tf 15.9 0 Td[(le)-249(for)-250(pri)26(v)25(ate,)-249(internal)]TJ -282.5 -15.54 Td[(functions.)-308(The)-250(function)-248(declaration)-248(list)-249(should)-249(read)-249(lik)10(e)-250(a)-249(table)-250(of)-249(contents)-249(for)-249(your)]TJ 0 -15.54 Td[(code.)]TJ 0 -21.52 Td[(Mak)11(e)-250(e)15(xplicit)-249(all)-249(assumptions)-248(about)-249(the)-249(condition)-249(of)-249(input)-249(data)-249(to)-250(your)-249(routines.)-309(Use)]TJ 0 -15.54 Td[(assertions)-248(to)-250(test)-249(for)-250(programming)-247(errors,)-249(use)-249(e)15(xceptions)-249(\050C++\051)-248(or)-250(return)-249(v)25(alues)-249(\050C\051)-249(to)]TJ 0 -15.55 Td[(report)-249(error)-249(conditions)-248(detected)-249(in)-249(normal)-249(use.)-309(Do)-250(not)-249(put)-249(an)15(y)-250(implementation)-247(logic)-249(in)]TJ 0 -15.54 Td[(your)-249(assertions)-248(since)-250(often)-249(the)16(y)-250(will)-249(not)-249(remain)-249(in)-250(the)-249(deplo)11(yed)-249(code)-250(\050especially)-248(library)]TJ 0 -15.54 Td[(functions\051.)-308(When)-249(a)-250(library)-249(function)-248(must)-249(report)-249(both)-249(a)-250(computed)-248(v)25(alue)-249(and)-250(a)-249(distinct)]TJ 0 -15.54 Td[(error)-249(v)25(alue,)-249(pass)-249(the)-250(computed)-248(v)25(alue)-249(through)-249(a)-249(v)25(ariable)-249(and)]TJ/F29 10.76 Tf 287.62 0 Td[(return)]TJ/F26 11.96 Tf 41.72 0 Td[(the)-249(error)-249(v)25(alue.)]TJ -329.34 -21.52 Td[(Check)-249(the)-249(return)-249(v)25(alues)-249(of)-250(all)-249(library)-249(function)-248(calls.)-309(This)-250(is)-249(especially)-248(important)-249(for)]TJ 0 -15.54 Td[(functions)-248(pro)15(viding)-249(access)-249(to)-249(system)-249(resources)-248(\050e.g.,)]TJ/F44 11.96 Tf 254.15 0 Td[(malloc\050\051)]TJ/F26 11.96 Tf 57.39 0 Td[(,)]TJ/F44 11.96 Tf 5.97 0 Td[(fopen\050\051)]TJ/F26 11.96 Tf 50.22 0 Td[(,)-249(etc.\051.)]TJ -367.73 -21.52 Td[(Generate)-249(informati)27(v)15(e)-249(error)-250(messages.)-308(Write)-249(messages)-248(that)-249(are)-250(understandable)-247(to)-250(the)]TJ 0 -15.54 Td[(user)56(.)-310(Be)-250(complete)-248(and)-249(concise)-249(and)-249(a)20(v)20(oid)-249(using)-249(computer)-249(jar)19(gon.)-309(Suggest)-249(possible)]TJ 0 -15.55 Td[(causes)-249(of)-249(the)-250(error)-249(condition.)]TJ/F25 20.66 Tf -47.82 -72.23 Td[(7.)-344(Conc)20(lusion)]TJ/F26 11.96 Tf 47.82 -25.87 Td[(The)-249(guidelines)-249(presented)-248(here)-249(should)-249(be)-249(follo)25(wed)-249(when)-249(writing)-248(all)-250(ne)25(w)-249(code.)-309(When)]TJ 0 -15.55 Td[(w)10(orking)-249(with)-249(someone)-248(else')56(s)-250(code)-249(it)-250(is)-250(more)-249(important)-248(that)-249(you)-249(adhere)-249(to)-250(the)]TJ 0 -15.54 Td[(con)40(v)16(entions)-249(used)-249(there.)-309(Only)-249(if)-250(the)-249(coding)-249(style)-249(is)-250(ad)-249(hoc)-249(should)-249(you)-250(impose)-248(your)-249(o)25(wn)]TJ 0 -15.54 Td[(\050or)-250(these\051)-248(con)40(v)15(entions.)]TJ 0 -21.52 Td[(A)-250(checklist)-248(is)-250(included)-248(at)-250(the)-249(end)-249(of)-250(this)-249(document.)-308(It)-250(co)15(v)15(ers)-249(most)-249(of)-250(the)-249(items)]TJ 0 -15.54 Td[(discussed.)-308(Apply)-249(the)-250(checklist)-248(to)-249(your)-250(code)-249(prior)-249(to)-249(submitting)-249(it)-249(for)-250(peer)-249(re)26(vie)25(w)65(.)-309(An)15(y)]TJ 0 -15.54 Td[(unaddressed)-248(issue)-249(is)-250(considered)-248(a)-249(coding)-249(defect)-249(during)-249(the)-249(re)25(vie)26(w)-250(process.)]TJ 0 -21.52 Td[(Ob)15(viously)-248(a)-250(style)-249(guide)-249(cannot)-249(dictate)-249(good)-249(programming)-247(practices.)-309(It)-249(can)-250(only)-249(w)11(ard)]TJ 0 -15.54 Td[(of)25(f)-250(some)-249(of)-249(the)-249(more)-250(agrant)-248(problems.)-308(W)40(ith)-249(luck,)-250(a)-249(good)-249(style)-249(guide)-249(can)-250(encourage)]TJ 0 -15.54 Td[(better)-249(programming)-248(habits.)-308(T)80(o)-250(that)-249(end,)-249(all)-250(C++)-249(programmers)-248(should)-248(read)]TJ/F27 11.96 Tf 357.58 0 Td[(Ef)19(fective)]TJ -357.58 -15.55 Td[(C++)]TJ/F26 11.96 Tf 24.11 0 Td[(,)-250(by)-250(Scott)-249(Me)16(yers.)-309(It)-250(co)16(v)15(ers)-250(f)10(ar)-249(more)-249(concerns)-249(and)-249(goes)-249(into)-249(f)10(ar)-250(greater)-248(detail)-249(on)]TJ -24.11 -15.54 Td[(C++)-249(than)-249(is)-250(appropriate)-248(here.)-309(It)-250(is)-249(critical)-249(for)-249(C++)-250(programmers)-247(to)-250(understand)-248(these)]TJ
+ET
+1 0 0 1 -47.82 -563.88 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(22)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+408 0 obj
+4920
+endobj
+405 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F29 53 0 R /F44 372 0 R /F25 20 0 R >>
+>> endobj
+406 0 obj <<
+/Type /Page
+/Contents 407 0 R
+/Resources 405 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+404 0 obj <<
+/D [406 0 R /XYZ 71.73 717.31 null]
+>> endobj
+387 0 obj <<
+/D [406 0 R /XYZ 158.41 647.57 null]
+>> endobj
+388 0 obj <<
+/D [406 0 R /XYZ 386.15 647.57 null]
+>> endobj
+393 0 obj <<
+/D [406 0 R /XYZ 71.73 610.34 null]
+>> endobj
+394 0 obj <<
+/D [406 0 R /XYZ 407.17 517.26 null]
+>> endobj
+395 0 obj <<
+/D [406 0 R /XYZ 71.73 508.68 null]
+>> endobj
+396 0 obj <<
+/D [406 0 R /XYZ 373.7 480.2 null]
+>> endobj
+397 0 obj <<
+/D [406 0 R /XYZ 437.06 480.2 null]
+>> endobj
+398 0 obj <<
+/D [406 0 R /XYZ 71.73 471.62 null]
+>> endobj
+399 0 obj <<
+/D [406 0 R /XYZ 71.73 397.54 null]
+>> endobj
+400 0 obj <<
+/D [406 0 R /XYZ 71.73 344.77 null]
+>> endobj
+401 0 obj <<
+/D [406 0 R /XYZ 71.73 274.83 null]
+>> endobj
+402 0 obj <<
+/D [406 0 R /XYZ 71.73 221.68 null]
+>> endobj
+403 0 obj <<
+/D [406 0 R /XYZ 477.13 177.66 null]
+>> endobj
+452 0 obj <<
+/Length 453 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+BT
+/F26 11.96 Tf 0 0 Td[(issues)-249(when)-249(writing)-249(ne)26(w)-250(code.)]TJ/F25 20.66 Tf -47.82 -60.28 Td[(Appendix)-278(A.)-278(Re)16(vie)15(w)-278(Chec)20(klist)]TJ/F34 11.96 Tf 47.82 -25.87 Td[(File)-249(contents.)]TJ
+ET
+1 0 0 1 0 -132.68 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(les)-249(contain:)]TJ
+ET
+1 0 0 1 0 -46.53 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(a)-250(cop)11(yright)-249(statement?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(an)-250(abstract/synopsis)-247(comment?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(a)-250(re)25(vision)-248(string?)]TJ
+ET
+1 0 0 1 -23.91 -27.5 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(header)-248(les)-250(contain)-248(a)-250(multiple)-248(include)]TJ/F29 10.76 Tf 217.82 0 Td[(#ifdef)]TJ/F26 11.96 Tf 38.73 0 Td[(?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(necessary)]TJ/F29 10.76 Tf 85.31 0 Td[(#include)]TJ/F26 11.96 Tf 51.64 0 Td[(s)-250(made)-249(e)15(xplicitly)-248(\050i.e.)-310(the)-249(code)-249(does)-249(not)-250(rely)-249(on)-249(nested)]TJ/F29 10.76 Tf -136.95 -15.54 Td[(#include)]TJ/F26 11.96 Tf 51.64 0 Td[(s\051?)]TJ
+ET
+1 0 0 1 -11.96 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(public)-249(functions)]TJ/F27 11.96 Tf 116.21 0 Td[(declar)38(ed)]TJ/F26 11.96 Tf 44.7 0 Td[(in)-250(the)-249(module')56(s)]TJ/F29 10.76 Tf 76.72 0 Td[(.h)]TJ/F26 11.96 Tf 15.9 0 Td[(le?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(function)-249(declarations/prototypes)-246(e)16(xist)-250(for)-249(all)-250(functions?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(each)-249(code)-249(le)-249(contain)-249(e)15(xactly)-249(one)-249(cohesi)26(v)15(e)-250(set)-249(of)-249(classes)-249(or)-250(functions?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(functions)-248(from)-249(dif)25(ferent)-249(les)-249(suf)25(ciently)-248(uncoupled)-248(from)-249(one)-250(another?)]TJ/F34 11.96 Tf -11.96 -27.49 Td[(File)-249(f)25(ormat.)]TJ
+ET
+1 0 0 1 -11.96 -60.97 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(function)-248(declarations)-248(and)-249(denitions)-248(be)15(gin)-249(in)-250(column)-249(zero?)-309(Are)-249(the)-249(return)]TJ 0 -15.54 Td[(type,)-249(function)-248(name)-249(and)-250(open)-249(brack)11(et)-249(each)-250(on)-249(a)-250(separate)-248(line,)-249(each)-250(be)16(ginning)-249(in)]TJ 0 -15.54 Td[(column)-248(zero?)]TJ
+ET
+1 0 0 1 -11.96 -52.6 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-246(functions)-245(longer)-246(than)-246(a)-246(typical)-246(screen/page)-244(ha)20(v)15(e)-246(comments)-245(with)-246(their)-246(name)-246(at)-246(the)]TJ 0 -15.54 Td[(close)-249(brack)11(et?)]TJ
+ET
+1 0 0 1 -59.78 -77.42 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(23)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+453 0 obj
+4792
+endobj
+450 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F26 21 0 R /F25 20 0 R /F34 93 0 R /F37 209 0 R /F47 454 0 R /F29 53 0 R >>
+>> endobj
+451 0 obj <<
+/Type /Page
+/Contents 452 0 R
+/Resources 450 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+449 0 obj <<
+/D [451 0 R /XYZ 71.73 717.31 null]
+>> endobj
+409 0 obj <<
+/D [451 0 R /XYZ 71.73 572.79 null]
+>> endobj
+410 0 obj <<
+/D [451 0 R /XYZ 71.73 572.79 null]
+>> endobj
+411 0 obj <<
+/D [451 0 R /XYZ 190.99 561.42 null]
+>> endobj
+412 0 obj <<
+/D [451 0 R /XYZ 71.73 550.94 null]
+>> endobj
+413 0 obj <<
+/D [451 0 R /XYZ 71.73 540.61 null]
+>> endobj
+414 0 obj <<
+/D [451 0 R /XYZ 131.51 514.89 null]
+>> endobj
+415 0 obj <<
+/D [451 0 R /XYZ 71.73 504.39 null]
+>> endobj
+416 0 obj <<
+/D [451 0 R /XYZ 71.73 494.06 null]
+>> endobj
+417 0 obj <<
+/D [451 0 R /XYZ 143.46 468.36 null]
+>> endobj
+418 0 obj <<
+/D [451 0 R /XYZ 71.73 465.76 null]
+>> endobj
+419 0 obj <<
+/D [451 0 R /XYZ 143.46 446.84 null]
+>> endobj
+420 0 obj <<
+/D [451 0 R /XYZ 71.73 444.24 null]
+>> endobj
+421 0 obj <<
+/D [451 0 R /XYZ 143.46 425.32 null]
+>> endobj
+422 0 obj <<
+/D [451 0 R /XYZ 71.73 416.74 null]
+>> endobj
+423 0 obj <<
+/D [451 0 R /XYZ 131.51 397.82 null]
+>> endobj
+424 0 obj <<
+/D [451 0 R /XYZ 349.33 397.82 null]
+>> endobj
+425 0 obj <<
+/D [451 0 R /XYZ 71.73 395.22 null]
+>> endobj
+426 0 obj <<
+/D [451 0 R /XYZ 131.51 376.3 null]
+>> endobj
+427 0 obj <<
+/D [451 0 R /XYZ 216.82 376.3 null]
+>> endobj
+428 0 obj <<
+/D [451 0 R /XYZ 131.51 360.76 null]
+>> endobj
+429 0 obj <<
+/D [451 0 R /XYZ 71.73 358.71 null]
+>> endobj
+430 0 obj <<
+/D [451 0 R /XYZ 131.51 339.24 null]
+>> endobj
+431 0 obj <<
+/D [451 0 R /XYZ 247.72 339.24 null]
+>> endobj
+432 0 obj <<
+/D [451 0 R /XYZ 369.14 339.24 null]
+>> endobj
+433 0 obj <<
+/D [451 0 R /XYZ 71.73 336.64 null]
+>> endobj
+434 0 obj <<
+/D [451 0 R /XYZ 131.51 317.72 null]
+>> endobj
+435 0 obj <<
+/D [451 0 R /XYZ 71.73 315.12 null]
+>> endobj
+436 0 obj <<
+/D [451 0 R /XYZ 131.51 296.2 null]
+>> endobj
+437 0 obj <<
+/D [451 0 R /XYZ 71.73 293.6 null]
+>> endobj
+438 0 obj <<
+/D [451 0 R /XYZ 131.51 274.68 null]
+>> endobj
+439 0 obj <<
+/D [451 0 R /XYZ 71.73 260.13 null]
+>> endobj
+440 0 obj <<
+/D [451 0 R /XYZ 71.73 260.13 null]
+>> endobj
+441 0 obj <<
+/D [451 0 R /XYZ 183.38 247.19 null]
+>> endobj
+442 0 obj <<
+/D [451 0 R /XYZ 71.73 241.07 null]
+>> endobj
+443 0 obj <<
+/D [451 0 R /XYZ 71.73 235.09 null]
+>> endobj
+444 0 obj <<
+/D [451 0 R /XYZ 131.51 213.71 null]
+>> endobj
+445 0 obj <<
+/D [451 0 R /XYZ 71.73 182.46 null]
+>> endobj
+446 0 obj <<
+/D [451 0 R /XYZ 131.51 161.11 null]
+>> endobj
+447 0 obj <<
+/D [451 0 R /XYZ 71.73 145.4 null]
+>> endobj
+507 0 obj <<
+/Length 508 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Is)-249(four)20(-space)-248(indentation)-248(used)-250(throughout?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(control)-249(structures)-248(in)-250(a)-250(pure-block)-248(style)-249(and)-249(fully)-249(brack)11(eted?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Is)-249(there)-249(a)-250(single)-249(space)-249(surrounding)-248(all)-249(operators,)-249(e)16(xcept)]TJ/F29 10.76 Tf 268.08 0 Td[(.)]TJ/F26 11.96 Tf 6.45 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(->)]TJ/F26 11.96 Tf 12.91 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[([])]TJ/F26 11.96 Tf 15.9 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(\050\051)]TJ/F26 11.96 Tf 12.91 0 Td[(?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(the)-249(C++)-250(k)11(e)15(yw)10(ords)]TJ/F29 10.76 Tf 108.69 0 Td[(public)]TJ/F26 11.96 Tf 38.74 0 Td[(,)]TJ/F29 10.76 Tf 5.97 0 Td[(private)]TJ/F26 11.96 Tf 45.19 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(protected)]TJ/F26 11.96 Tf 58.1 0 Td[(,)-250(and)]TJ/F29 10.76 Tf 26.23 0 Td[(friend)]TJ/F26 11.96 Tf 41.73 0 Td[(all)-249(start)-249(in)]TJ -330.63 -15.54 Td[(column)-248(zero?)]TJ
+ET
+1 0 0 1 -11.96 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(C++)-249(class)-249(internals)-249(declared)-248(in)-250(the)-249(proper)-249(order?)]TJ
+ET
+1 0 0 1 8.84 -27.5 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(1.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(public)-248(data)-250(and)-249(types)]TJ
+ET
+1 0 0 1 -12.68 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(2.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(pri)26(v)25(ate)-249(or)-250(protected)-248(data)-249(and)-250(types)-249(used)-249(in)-250(the)-249(class)-249(declaration)]TJ
+ET
+1 0 0 1 -12.68 -21.51 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(3.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(public)-248(member)-249(functions,)-248(starting)-249(with)-249(constructors)-248(and)-249(the)-250(destructor)]TJ
+ET
+1 0 0 1 -12.68 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(4.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(other)-249(pri)26(v)25(ate)-249(or)-250(protected)-248(data)-250(members)]TJ
+ET
+1 0 0 1 -12.68 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(5.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(other)-249(pri)26(v)25(ate)-249(or)-250(protected)-248(functions)]TJ
+ET
+1 0 0 1 -12.68 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(6.)]TJ
+ET
+1 0 0 1 12.68 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+BT
+/F26 11.96 Tf 0 0 Td[(friends)]TJ/F34 11.96 Tf -33.48 -33.48 Td[(V)92(ariable)-248(and)-250(function)-248(names.)]TJ
+ET
+1 0 0 1 -33.48 -66.95 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(C)-250(v)25(ariable)-249(and)-249(function)-248(names)-249(lo)25(wer)-249(case,)-249(with)-249(an)-250(underscore)-248(as)-250(a)-249(w)10(ord)]TJ 0 -15.54 Td[(separator?)]TJ
+ET
+1 0 0 1 -11.96 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(C++)-250(v)26(ariable)-249(and)-249(function)-249(names)-249(lo)26(wer)-250(case,)-249(with)-249(capitalization)-248(rather)-249(than)]TJ 0 -15.54 Td[(an)-249(underscore)-248(indicating)-249(w)11(ord)-250(boundaries?)]TJ
+ET
+1 0 0 1 -11.96 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(pri)26(v)25(ate)-249(class)-249(member)-249(names)-249(end)-249(with)-249(an)-250(underscore?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(programmer)22(-dened)-248(types/classes)-248(start)-249(with)-249(a)-250(capital)-249(letter?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(constants)-249(and)-249(enumerated)-248(types)-249(all)-250(capital)-248(letters?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-249(v)25(ariable)-249(names)-249(suf)26(ciently)-249(informati)27(v)15(e)-250(and)-249(meaningful)-248(gi)25(v)15(en)-249(their)-249(scope?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(v)25(ariable)-249(names)-248(match)-249(the)-250(problem)-248(domain?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(v)25(ariable)-249(names)-248(nouns?)]TJ
+ET
+1 0 0 1 -59.78 -78.5 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(24)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+508 0 obj
+6664
+endobj
+505 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F37 209 0 R /F26 21 0 R /F29 53 0 R /F34 93 0 R >>
+>> endobj
+506 0 obj <<
+/Type /Page
+/Contents 507 0 R
+/Resources 505 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 345 0 R
+>> endobj
+504 0 obj <<
+/D [506 0 R /XYZ 71.73 717.31 null]
+>> endobj
+448 0 obj <<
+/D [506 0 R /XYZ 131.51 647.57 null]
+>> endobj
+455 0 obj <<
+/D [506 0 R /XYZ 71.73 623.45 null]
+>> endobj
+456 0 obj <<
+/D [506 0 R /XYZ 131.51 604.53 null]
+>> endobj
+457 0 obj <<
+/D [506 0 R /XYZ 399.59 604.53 null]
+>> endobj
+458 0 obj <<
+/D [506 0 R /XYZ 412.02 604.53 null]
+>> endobj
+459 0 obj <<
+/D [506 0 R /XYZ 430.91 604.53 null]
+>> endobj
+460 0 obj <<
+/D [506 0 R /XYZ 467.06 604.53 null]
+>> endobj
+461 0 obj <<
+/D [506 0 R /XYZ 71.73 601.93 null]
+>> endobj
+462 0 obj <<
+/D [506 0 R /XYZ 131.51 583.01 null]
+>> endobj
+463 0 obj <<
+/D [506 0 R /XYZ 240.2 583.01 null]
+>> endobj
+464 0 obj <<
+/D [506 0 R /XYZ 284.91 583.01 null]
+>> endobj
+465 0 obj <<
+/D [506 0 R /XYZ 336.08 583.01 null]
+>> endobj
+466 0 obj <<
+/D [506 0 R /XYZ 420.41 583.01 null]
+>> endobj
+467 0 obj <<
+/D [506 0 R /XYZ 71.73 567.3 null]
+>> endobj
+468 0 obj <<
+/D [506 0 R /XYZ 131.51 545.95 null]
+>> endobj
+469 0 obj <<
+/D [506 0 R /XYZ 71.73 537.37 null]
+>> endobj
+470 0 obj <<
+/D [506 0 R /XYZ 71.73 537.37 null]
+>> endobj
+471 0 obj <<
+/D [506 0 R /XYZ 153.03 518.45 null]
+>> endobj
+472 0 obj <<
+/D [506 0 R /XYZ 71.73 515.85 null]
+>> endobj
+473 0 obj <<
+/D [506 0 R /XYZ 153.03 496.93 null]
+>> endobj
+474 0 obj <<
+/D [506 0 R /XYZ 71.73 494.33 null]
+>> endobj
+475 0 obj <<
+/D [506 0 R /XYZ 153.03 475.42 null]
+>> endobj
+476 0 obj <<
+/D [506 0 R /XYZ 71.73 472.82 null]
+>> endobj
+477 0 obj <<
+/D [506 0 R /XYZ 153.03 453.9 null]
+>> endobj
+478 0 obj <<
+/D [506 0 R /XYZ 71.73 451.3 null]
+>> endobj
+479 0 obj <<
+/D [506 0 R /XYZ 153.03 432.38 null]
+>> endobj
+480 0 obj <<
+/D [506 0 R /XYZ 71.73 429.78 null]
+>> endobj
+481 0 obj <<
+/D [506 0 R /XYZ 153.03 410.86 null]
+>> endobj
+482 0 obj <<
+/D [506 0 R /XYZ 71.73 392.76 null]
+>> endobj
+483 0 obj <<
+/D [506 0 R /XYZ 71.73 392.76 null]
+>> endobj
+484 0 obj <<
+/D [506 0 R /XYZ 272.93 377.38 null]
+>> endobj
+485 0 obj <<
+/D [506 0 R /XYZ 71.73 371.26 null]
+>> endobj
+486 0 obj <<
+/D [506 0 R /XYZ 71.73 365.28 null]
+>> endobj
+487 0 obj <<
+/D [506 0 R /XYZ 131.51 343.91 null]
+>> endobj
+488 0 obj <<
+/D [506 0 R /XYZ 71.73 325.77 null]
+>> endobj
+489 0 obj <<
+/D [506 0 R /XYZ 131.51 306.85 null]
+>> endobj
+490 0 obj <<
+/D [506 0 R /XYZ 71.73 288.71 null]
+>> endobj
+491 0 obj <<
+/D [506 0 R /XYZ 131.51 269.79 null]
+>> endobj
+492 0 obj <<
+/D [506 0 R /XYZ 71.73 267.19 null]
+>> endobj
+493 0 obj <<
+/D [506 0 R /XYZ 131.51 248.27 null]
+>> endobj
+494 0 obj <<
+/D [506 0 R /XYZ 71.73 245.67 null]
+>> endobj
+495 0 obj <<
+/D [506 0 R /XYZ 131.51 226.75 null]
+>> endobj
+496 0 obj <<
+/D [506 0 R /XYZ 71.73 224.15 null]
+>> endobj
+497 0 obj <<
+/D [506 0 R /XYZ 131.51 205.23 null]
+>> endobj
+498 0 obj <<
+/D [506 0 R /XYZ 71.73 202.63 null]
+>> endobj
+499 0 obj <<
+/D [506 0 R /XYZ 131.51 183.71 null]
+>> endobj
+500 0 obj <<
+/D [506 0 R /XYZ 71.73 181.11 null]
+>> endobj
+501 0 obj <<
+/D [506 0 R /XYZ 131.51 162.19 null]
+>> endobj
+502 0 obj <<
+/D [506 0 R /XYZ 71.73 162.02 null]
+>> endobj
+561 0 obj <<
+/Length 562 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -418.43 -57.78 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(function)-248(names)-249(strong)-249(v)15(erbs)-249(\050or)-250(nouns)-249(for)-249(functions)-248(whose)-249(sole)-249(purpose)-249(is)-250(to)]TJ 0 -15.54 Td[(compute)-248(a)-250(v)25(alue\051?)]TJ/F34 11.96 Tf -11.96 -27.5 Td[(Comments.)]TJ
+ET
+1 0 0 1 -11.96 -76.51 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(bold)-249(comments)-248(used)-249(to)-250(di)25(vide)-249(code)-249(into)-249(major)-249(sections?)-308(Are)-250(block)-249(comments)]TJ 0 -15.55 Td[(used)-249(to)-249(mark)-249(signicant)-249(points?)-308(Are)-250(end-line)-248(comments)-248(used)-249(only)-250(for)-249(v)25(ariable)]TJ 0 -15.54 Td[(declarations)-248(and)-249(to)-249(mark)-249(long)-250(blocks)-248(of)-250(code?)]TJ
+ET
+1 0 0 1 -11.96 -52.61 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(C++)-249(code)-249(use)]TJ/F29 10.76 Tf 96.49 0 Td[(//)-599(...)]TJ/F26 11.96 Tf 42.44 0 Td[(style)-249(comments)-248(\050not)]TJ/F29 10.76 Tf 99.95 0 Td[(/*)-600(...)-1200(*/)]TJ/F26 11.96 Tf 64.56 0 Td[(\051?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(comments)-248(contain)-248(complete)-249(sentences,)-248(with)-249(proper)-249(punctuation)-248(and)-249(spelling?)]TJ
+ET
+1 0 0 1 -11.96 -21.51 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(comments)-248(describe)-249(intent)-249(rather)-249(than)-249(implementation)-247(details?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Is)-249(all)-250(subtle)-249(code)-249(suf)26(ciently)-249(e)15(xplained)-248(in)-250(comments?)]TJ
+ET
+1 0 0 1 -11.96 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-249(all)-250(b)21(ut)-250(the)-249(simplest)-249(functions)-248(ha)20(v)15(e)-249(comments)-248(describing)-249(what)-249(the)16(y)-250(do,)-249(what)-249(data)]TJ 0 -15.54 Td[(the)16(y)-250(operate)-249(on)-249(and)-249(an)15(y)-250(impact)-248(the)15(y)-250(ha)21(v)15(e)-250(on)-249(the)-250(rest)-249(of)-249(the)-250(application?)]TJ/F34 11.96 Tf -11.96 -27.5 Td[(Language)-248(usage.)]TJ
+ET
+1 0 0 1 -11.96 -76.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(General)]TJ
+ET
+1 0 0 1 0 -33.47 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(each)-249(line)-250(of)-249(code)-249(do)-250(e)15(xactly)-248(one)-250(thing?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-250(constants)-248(declared)-249(as)]TJ/F29 10.76 Tf 139.77 0 Td[(const)]TJ/F26 11.96 Tf 35.26 0 Td[(and)-250(not)-249(as)]TJ/F29 10.76 Tf 51.47 0 Td[(#define)]TJ/F26 11.96 Tf 45.19 0 Td[(s?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(the)-250(code)-249(a)20(v)21(oid)-250(casting)-248(v)25(ariables)-249(and)-249(return)-249(v)25(alues)-249(to)-249(dif)25(ferent)-249(data)-249(types?)]TJ 0 -15.54 Td[(Are)-249(there)-249(no)-250(casts)-249(to)]TJ/F29 10.76 Tf 101.26 0 Td[(void*)]TJ/F26 11.96 Tf 32.28 0 Td[(?)]TJ
+ET
+1 0 0 1 -11.95 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(no)]TJ/F29 10.76 Tf 35.85 0 Td[(typedef)]TJ/F26 11.96 Tf 45.2 0 Td[(s)-249(made)-249(from)-249(pointers)-249(\050e.g.,)]TJ/F29 10.76 Tf 131.48 0 Td[(typedef)-599(char*)-600(Str)]TJ/F26 11.96 Tf 109.74 0 Td[(?\051)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(there)-249(no)-250(preprocessor)-248(macros)-248(dened?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(parentheses)-248(used)-249(to)-250(group)-249(items)-249(in)-250(all)-249(b)20(ut)-249(the)-250(simplest)-248(logic)-249(constructs?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)]TJ/F29 10.76 Tf 35.85 0 Td[(private)]TJ/F26 11.96 Tf 48.18 0 Td[(class)-249(members)-249(e)15(xplicitly)-248(declared)-249(such?)]TJ
+ET
+1 0 0 1 -23.91 -27.49 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Program)-248(structure)]TJ
+ET
+1 0 0 1 -59.78 -66.55 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 454.3 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(25)]TJ
+ET
+1 0 0 1 11.95 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+562 0 obj
+6369
+endobj
+559 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F37 209 0 R /F26 21 0 R /F34 93 0 R /F29 53 0 R /F47 454 0 R >>
+>> endobj
+560 0 obj <<
+/Type /Page
+/Contents 561 0 R
+/Resources 559 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 563 0 R
+>> endobj
+558 0 obj <<
+/D [560 0 R /XYZ 71.73 717.31 null]
+>> endobj
+503 0 obj <<
+/D [560 0 R /XYZ 131.51 647.57 null]
+>> endobj
+509 0 obj <<
+/D [560 0 R /XYZ 181.36 604.53 null]
+>> endobj
+510 0 obj <<
+/D [560 0 R /XYZ 71.73 598.41 null]
+>> endobj
+511 0 obj <<
+/D [560 0 R /XYZ 71.73 592.43 null]
+>> endobj
+512 0 obj <<
+/D [560 0 R /XYZ 131.51 571.06 null]
+>> endobj
+513 0 obj <<
+/D [560 0 R /XYZ 71.73 537.37 null]
+>> endobj
+514 0 obj <<
+/D [560 0 R /XYZ 131.51 518.45 null]
+>> endobj
+515 0 obj <<
+/D [560 0 R /XYZ 228 518.45 null]
+>> endobj
+516 0 obj <<
+/D [560 0 R /XYZ 370.39 518.45 null]
+>> endobj
+517 0 obj <<
+/D [560 0 R /XYZ 71.73 515.85 null]
+>> endobj
+518 0 obj <<
+/D [560 0 R /XYZ 131.51 496.93 null]
+>> endobj
+519 0 obj <<
+/D [560 0 R /XYZ 71.73 494.33 null]
+>> endobj
+520 0 obj <<
+/D [560 0 R /XYZ 131.51 475.42 null]
+>> endobj
+521 0 obj <<
+/D [560 0 R /XYZ 71.73 472.82 null]
+>> endobj
+522 0 obj <<
+/D [560 0 R /XYZ 131.51 453.9 null]
+>> endobj
+523 0 obj <<
+/D [560 0 R /XYZ 71.73 451.3 null]
+>> endobj
+524 0 obj <<
+/D [560 0 R /XYZ 131.51 432.38 null]
+>> endobj
+525 0 obj <<
+/D [560 0 R /XYZ 71.73 402.28 null]
+>> endobj
+526 0 obj <<
+/D [560 0 R /XYZ 71.73 402.28 null]
+>> endobj
+527 0 obj <<
+/D [560 0 R /XYZ 208.28 389.34 null]
+>> endobj
+528 0 obj <<
+/D [560 0 R /XYZ 71.73 380.86 null]
+>> endobj
+529 0 obj <<
+/D [560 0 R /XYZ 71.73 374.88 null]
+>> endobj
+530 0 obj <<
+/D [560 0 R /XYZ 131.51 355.86 null]
+>> endobj
+531 0 obj <<
+/D [560 0 R /XYZ 71.73 349.72 null]
+>> endobj
+532 0 obj <<
+/D [560 0 R /XYZ 71.73 343.74 null]
+>> endobj
+533 0 obj <<
+/D [560 0 R /XYZ 143.46 322.39 null]
+>> endobj
+534 0 obj <<
+/D [560 0 R /XYZ 71.73 319.79 null]
+>> endobj
+535 0 obj <<
+/D [560 0 R /XYZ 143.46 300.87 null]
+>> endobj
+536 0 obj <<
+/D [560 0 R /XYZ 283.23 300.87 null]
+>> endobj
+537 0 obj <<
+/D [560 0 R /XYZ 369.96 300.87 null]
+>> endobj
+538 0 obj <<
+/D [560 0 R /XYZ 71.73 300.64 null]
+>> endobj
+539 0 obj <<
+/D [560 0 R /XYZ 143.46 279.35 null]
+>> endobj
+540 0 obj <<
+/D [560 0 R /XYZ 244.72 263.81 null]
+>> endobj
+541 0 obj <<
+/D [560 0 R /XYZ 71.73 263.58 null]
+>> endobj
+542 0 obj <<
+/D [560 0 R /XYZ 143.46 242.29 null]
+>> endobj
+543 0 obj <<
+/D [560 0 R /XYZ 179.31 242.29 null]
+>> endobj
+544 0 obj <<
+/D [560 0 R /XYZ 355.99 242.29 null]
+>> endobj
+545 0 obj <<
+/D [560 0 R /XYZ 71.73 239.69 null]
+>> endobj
+546 0 obj <<
+/D [560 0 R /XYZ 143.46 220.77 null]
+>> endobj
+547 0 obj <<
+/D [560 0 R /XYZ 71.73 218.17 null]
+>> endobj
+548 0 obj <<
+/D [560 0 R /XYZ 143.46 199.25 null]
+>> endobj
+549 0 obj <<
+/D [560 0 R /XYZ 71.73 196.65 null]
+>> endobj
+550 0 obj <<
+/D [560 0 R /XYZ 143.46 177.73 null]
+>> endobj
+551 0 obj <<
+/D [560 0 R /XYZ 179.31 177.73 null]
+>> endobj
+552 0 obj <<
+/D [560 0 R /XYZ 71.73 169.16 null]
+>> endobj
+553 0 obj <<
+/D [560 0 R /XYZ 131.51 150.24 null]
+>> endobj
+554 0 obj <<
+/D [560 0 R /XYZ 71.73 141.66 null]
+>> endobj
+555 0 obj <<
+/D [560 0 R /XYZ 71.73 141.66 null]
+>> endobj
+605 0 obj <<
+/Length 606 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 0 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 466.25 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -406.47 -57.78 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(each)-249(function)-249(call)]TJ/F29 10.76 Tf 115.53 0 Td[(return)]TJ/F26 11.96 Tf 41.73 0 Td[(from)-249(only)-249(one)-249(place?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Is)]TJ/F44 11.96 Tf 11.62 0 Td[(exit\050\051)]TJ/F26 11.96 Tf 46.03 0 Td[(called)-249(only)-249(from)-249(within)]TJ/F44 11.96 Tf 115.56 0 Td[(main\050\051)]TJ/F26 11.96 Tf 43.03 0 Td[(,)-250(and)-249(only)-250(once?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-250(nal)]TJ/F29 10.76 Tf 41.84 0 Td[(else)]TJ/F26 11.96 Tf 28.82 0 Td[(blocks)-248(of)]TJ/F29 10.76 Tf 47.15 0 Td[(if/else)]TJ/F26 11.96 Tf 48.18 0 Td[(branches)-248(and)]TJ/F29 10.76 Tf 65.72 0 Td[(default)]TJ/F26 11.96 Tf 48.18 0 Td[(blocks)-249(of)]TJ/F29 10.76 Tf -279.89 -15.54 Td[(switch/case)]TJ/F26 11.96 Tf 74 0 Td[(branches)-249(handle)-249(def)11(ault)-249(conditions)-248(or)-250(error)-249(conditions)-248(only?)]TJ
+ET
+1 0 0 1 -11.95 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-250(all)-249(o)15(v)15(erlapping)]TJ/F29 10.76 Tf 92.28 0 Td[(switch/case)]TJ/F26 11.96 Tf 74 0 Td[(conditions)-249(\050i.e.)-309(f)10(all-throughs\051)-247(use)-250(identical)]TJ -166.28 -15.54 Td[(code?)]TJ
+ET
+1 0 0 1 -11.95 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Has)-249(the)-250(use)-249(of)-250(global)-249(v)26(ariables)-249(been)-249(a)20(v)20(oided?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-250(most)-249(control)-248(structures)-249(span)-249(no)-249(more)-249(than)-249(a)-250(page)-249(or)-250(tw)11(o?)-310(Is)-249(the)-250(close)-249(brack)11(et)]TJ 0 -15.54 Td[(of)-250(all)-249(longer)-249(controls)-249(structures)-248(commented)-248(with)-249(the)-249(e)15(xit)-250(criteria)-248(for)-250(the)-249(block)-249(of)]TJ 0 -15.54 Td[(code?)]TJ
+ET
+1 0 0 1 -11.95 -52.6 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Does)-249(nested)-249(conditional)-248(code)-249(go)-250(no)-249(more)-249(than)-249(three)-249(or)-250(four)-249(le)25(v)15(els?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Has)-249(the)-250(use)-249(of)-250(structure-breaking)-246(directi)26(v)15(es)-250(such)-249(as)]TJ/F29 10.76 Tf 248.52 0 Td[(goto)]TJ/F26 11.96 Tf 25.82 0 Td[(,)]TJ/F29 10.76 Tf 5.98 0 Td[(continue)]TJ/F26 11.96 Tf 54.64 0 Td[(and)]TJ/F29 10.76 Tf 20.25 0 Td[(break)]TJ/F26 11.96 Tf -355.21 -15.54 Td[(been)-249(a)20(v)20(oided?)]TJ
+ET
+1 0 0 1 -23.91 -43.04 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F37 9.56 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.35 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.61 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Functions)-248(and)-249(error)21(-checking)]TJ
+ET
+1 0 0 1 0 -27.5 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(functions)-249(used)-249(al)10(w)11(ays)-250(instead)-248(of)-250(preprocessor)-248(macros?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-250(assumptions)-248(about)-249(the)-249(condition)-248(of)-250(input)-249(data)-249(tested)-249(e)15(xplicitly)-248(with)]TJ/F44 11.96 Tf 0 -15.54 Td[(assert\050\051)]TJ/F26 11.96 Tf 57.39 0 Td[(?)]TJ
+ET
+1 0 0 1 -11.95 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(W)40(ill)-249(the)-250(code)-249(perform)-248(the)-250(same)-249(w)11(ay)-250(if)-250(assertions)-248(are)-249(remo)16(v)15(ed?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Do)-250(library)-248(functions)-249(return)-249(error)-249(v)26(alues)-249(or)-250(thro)26(w)-250(e)15(xceptions)-248(\050C++\051)-249(where)26(v)15(er)]TJ 0 -15.54 Td[(possible?)]TJ
+ET
+1 0 0 1 -11.95 -37.06 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-250(function)-248(return)-249(v)25(alues)-249(tested)-249(or)-250(e)16(xceptions)-249(caught?)]TJ
+ET
+1 0 0 1 -11.95 -21.52 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F47 8.61 Tf 0 0 Td[(•)]TJ
+ET
+1 0 0 1 3.01 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 8.94 0 cm
+BT
+/F26 11.96 Tf 0 0 Td[(Are)-249(all)-250(error)-249(messages)-248(informati)26(v)15(e)-249(to)-250(a)-250(typical)-248(user?)-309(Are)-250(messages)-248(complete)]TJ 0 -15.54 Td[(sentences,)-248(with)-249(proper)-249(punctuation)-248(and)-250(spelling?)]TJ
+ET
+1 0 0 1 -71.73 -141.86 cm
+1 1 1 1 k 1 1 1 1 K
+BT
+/F27 11.96 Tf 0 0 Td[(26)]TJ
+ET
+1 0 0 1 466.25 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+606 0 obj
+6279
+endobj
+603 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F47 454 0 R /F26 21 0 R /F29 53 0 R /F44 372 0 R /F37 209 0 R >>
+>> endobj
+604 0 obj <<
+/Type /Page
+/Contents 605 0 R
+/Resources 603 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 563 0 R
+>> endobj
+556 0 obj <<
+/D [604 0 R /XYZ 143.46 647.57 null]
+>> endobj
+557 0 obj <<
+/D [604 0 R /XYZ 258.99 647.57 null]
+>> endobj
+564 0 obj <<
+/D [604 0 R /XYZ 316.67 626.05 null]
+>> endobj
+565 0 obj <<
+/D [604 0 R /XYZ 71.73 623.45 null]
+>> endobj
+566 0 obj <<
+/D [604 0 R /XYZ 143.46 604.53 null]
+>> endobj
+567 0 obj <<
+/D [604 0 R /XYZ 185.3 604.53 null]
+>> endobj
+568 0 obj <<
+/D [604 0 R /XYZ 261.27 604.53 null]
+>> endobj
+569 0 obj <<
+/D [604 0 R /XYZ 375.17 604.53 null]
+>> endobj
+570 0 obj <<
+/D [604 0 R /XYZ 143.46 588.99 null]
+>> endobj
+571 0 obj <<
+/D [604 0 R /XYZ 71.73 586.39 null]
+>> endobj
+572 0 obj <<
+/D [604 0 R /XYZ 143.46 567.47 null]
+>> endobj
+573 0 obj <<
+/D [604 0 R /XYZ 235.74 567.47 null]
+>> endobj
+574 0 obj <<
+/D [604 0 R /XYZ 71.73 551.76 null]
+>> endobj
+575 0 obj <<
+/D [604 0 R /XYZ 143.46 530.41 null]
+>> endobj
+576 0 obj <<
+/D [604 0 R /XYZ 71.73 527.81 null]
+>> endobj
+577 0 obj <<
+/D [604 0 R /XYZ 143.46 508.89 null]
+>> endobj
+578 0 obj <<
+/D [604 0 R /XYZ 71.73 477.64 null]
+>> endobj
+579 0 obj <<
+/D [604 0 R /XYZ 143.46 456.29 null]
+>> endobj
+580 0 obj <<
+/D [604 0 R /XYZ 71.73 453.69 null]
+>> endobj
+581 0 obj <<
+/D [604 0 R /XYZ 143.46 434.77 null]
+>> endobj
+582 0 obj <<
+/D [604 0 R /XYZ 391.98 434.77 null]
+>> endobj
+583 0 obj <<
+/D [604 0 R /XYZ 423.78 434.77 null]
+>> endobj
+584 0 obj <<
+/D [604 0 R /XYZ 498.67 434.77 null]
+>> endobj
+585 0 obj <<
+/D [604 0 R /XYZ 71.73 413.08 null]
+>> endobj
+586 0 obj <<
+/D [604 0 R /XYZ 131.51 391.73 null]
+>> endobj
+587 0 obj <<
+/D [604 0 R /XYZ 71.73 383.15 null]
+>> endobj
+588 0 obj <<
+/D [604 0 R /XYZ 71.73 383.15 null]
+>> endobj
+589 0 obj <<
+/D [604 0 R /XYZ 143.46 364.23 null]
+>> endobj
+590 0 obj <<
+/D [604 0 R /XYZ 71.73 361.63 null]
+>> endobj
+591 0 obj <<
+/D [604 0 R /XYZ 143.46 342.71 null]
+>> endobj
+592 0 obj <<
+/D [604 0 R /XYZ 143.46 327.17 null]
+>> endobj
+593 0 obj <<
+/D [604 0 R /XYZ 71.73 325.81 null]
+>> endobj
+594 0 obj <<
+/D [604 0 R /XYZ 143.46 305.65 null]
+>> endobj
+595 0 obj <<
+/D [604 0 R /XYZ 71.73 303.05 null]
+>> endobj
+596 0 obj <<
+/D [604 0 R /XYZ 143.46 284.13 null]
+>> endobj
+597 0 obj <<
+/D [604 0 R /XYZ 71.73 265.99 null]
+>> endobj
+598 0 obj <<
+/D [604 0 R /XYZ 143.46 247.07 null]
+>> endobj
+599 0 obj <<
+/D [604 0 R /XYZ 71.73 244.47 null]
+>> endobj
+600 0 obj <<
+/D [604 0 R /XYZ 143.46 225.55 null]
+>> endobj
+601 0 obj <<
+/D [604 0 R /XYZ 71.73 189.48 null]
+>> endobj
+614 0 obj <<
+/Length 615 0 R
+>>
+stream
+1 0 0 1 71.73 705.35 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 372.4 3.59 cm
+BT
+/F27 11.96 Tf 0 0 Td[(C/C++)-249(Style)-249(Guide)]TJ
+ET
+1 0 0 1 93.85 -3.59 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -466.25 -60.38 cm
+BT
+/F33 17.22 Tf 0 0 Td[(Ref)10(erences)]TJ/F27 11.96 Tf 47.82 -32.75 Td[(The)-249(C++)-249(Pr)45(o)10(gr)16(amming)-249(Langua)11(g)10(e)]TJ/F26 11.96 Tf 164.84 0 Td[(,)-250(Bjarne)-248(Stroustrup,)-248(0-201-88954-4,)]TJ -140.93 -15.55 Td[(Addison-W)82(esle)15(y,)-249(1997.)]TJ/F27 11.96 Tf -23.91 -27.49 Td[(Code)-249(Complete:)-308(A)-250(Pr)15(actical)-248(Handbook)-248(of)-250(Softwar)38(e)-249(Construction)]TJ/F26 11.96 Tf 311.92 0 Td[(,)-250(Code)-249(Complete,)]TJ -288.01 -15.54 Td[(Ste)25(v)16(e)-250(McConnell,)-248(1-55615-484-4,)-247(Microsoft)-249(Press,)-249(1993.)]TJ/F27 11.96 Tf -23.91 -27.5 Td[(Ef)18(fective)-249(C++:)-308(50)-250(Specic)-249(W)93(ays)-250(to)-249(Impr)46(o)10(ve)-250(Y)92(our)-249(Pr)46(o)10(gr)15(ams)-249(and)-249(Designs)]TJ/F26 11.96 Tf 348.31 0 Td[(,)-250(Ef)25(fecti)26(v)15(e)]TJ -324.4 -15.54 Td[(C++,)-249(Scott)-249(Me)15(yers,)-249(0-201-92488-9,)-247(Addison-W)82(esle)15(y,)-249(1998.)]TJ/F27 11.96 Tf -23.91 -27.5 Td[(The)-249(Elements)-249(of)-249(Style)]TJ/F26 11.96 Tf 103.27 0 Td[(,)-250(W)41(illiam)-249(Strunk,)-249(Jr)55(.)-309(and)-250(E.)-249(B.)-250(White,)-249(0-02-418200-1,)-247(MacMillan)]TJ -79.36 -15.54 Td[(Publishing)-248(Co.,)-249(Inc.,)-250(1979.)]TJ/F27 11.96 Tf -23.91 -27.5 Td[(Mor)38(e)-250(Ef)18(fective)-249(C++:)-308(35)-250(Ne)16(w)-250(W)92(ays)-249(to)-250(Impr)46(o)10(ve)-249(Y)92(our)-249(Pr)45(o)10(gr)16(ams)-250(and)-249(Designs)]TJ/F26 11.96 Tf 360.65 0 Td[(,)-250(More)]TJ -336.74 -15.54 Td[(Ef)25(fecti)26(v)15(e)-250(C++,)-249(Scott)-249(Me)16(yers,)-249(0-201-63371-X,)-247(1996,)-249(Addison-W)82(esle)15(y,)-249(1998.)]TJ/F27 11.96 Tf -23.91 -27.5 Td[(The)-249(Pr)15(actice)-249(of)-249(Pr)45(o)10(gr)16(amming)]TJ/F26 11.96 Tf 142.77 0 Td[(,)-250(Brian)-249(W)93(.)-250(K)25(ernighan)-248(and)-250(Rob)-249(Pik)11(e,)-250(0-201-61586-X,)]TJ -118.86 -15.54 Td[(Addison-W)82(esle)15(y,)-249(1999.)]TJ
+ET
+1 0 0 1 0 -561.28 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 453.85 0 cm
+BT
+/F27 11.96 Tf 0 0 Td[(27)]TJ
+ET
+1 0 0 1 12.4 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+615 0 obj
+2233
+endobj
+612 0 obj <<
+/ProcSet [/PDF /Text]
+/Font << /F27 22 0 R /F33 92 0 R /F26 21 0 R >>
+>> endobj
+613 0 obj <<
+/Type /Page
+/Contents 614 0 R
+/Resources 612 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 563 0 R
+>> endobj
+602 0 obj <<
+/D [613 0 R /XYZ 71.73 636.15 null]
+>> endobj
+607 0 obj <<
+/D [613 0 R /XYZ 71.73 588.1 null]
+>> endobj
+608 0 obj <<
+/D [613 0 R /XYZ 71.73 545.88 null]
+>> endobj
+609 0 obj <<
+/D [613 0 R /XYZ 71.73 502.02 null]
+>> endobj
+610 0 obj <<
+/D [613 0 R /XYZ 71.73 458.98 null]
+>> endobj
+611 0 obj <<
+/D [613 0 R /XYZ 71.73 415.94 null]
+>> endobj
+618 0 obj <<
+/Length 619 0 R
+>>
+stream
+1 0 0 1 0 777.08 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 598.11 0 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 -598.11 -534.39 cm
+1 1 1 1 k 1 1 1 1 K
+1 0 0 1 598.11 0 cm
+1 1 1 1 k 1 1 1 1 K
+endstream
+endobj
+619 0 obj
+167
+endobj
+616 0 obj <<
+/ProcSet [/PDF]
+>> endobj
+617 0 obj <<
+/Type /Page
+/Contents 618 0 R
+/Resources 616 0 R
+/MediaBox [0 0 609.71 789.04]
+/Parent 563 0 R
+>> endobj
+620 0 obj <<
+/Type /Encoding
+/Differences [ 0/.notdef 1/dotaccent/fi/fl/fraction/hungarumlaut/Lslash/lslash/ogonek/ring 10/.notdef 11/breve/minus 13/.notdef 14/Zcaron/zcaron/caron/dotlessi/dotlessj/ff/ffi/ffl 22/.notdef 30/grave/quotesingle/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde 127/.notdef 130/quotesinglbase/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE 141/.notdef 147/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright/oe 157/.notdef 159/Ydieresis 160/.notdef 161/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]
+>> endobj
+454 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Times-Roman
+>> endobj
+372 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Courier-Bold
+>> endobj
+291 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Courier-Bold
+>> endobj
+290 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Courier
+>> endobj
+209 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Times-Roman
+>> endobj
+93 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Times-Bold
+>> endobj
+92 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Helvetica-Bold
+>> endobj
+53 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Courier
+>> endobj
+22 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Times-Italic
+>> endobj
+21 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Times-Roman
+>> endobj
+20 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Helvetica-Bold
+>> endobj
+19 0 obj <<
+/Type /Font
+/Subtype /Type1
+/Encoding 620 0 R
+/BaseFont /Helvetica-Bold
+>> endobj
+23 0 obj <<
+/Type /Pages
+/Count 6
+/Parent 621 0 R
+/Kids [1 0 R 50 0 R 89 0 R 96 0 R 128 0 R 137 0 R]
+>> endobj
+157 0 obj <<
+/Type /Pages
+/Count 6
+/Parent 621 0 R
+/Kids [154 0 R 165 0 R 183 0 R 206 0 R 236 0 R 255 0 R]
+>> endobj
+264 0 obj <<
+/Type /Pages
+/Count 6
+/Parent 621 0 R
+/Kids [261 0 R 274 0 R 287 0 R 305 0 R 322 0 R 331 0 R]
+>> endobj
+345 0 obj <<
+/Type /Pages
+/Count 6
+/Parent 621 0 R
+/Kids [342 0 R 369 0 R 390 0 R 406 0 R 451 0 R 506 0 R]
+>> endobj
+563 0 obj <<
+/Type /Pages
+/Count 4
+/Parent 621 0 R
+/Kids [560 0 R 604 0 R 613 0 R 617 0 R]
+>> endobj
+621 0 obj <<
+/Type /Pages
+/Count 28
+/Kids [23 0 R 157 0 R 264 0 R 345 0 R 563 0 R]
+>> endobj
+622 0 obj <<
+/Names [(0) 4 0 R (101) 87 0 R (102) 94 0 R (104) 99 0 R (105) 100 0 R (106) 101 0 R]
+/Limits [(0) (106)]
+>> endobj
+623 0 obj <<
+/Names [(107) 102 0 R (108) 103 0 R (109) 104 0 R (110) 105 0 R (111) 106 0 R (112) 107 0 R]
+/Limits [(107) (112)]
+>> endobj
+624 0 obj <<
+/Names [(113) 108 0 R (114) 109 0 R (115) 110 0 R (116) 111 0 R (117) 112 0 R (118) 113 0 R]
+/Limits [(113) (118)]
+>> endobj
+625 0 obj <<
+/Names [(119) 114 0 R (120) 115 0 R (121) 116 0 R (122) 117 0 R (123) 118 0 R (124) 119 0 R]
+/Limits [(119) (124)]
+>> endobj
+626 0 obj <<
+/Names [(125) 120 0 R (126) 121 0 R (127) 122 0 R (128) 123 0 R (129) 124 0 R (130) 125 0 R]
+/Limits [(125) (130)]
+>> endobj
+627 0 obj <<
+/Names [(132) 126 0 R (133) 131 0 R (135) 132 0 R (136) 133 0 R (137) 134 0 R (138) 135 0 R]
+/Limits [(132) (138)]
+>> endobj
+628 0 obj <<
+/Names [(140) 140 0 R (141) 141 0 R (142) 142 0 R (144) 143 0 R (145) 144 0 R (146) 145 0 R]
+/Limits [(140) (146)]
+>> endobj
+629 0 obj <<
+/Names [(147) 146 0 R (148) 147 0 R (149) 148 0 R (150) 149 0 R (151) 150 0 R (152) 151 0 R]
+/Limits [(147) (152)]
+>> endobj
+630 0 obj <<
+/Names [(153) 152 0 R (154) 158 0 R (155) 159 0 R (157) 160 0 R (158) 161 0 R (159) 162 0 R]
+/Limits [(153) (159)]
+>> endobj
+631 0 obj <<
+/Names [(161) 163 0 R (162) 168 0 R (164) 169 0 R (165) 170 0 R (166) 171 0 R (167) 172 0 R]
+/Limits [(161) (167)]
+>> endobj
+632 0 obj <<
+/Names [(168) 173 0 R (169) 174 0 R (170) 175 0 R (171) 176 0 R (172) 177 0 R (173) 178 0 R]
+/Limits [(168) (173)]
+>> endobj
+633 0 obj <<
+/Names [(174) 179 0 R (175) 180 0 R (177) 181 0 R (178) 186 0 R (180) 187 0 R (182) 188 0 R]
+/Limits [(174) (182)]
+>> endobj
+634 0 obj <<
+/Names [(183) 189 0 R (184) 190 0 R (185) 191 0 R (186) 192 0 R (187) 193 0 R (188) 194 0 R]
+/Limits [(183) (188)]
+>> endobj
+635 0 obj <<
+/Names [(189) 195 0 R (190) 196 0 R (191) 197 0 R (192) 198 0 R (193) 199 0 R (194) 200 0 R]
+/Limits [(189) (194)]
+>> endobj
+636 0 obj <<
+/Names [(195) 201 0 R (196) 202 0 R (197) 203 0 R (198) 204 0 R (199) 210 0 R (200) 211 0 R]
+/Limits [(195) (200)]
+>> endobj
+637 0 obj <<
+/Names [(201) 212 0 R (202) 213 0 R (203) 214 0 R (204) 215 0 R (205) 216 0 R (206) 217 0 R]
+/Limits [(201) (206)]
+>> endobj
+638 0 obj <<
+/Names [(207) 218 0 R (208) 219 0 R (209) 220 0 R (210) 221 0 R (211) 222 0 R (212) 223 0 R]
+/Limits [(207) (212)]
+>> endobj
+639 0 obj <<
+/Names [(213) 224 0 R (214) 225 0 R (215) 226 0 R (216) 227 0 R (218) 228 0 R (219) 229 0 R]
+/Limits [(213) (219)]
+>> endobj
+640 0 obj <<
+/Names [(220) 230 0 R (221) 231 0 R (222) 232 0 R (223) 233 0 R (224) 234 0 R (226) 239 0 R]
+/Limits [(220) (226)]
+>> endobj
+641 0 obj <<
+/Names [(228) 240 0 R (229) 241 0 R (230) 242 0 R (231) 243 0 R (232) 244 0 R (233) 245 0 R]
+/Limits [(228) (233)]
+>> endobj
+642 0 obj <<
+/Names [(234) 246 0 R (235) 247 0 R (236) 248 0 R (237) 249 0 R (238) 250 0 R (239) 251 0 R]
+/Limits [(234) (239)]
+>> endobj
+643 0 obj <<
+/Names [(240) 252 0 R (242) 253 0 R (243) 258 0 R (244) 259 0 R (246) 265 0 R (247) 266 0 R]
+/Limits [(240) (247)]
+>> endobj
+644 0 obj <<
+/Names [(249) 267 0 R (250) 268 0 R (252) 269 0 R (253) 270 0 R (254) 271 0 R (255) 272 0 R]
+/Limits [(249) (255)]
+>> endobj
+645 0 obj <<
+/Names [(257) 277 0 R (258) 278 0 R (259) 279 0 R (260) 280 0 R (261) 281 0 R (262) 282 0 R]
+/Limits [(257) (262)]
+>> endobj
+646 0 obj <<
+/Names [(263) 283 0 R (264) 284 0 R (266) 285 0 R (267) 292 0 R (269) 293 0 R (270) 294 0 R]
+/Limits [(263) (270)]
+>> endobj
+647 0 obj <<
+/Names [(271) 295 0 R (272) 296 0 R (273) 297 0 R (274) 298 0 R (275) 299 0 R (276) 300 0 R]
+/Limits [(271) (276)]
+>> endobj
+648 0 obj <<
+/Names [(277) 301 0 R (278) 302 0 R (28) 5 0 R (280) 303 0 R (281) 308 0 R (282) 309 0 R]
+/Limits [(277) (282)]
+>> endobj
+649 0 obj <<
+/Names [(283) 310 0 R (284) 311 0 R (285) 312 0 R (286) 313 0 R (287) 314 0 R (288) 315 0 R]
+/Limits [(283) (288)]
+>> endobj
+650 0 obj <<
+/Names [(289) 316 0 R (29) 6 0 R (290) 317 0 R (291) 318 0 R (292) 319 0 R (294) 320 0 R]
+/Limits [(289) (294)]
+>> endobj
+651 0 obj <<
+/Names [(295) 325 0 R (297) 326 0 R (298) 327 0 R (30) 7 0 R (300) 328 0 R (301) 329 0 R]
+/Limits [(295) (301)]
+>> endobj
+652 0 obj <<
+/Names [(303) 334 0 R (304) 335 0 R (305) 336 0 R (306) 337 0 R (307) 338 0 R (308) 339 0 R]
+/Limits [(303) (308)]
+>> endobj
+653 0 obj <<
+/Names [(309) 340 0 R (31) 8 0 R (310) 346 0 R (311) 347 0 R (312) 348 0 R (313) 349 0 R]
+/Limits [(309) (313)]
+>> endobj
+654 0 obj <<
+/Names [(314) 350 0 R (315) 351 0 R (316) 352 0 R (317) 353 0 R (318) 354 0 R (319) 355 0 R]
+/Limits [(314) (319)]
+>> endobj
+655 0 obj <<
+/Names [(320) 356 0 R (321) 357 0 R (322) 358 0 R (324) 359 0 R (325) 360 0 R (327) 361 0 R]
+/Limits [(320) (327)]
+>> endobj
+656 0 obj <<
+/Names [(328) 362 0 R (329) 363 0 R (33) 9 0 R (330) 364 0 R (331) 365 0 R (332) 366 0 R]
+/Limits [(328) (332)]
+>> endobj
+657 0 obj <<
+/Names [(333) 367 0 R (334) 373 0 R (335) 374 0 R (336) 375 0 R (337) 376 0 R (338) 377 0 R]
+/Limits [(333) (338)]
+>> endobj
+658 0 obj <<
+/Names [(339) 378 0 R (34) 10 0 R (340) 379 0 R (341) 380 0 R (342) 381 0 R (343) 382 0 R]
+/Limits [(339) (343)]
+>> endobj
+659 0 obj <<
+/Names [(344) 383 0 R (345) 384 0 R (347) 385 0 R (348) 386 0 R (349) 387 0 R (35) 11 0 R]
+/Limits [(344) (35)]
+>> endobj
+660 0 obj <<
+/Names [(350) 388 0 R (351) 393 0 R (352) 394 0 R (353) 395 0 R (354) 396 0 R (355) 397 0 R]
+/Limits [(350) (355)]
+>> endobj
+661 0 obj <<
+/Names [(356) 398 0 R (357) 399 0 R (359) 400 0 R (36) 12 0 R (360) 401 0 R (361) 402 0 R]
+/Limits [(356) (361)]
+>> endobj
+662 0 obj <<
+/Names [(362) 403 0 R (363) 404 0 R (365) 409 0 R (366) 410 0 R (367) 411 0 R (368) 412 0 R]
+/Limits [(362) (368)]
+>> endobj
+663 0 obj <<
+/Names [(369) 413 0 R (37) 13 0 R (370) 414 0 R (371) 415 0 R (372) 416 0 R (373) 417 0 R]
+/Limits [(369) (373)]
+>> endobj
+664 0 obj <<
+/Names [(374) 418 0 R (375) 419 0 R (376) 420 0 R (377) 421 0 R (378) 422 0 R (379) 423 0 R]
+/Limits [(374) (379)]
+>> endobj
+665 0 obj <<
+/Names [(38) 14 0 R (380) 424 0 R (381) 425 0 R (382) 426 0 R (383) 427 0 R (384) 428 0 R]
+/Limits [(38) (384)]
+>> endobj
+666 0 obj <<
+/Names [(385) 429 0 R (386) 430 0 R (387) 431 0 R (388) 432 0 R (389) 433 0 R (39) 15 0 R]
+/Limits [(385) (39)]
+>> endobj
+667 0 obj <<
+/Names [(390) 434 0 R (391) 435 0 R (392) 436 0 R (393) 437 0 R (394) 438 0 R (395) 439 0 R]
+/Limits [(390) (395)]
+>> endobj
+668 0 obj <<
+/Names [(396) 440 0 R (397) 441 0 R (398) 442 0 R (399) 443 0 R (40) 24 0 R (400) 444 0 R]
+/Limits [(396) (400)]
+>> endobj
+669 0 obj <<
+/Names [(401) 445 0 R (402) 446 0 R (403) 447 0 R (404) 448 0 R (405) 449 0 R (407) 455 0 R]
+/Limits [(401) (407)]
+>> endobj
+670 0 obj <<
+/Names [(408) 456 0 R (409) 457 0 R (41) 25 0 R (410) 458 0 R (411) 459 0 R (412) 460 0 R]
+/Limits [(408) (412)]
+>> endobj
+671 0 obj <<
+/Names [(413) 461 0 R (414) 462 0 R (415) 463 0 R (416) 464 0 R (417) 465 0 R (418) 466 0 R]
+/Limits [(413) (418)]
+>> endobj
+672 0 obj <<
+/Names [(419) 467 0 R (42) 26 0 R (420) 468 0 R (421) 469 0 R (422) 470 0 R (423) 471 0 R]
+/Limits [(419) (423)]
+>> endobj
+673 0 obj <<
+/Names [(424) 472 0 R (425) 473 0 R (426) 474 0 R (427) 475 0 R (428) 476 0 R (429) 477 0 R]
+/Limits [(424) (429)]
+>> endobj
+674 0 obj <<
+/Names [(430) 478 0 R (431) 479 0 R (432) 480 0 R (433) 481 0 R (434) 482 0 R (435) 483 0 R]
+/Limits [(430) (435)]
+>> endobj
+675 0 obj <<
+/Names [(436) 484 0 R (437) 485 0 R (438) 486 0 R (439) 487 0 R (44) 27 0 R (440) 488 0 R]
+/Limits [(436) (440)]
+>> endobj
+676 0 obj <<
+/Names [(441) 489 0 R (442) 490 0 R (443) 491 0 R (444) 492 0 R (445) 493 0 R (446) 494 0 R]
+/Limits [(441) (446)]
+>> endobj
+677 0 obj <<
+/Names [(447) 495 0 R (448) 496 0 R (449) 497 0 R (45) 28 0 R (450) 498 0 R (451) 499 0 R]
+/Limits [(447) (451)]
+>> endobj
+678 0 obj <<
+/Names [(452) 500 0 R (453) 501 0 R (454) 502 0 R (455) 503 0 R (456) 504 0 R (458) 509 0 R]
+/Limits [(452) (458)]
+>> endobj
+679 0 obj <<
+/Names [(459) 510 0 R (46) 29 0 R (460) 511 0 R (461) 512 0 R (462) 513 0 R (463) 514 0 R]
+/Limits [(459) (463)]
+>> endobj
+680 0 obj <<
+/Names [(464) 515 0 R (465) 516 0 R (466) 517 0 R (467) 518 0 R (468) 519 0 R (469) 520 0 R]
+/Limits [(464) (469)]
+>> endobj
+681 0 obj <<
+/Names [(47) 30 0 R (470) 521 0 R (471) 522 0 R (472) 523 0 R (473) 524 0 R (474) 525 0 R]
+/Limits [(47) (474)]
+>> endobj
+682 0 obj <<
+/Names [(475) 526 0 R (476) 527 0 R (477) 528 0 R (478) 529 0 R (479) 530 0 R (48) 31 0 R]
+/Limits [(475) (48)]
+>> endobj
+683 0 obj <<
+/Names [(480) 531 0 R (481) 532 0 R (482) 533 0 R (483) 534 0 R (484) 535 0 R (485) 536 0 R]
+/Limits [(480) (485)]
+>> endobj
+684 0 obj <<
+/Names [(486) 537 0 R (487) 538 0 R (488) 539 0 R (489) 540 0 R (49) 32 0 R (490) 541 0 R]
+/Limits [(486) (490)]
+>> endobj
+685 0 obj <<
+/Names [(491) 542 0 R (492) 543 0 R (493) 544 0 R (494) 545 0 R (495) 546 0 R (496) 547 0 R]
+/Limits [(491) (496)]
+>> endobj
+686 0 obj <<
+/Names [(497) 548 0 R (498) 549 0 R (499) 550 0 R (50) 33 0 R (500) 551 0 R (501) 552 0 R]
+/Limits [(497) (501)]
+>> endobj
+687 0 obj <<
+/Names [(502) 553 0 R (503) 554 0 R (504) 555 0 R (505) 556 0 R (506) 557 0 R (507) 558 0 R]
+/Limits [(502) (507)]
+>> endobj
+688 0 obj <<
+/Names [(51) 34 0 R (510) 564 0 R (511) 565 0 R (512) 566 0 R (513) 567 0 R (514) 568 0 R]
+/Limits [(51) (514)]
+>> endobj
+689 0 obj <<
+/Names [(515) 569 0 R (516) 570 0 R (517) 571 0 R (518) 572 0 R (519) 573 0 R (52) 35 0 R]
+/Limits [(515) (52)]
+>> endobj
+690 0 obj <<
+/Names [(520) 574 0 R (521) 575 0 R (522) 576 0 R (523) 577 0 R (524) 578 0 R (525) 579 0 R]
+/Limits [(520) (525)]
+>> endobj
+691 0 obj <<
+/Names [(526) 580 0 R (527) 581 0 R (528) 582 0 R (529) 583 0 R (53) 36 0 R (530) 584 0 R]
+/Limits [(526) (530)]
+>> endobj
+692 0 obj <<
+/Names [(531) 585 0 R (532) 586 0 R (533) 587 0 R (534) 588 0 R (535) 589 0 R (536) 590 0 R]
+/Limits [(531) (536)]
+>> endobj
+693 0 obj <<
+/Names [(537) 591 0 R (538) 592 0 R (539) 593 0 R (54) 37 0 R (540) 594 0 R (541) 595 0 R]
+/Limits [(537) (541)]
+>> endobj
+694 0 obj <<
+/Names [(542) 596 0 R (543) 597 0 R (544) 598 0 R (545) 599 0 R (546) 600 0 R (547) 601 0 R]
+/Limits [(542) (547)]
+>> endobj
+695 0 obj <<
+/Names [(549) 602 0 R (55) 38 0 R (56) 39 0 R (561) 607 0 R (57) 40 0 R (574) 608 0 R]
+/Limits [(549) (574)]
+>> endobj
+696 0 obj <<
+/Names [(58) 41 0 R (587) 609 0 R (59) 42 0 R (60) 43 0 R (605) 610 0 R (61) 44 0 R]
+/Limits [(58) (61)]
+>> endobj
+697 0 obj <<
+/Names [(619) 611 0 R (62) 45 0 R (63) 46 0 R (64) 47 0 R (65) 48 0 R (67) 54 0 R]
+/Limits [(619) (67)]
+>> endobj
+698 0 obj <<
+/Names [(68) 55 0 R (69) 56 0 R (70) 57 0 R (71) 58 0 R (72) 59 0 R (73) 60 0 R]
+/Limits [(68) (73)]
+>> endobj
+699 0 obj <<
+/Names [(74) 61 0 R (75) 62 0 R (76) 63 0 R (77) 64 0 R (78) 65 0 R (79) 66 0 R]
+/Limits [(74) (79)]
+>> endobj
+700 0 obj <<
+/Names [(80) 67 0 R (81) 68 0 R (82) 69 0 R (83) 70 0 R (84) 71 0 R (85) 72 0 R]
+/Limits [(80) (85)]
+>> endobj
+701 0 obj <<
+/Names [(86) 73 0 R (87) 74 0 R (88) 75 0 R (89) 76 0 R (90) 77 0 R (91) 78 0 R]
+/Limits [(86) (91)]
+>> endobj
+702 0 obj <<
+/Names [(92) 79 0 R (93) 80 0 R (94) 81 0 R (95) 82 0 R (96) 83 0 R (97) 84 0 R]
+/Limits [(92) (97)]
+>> endobj
+703 0 obj <<
+/Names [(98) 85 0 R (99) 86 0 R (Doc-Start) 3 0 R]
+/Limits [(98) (Doc-Start)]
+>> endobj
+704 0 obj <<
+/Kids [622 0 R 623 0 R 624 0 R 625 0 R 626 0 R 627 0 R]
+/Limits [(0) (138)]
+>> endobj
+705 0 obj <<
+/Kids [628 0 R 629 0 R 630 0 R 631 0 R 632 0 R 633 0 R]
+/Limits [(140) (182)]
+>> endobj
+706 0 obj <<
+/Kids [634 0 R 635 0 R 636 0 R 637 0 R 638 0 R 639 0 R]
+/Limits [(183) (219)]
+>> endobj
+707 0 obj <<
+/Kids [640 0 R 641 0 R 642 0 R 643 0 R 644 0 R 645 0 R]
+/Limits [(220) (262)]
+>> endobj
+708 0 obj <<
+/Kids [646 0 R 647 0 R 648 0 R 649 0 R 650 0 R 651 0 R]
+/Limits [(263) (301)]
+>> endobj
+709 0 obj <<
+/Kids [652 0 R 653 0 R 654 0 R 655 0 R 656 0 R 657 0 R]
+/Limits [(303) (338)]
+>> endobj
+710 0 obj <<
+/Kids [658 0 R 659 0 R 660 0 R 661 0 R 662 0 R 663 0 R]
+/Limits [(339) (373)]
+>> endobj
+711 0 obj <<
+/Kids [664 0 R 665 0 R 666 0 R 667 0 R 668 0 R 669 0 R]
+/Limits [(374) (407)]
+>> endobj
+712 0 obj <<
+/Kids [670 0 R 671 0 R 672 0 R 673 0 R 674 0 R 675 0 R]
+/Limits [(408) (440)]
+>> endobj
+713 0 obj <<
+/Kids [676 0 R 677 0 R 678 0 R 679 0 R 680 0 R 681 0 R]
+/Limits [(441) (474)]
+>> endobj
+714 0 obj <<
+/Kids [682 0 R 683 0 R 684 0 R 685 0 R 686 0 R 687 0 R]
+/Limits [(475) (507)]
+>> endobj
+715 0 obj <<
+/Kids [688 0 R 689 0 R 690 0 R 691 0 R 692 0 R 693 0 R]
+/Limits [(51) (541)]
+>> endobj
+716 0 obj <<
+/Kids [694 0 R 695 0 R 696 0 R 697 0 R 698 0 R 699 0 R]
+/Limits [(542) (79)]
+>> endobj
+717 0 obj <<
+/Kids [700 0 R 701 0 R 702 0 R 703 0 R]
+/Limits [(80) (Doc-Start)]
+>> endobj
+718 0 obj <<
+/Kids [704 0 R 705 0 R 706 0 R 707 0 R 708 0 R 709 0 R]
+/Limits [(0) (338)]
+>> endobj
+719 0 obj <<
+/Kids [710 0 R 711 0 R 712 0 R 713 0 R 714 0 R 715 0 R]
+/Limits [(339) (541)]
+>> endobj
+720 0 obj <<
+/Kids [716 0 R 717 0 R]
+/Limits [(542) (Doc-Start)]
+>> endobj
+721 0 obj <<
+/Kids [718 0 R 719 0 R 720 0 R]
+>> endobj
+722 0 obj <<
+/Dests 721 0 R
+>> endobj
+723 0 obj <<
+/Type /Catalog
+/Pages 621 0 R
+/Names 722 0 R
+ /ViewerPreferences << >> 
+/OpenAction 2 0 R
+>> endobj
+724 0 obj <<
+ /Author () /Title () /Subject () /Creator (LaTeX with hyperref package) /Producer (pdfTeX12.h) /Keywords () 
+/Creator (TeX)
+/Producer (pdfTeX)
+/CreationDate (D:19990727190200)
+>> endobj
+xref
+0 725
+0000000000 65535 f 
+0000003837 00000 n 
+0000000009 00000 n 
+0000003950 00000 n 
+0000004005 00000 n 
+0000004060 00000 n 
+0000004115 00000 n 
+0000004170 00000 n 
+0000004226 00000 n 
+0000004281 00000 n 
+0000004336 00000 n 
+0000004392 00000 n 
+0000004448 00000 n 
+0000004505 00000 n 
+0000010313 00000 n 
+0000010371 00000 n 
+0000003733 00000 n 
+0000000057 00000 n 
+0000003712 00000 n 
+0000142821 00000 n 
+0000142727 00000 n 
+0000142636 00000 n 
+0000142544 00000 n 
+0000142915 00000 n 
+0000010429 00000 n 
+0000010486 00000 n 
+0000010544 00000 n 
+0000010601 00000 n 
+0000010657 00000 n 
+0000010714 00000 n 
+0000010771 00000 n 
+0000010829 00000 n 
+0000010887 00000 n 
+0000010942 00000 n 
+0000011000 00000 n 
+0000011057 00000 n 
+0000011114 00000 n 
+0000011172 00000 n 
+0000011230 00000 n 
+0000011287 00000 n 
+0000011345 00000 n 
+0000011403 00000 n 
+0000011460 00000 n 
+0000011518 00000 n 
+0000011576 00000 n 
+0000011634 00000 n 
+0000011692 00000 n 
+0000016169 00000 n 
+0000010256 00000 n 
+0000010038 00000 n 
+0000010142 00000 n 
+0000004562 00000 n 
+0000010017 00000 n 
+0000142457 00000 n 
+0000016227 00000 n 
+0000016284 00000 n 
+0000016341 00000 n 
+0000016398 00000 n 
+0000016456 00000 n 
+0000016513 00000 n 
+0000016571 00000 n 
+0000016628 00000 n 
+0000016686 00000 n 
+0000016743 00000 n 
+0000016801 00000 n 
+0000016859 00000 n 
+0000016916 00000 n 
+0000016974 00000 n 
+0000017032 00000 n 
+0000017090 00000 n 
+0000017147 00000 n 
+0000017205 00000 n 
+0000017263 00000 n 
+0000017320 00000 n 
+0000017378 00000 n 
+0000017435 00000 n 
+0000017493 00000 n 
+0000017551 00000 n 
+0000017608 00000 n 
+0000017666 00000 n 
+0000017723 00000 n 
+0000017781 00000 n 
+0000017839 00000 n 
+0000017896 00000 n 
+0000017954 00000 n 
+0000018012 00000 n 
+0000018069 00000 n 
+0000018126 00000 n 
+0000015939 00000 n 
+0000016055 00000 n 
+0000011750 00000 n 
+0000015918 00000 n 
+0000142363 00000 n 
+0000142273 00000 n 
+0000020034 00000 n 
+0000019840 00000 n 
+0000019920 00000 n 
+0000018183 00000 n 
+0000019819 00000 n 
+0000024531 00000 n 
+0000024589 00000 n 
+0000024647 00000 n 
+0000024706 00000 n 
+0000024765 00000 n 
+0000024825 00000 n 
+0000024884 00000 n 
+0000024944 00000 n 
+0000025003 00000 n 
+0000025063 00000 n 
+0000025123 00000 n 
+0000025183 00000 n 
+0000025242 00000 n 
+0000025302 00000 n 
+0000025361 00000 n 
+0000025421 00000 n 
+0000025480 00000 n 
+0000025540 00000 n 
+0000025599 00000 n 
+0000025659 00000 n 
+0000025718 00000 n 
+0000025778 00000 n 
+0000025837 00000 n 
+0000025897 00000 n 
+0000025956 00000 n 
+0000026015 00000 n 
+0000026074 00000 n 
+0000028026 00000 n 
+0000024297 00000 n 
+0000024414 00000 n 
+0000020091 00000 n 
+0000024275 00000 n 
+0000028085 00000 n 
+0000031353 00000 n 
+0000031412 00000 n 
+0000031472 00000 n 
+0000027967 00000 n 
+0000027757 00000 n 
+0000027850 00000 n 
+0000026133 00000 n 
+0000027735 00000 n 
+0000031532 00000 n 
+0000031591 00000 n 
+0000031650 00000 n 
+0000031710 00000 n 
+0000036076 00000 n 
+0000036135 00000 n 
+0000036195 00000 n 
+0000036255 00000 n 
+0000036315 00000 n 
+0000036375 00000 n 
+0000036435 00000 n 
+0000036495 00000 n 
+0000036555 00000 n 
+0000031118 00000 n 
+0000031235 00000 n 
+0000028144 00000 n 
+0000031096 00000 n 
+0000143026 00000 n 
+0000036615 00000 n 
+0000036673 00000 n 
+0000036733 00000 n 
+0000036792 00000 n 
+0000036851 00000 n 
+0000036910 00000 n 
+0000035853 00000 n 
+0000035958 00000 n 
+0000031769 00000 n 
+0000035831 00000 n 
+0000040995 00000 n 
+0000041053 00000 n 
+0000041111 00000 n 
+0000041171 00000 n 
+0000041231 00000 n 
+0000041291 00000 n 
+0000041351 00000 n 
+0000041411 00000 n 
+0000041471 00000 n 
+0000041531 00000 n 
+0000041590 00000 n 
+0000041649 00000 n 
+0000041709 00000 n 
+0000041769 00000 n 
+0000040760 00000 n 
+0000040877 00000 n 
+0000036969 00000 n 
+0000040738 00000 n 
+0000045575 00000 n 
+0000045634 00000 n 
+0000045693 00000 n 
+0000045752 00000 n 
+0000045811 00000 n 
+0000045870 00000 n 
+0000045930 00000 n 
+0000045989 00000 n 
+0000046049 00000 n 
+0000046108 00000 n 
+0000046167 00000 n 
+0000046226 00000 n 
+0000046286 00000 n 
+0000046345 00000 n 
+0000046405 00000 n 
+0000051898 00000 n 
+0000051958 00000 n 
+0000052018 00000 n 
+0000052078 00000 n 
+0000045327 00000 n 
+0000045457 00000 n 
+0000041828 00000 n 
+0000045305 00000 n 
+0000142181 00000 n 
+0000052138 00000 n 
+0000052197 00000 n 
+0000052257 00000 n 
+0000052317 00000 n 
+0000052377 00000 n 
+0000052436 00000 n 
+0000052496 00000 n 
+0000052556 00000 n 
+0000052616 00000 n 
+0000052675 00000 n 
+0000052734 00000 n 
+0000052794 00000 n 
+0000052854 00000 n 
+0000052914 00000 n 
+0000052973 00000 n 
+0000053033 00000 n 
+0000053092 00000 n 
+0000053152 00000 n 
+0000053211 00000 n 
+0000053270 00000 n 
+0000053329 00000 n 
+0000053388 00000 n 
+0000053447 00000 n 
+0000056946 00000 n 
+0000051839 00000 n 
+0000051603 00000 n 
+0000051721 00000 n 
+0000046464 00000 n 
+0000051581 00000 n 
+0000057005 00000 n 
+0000057064 00000 n 
+0000057123 00000 n 
+0000057182 00000 n 
+0000057242 00000 n 
+0000057302 00000 n 
+0000057362 00000 n 
+0000057422 00000 n 
+0000057481 00000 n 
+0000057540 00000 n 
+0000057600 00000 n 
+0000057660 00000 n 
+0000057719 00000 n 
+0000057778 00000 n 
+0000059703 00000 n 
+0000056723 00000 n 
+0000056828 00000 n 
+0000053506 00000 n 
+0000056701 00000 n 
+0000062654 00000 n 
+0000062713 00000 n 
+0000059492 00000 n 
+0000059585 00000 n 
+0000057837 00000 n 
+0000059470 00000 n 
+0000143143 00000 n 
+0000062773 00000 n 
+0000062832 00000 n 
+0000062891 00000 n 
+0000062950 00000 n 
+0000066659 00000 n 
+0000066718 00000 n 
+0000066778 00000 n 
+0000062595 00000 n 
+0000062360 00000 n 
+0000062477 00000 n 
+0000059762 00000 n 
+0000062338 00000 n 
+0000066838 00000 n 
+0000066898 00000 n 
+0000066958 00000 n 
+0000067018 00000 n 
+0000067077 00000 n 
+0000067136 00000 n 
+0000067196 00000 n 
+0000067256 00000 n 
+0000067316 00000 n 
+0000066398 00000 n 
+0000066541 00000 n 
+0000063009 00000 n 
+0000066376 00000 n 
+0000142093 00000 n 
+0000142000 00000 n 
+0000071735 00000 n 
+0000071794 00000 n 
+0000071853 00000 n 
+0000071912 00000 n 
+0000071971 00000 n 
+0000072031 00000 n 
+0000072090 00000 n 
+0000072149 00000 n 
+0000072208 00000 n 
+0000072268 00000 n 
+0000072328 00000 n 
+0000072388 00000 n 
+0000071500 00000 n 
+0000071617 00000 n 
+0000067374 00000 n 
+0000071478 00000 n 
+0000075852 00000 n 
+0000075910 00000 n 
+0000075970 00000 n 
+0000076030 00000 n 
+0000076088 00000 n 
+0000076148 00000 n 
+0000076208 00000 n 
+0000076268 00000 n 
+0000076328 00000 n 
+0000076388 00000 n 
+0000076447 00000 n 
+0000076507 00000 n 
+0000076566 00000 n 
+0000075629 00000 n 
+0000075734 00000 n 
+0000072447 00000 n 
+0000075607 00000 n 
+0000078997 00000 n 
+0000079056 00000 n 
+0000079115 00000 n 
+0000081764 00000 n 
+0000078938 00000 n 
+0000078715 00000 n 
+0000078820 00000 n 
+0000076625 00000 n 
+0000078693 00000 n 
+0000081823 00000 n 
+0000081882 00000 n 
+0000081940 00000 n 
+0000081999 00000 n 
+0000082058 00000 n 
+0000086970 00000 n 
+0000087029 00000 n 
+0000081541 00000 n 
+0000081646 00000 n 
+0000079173 00000 n 
+0000081519 00000 n 
+0000143260 00000 n 
+0000087088 00000 n 
+0000087147 00000 n 
+0000087207 00000 n 
+0000087266 00000 n 
+0000087326 00000 n 
+0000087386 00000 n 
+0000087446 00000 n 
+0000087506 00000 n 
+0000087564 00000 n 
+0000087622 00000 n 
+0000087682 00000 n 
+0000087742 00000 n 
+0000087802 00000 n 
+0000087862 00000 n 
+0000087921 00000 n 
+0000087980 00000 n 
+0000088039 00000 n 
+0000088098 00000 n 
+0000088158 00000 n 
+0000093622 00000 n 
+0000093682 00000 n 
+0000093742 00000 n 
+0000086722 00000 n 
+0000086852 00000 n 
+0000082117 00000 n 
+0000086700 00000 n 
+0000141907 00000 n 
+0000093802 00000 n 
+0000093861 00000 n 
+0000093921 00000 n 
+0000093981 00000 n 
+0000094041 00000 n 
+0000094100 00000 n 
+0000094160 00000 n 
+0000094220 00000 n 
+0000094278 00000 n 
+0000094337 00000 n 
+0000094396 00000 n 
+0000094455 00000 n 
+0000094514 00000 n 
+0000094573 00000 n 
+0000099925 00000 n 
+0000099985 00000 n 
+0000093399 00000 n 
+0000093504 00000 n 
+0000088218 00000 n 
+0000093377 00000 n 
+0000100045 00000 n 
+0000100104 00000 n 
+0000100164 00000 n 
+0000100223 00000 n 
+0000100281 00000 n 
+0000100340 00000 n 
+0000100399 00000 n 
+0000100458 00000 n 
+0000100517 00000 n 
+0000100576 00000 n 
+0000100635 00000 n 
+0000099866 00000 n 
+0000099630 00000 n 
+0000099748 00000 n 
+0000094632 00000 n 
+0000099608 00000 n 
+0000105885 00000 n 
+0000105944 00000 n 
+0000106003 00000 n 
+0000106063 00000 n 
+0000106122 00000 n 
+0000106181 00000 n 
+0000106241 00000 n 
+0000106300 00000 n 
+0000106359 00000 n 
+0000106419 00000 n 
+0000106478 00000 n 
+0000106538 00000 n 
+0000106597 00000 n 
+0000106657 00000 n 
+0000106716 00000 n 
+0000106776 00000 n 
+0000106836 00000 n 
+0000106895 00000 n 
+0000106954 00000 n 
+0000107013 00000 n 
+0000107073 00000 n 
+0000107132 00000 n 
+0000107192 00000 n 
+0000107252 00000 n 
+0000107312 00000 n 
+0000107371 00000 n 
+0000107431 00000 n 
+0000107490 00000 n 
+0000107549 00000 n 
+0000107607 00000 n 
+0000107667 00000 n 
+0000107726 00000 n 
+0000107785 00000 n 
+0000107845 00000 n 
+0000107904 00000 n 
+0000107963 00000 n 
+0000108023 00000 n 
+0000108082 00000 n 
+0000108142 00000 n 
+0000115237 00000 n 
+0000105826 00000 n 
+0000105565 00000 n 
+0000105708 00000 n 
+0000100695 00000 n 
+0000105543 00000 n 
+0000141815 00000 n 
+0000115297 00000 n 
+0000115356 00000 n 
+0000115416 00000 n 
+0000115476 00000 n 
+0000115536 00000 n 
+0000115596 00000 n 
+0000115656 00000 n 
+0000115715 00000 n 
+0000115775 00000 n 
+0000115834 00000 n 
+0000115894 00000 n 
+0000115954 00000 n 
+0000116014 00000 n 
+0000116072 00000 n 
+0000116132 00000 n 
+0000116191 00000 n 
+0000116250 00000 n 
+0000116310 00000 n 
+0000116369 00000 n 
+0000116429 00000 n 
+0000116488 00000 n 
+0000116548 00000 n 
+0000116607 00000 n 
+0000116666 00000 n 
+0000116724 00000 n 
+0000116784 00000 n 
+0000116843 00000 n 
+0000116903 00000 n 
+0000116962 00000 n 
+0000117021 00000 n 
+0000117081 00000 n 
+0000117140 00000 n 
+0000117199 00000 n 
+0000117259 00000 n 
+0000117318 00000 n 
+0000117378 00000 n 
+0000117437 00000 n 
+0000117497 00000 n 
+0000117556 00000 n 
+0000117616 00000 n 
+0000117675 00000 n 
+0000117735 00000 n 
+0000117794 00000 n 
+0000117854 00000 n 
+0000117913 00000 n 
+0000117973 00000 n 
+0000118032 00000 n 
+0000118092 00000 n 
+0000124906 00000 n 
+0000115178 00000 n 
+0000114942 00000 n 
+0000115060 00000 n 
+0000108200 00000 n 
+0000114920 00000 n 
+0000124966 00000 n 
+0000125026 00000 n 
+0000125085 00000 n 
+0000125144 00000 n 
+0000125204 00000 n 
+0000125263 00000 n 
+0000125323 00000 n 
+0000125380 00000 n 
+0000125440 00000 n 
+0000125499 00000 n 
+0000125559 00000 n 
+0000125618 00000 n 
+0000125678 00000 n 
+0000125737 00000 n 
+0000125796 00000 n 
+0000125854 00000 n 
+0000125914 00000 n 
+0000125973 00000 n 
+0000126032 00000 n 
+0000126092 00000 n 
+0000126151 00000 n 
+0000126210 00000 n 
+0000126270 00000 n 
+0000126329 00000 n 
+0000126388 00000 n 
+0000126448 00000 n 
+0000126507 00000 n 
+0000126567 00000 n 
+0000126627 00000 n 
+0000126687 00000 n 
+0000126746 00000 n 
+0000126806 00000 n 
+0000126866 00000 n 
+0000126925 00000 n 
+0000126985 00000 n 
+0000127045 00000 n 
+0000127105 00000 n 
+0000127164 00000 n 
+0000127224 00000 n 
+0000127283 00000 n 
+0000127343 00000 n 
+0000127402 00000 n 
+0000127462 00000 n 
+0000127522 00000 n 
+0000127581 00000 n 
+0000127641 00000 n 
+0000127700 00000 n 
+0000134366 00000 n 
+0000134426 00000 n 
+0000124847 00000 n 
+0000124598 00000 n 
+0000124729 00000 n 
+0000118151 00000 n 
+0000124576 00000 n 
+0000143377 00000 n 
+0000134486 00000 n 
+0000134546 00000 n 
+0000134605 00000 n 
+0000134665 00000 n 
+0000134724 00000 n 
+0000134784 00000 n 
+0000134844 00000 n 
+0000134904 00000 n 
+0000134963 00000 n 
+0000135023 00000 n 
+0000135083 00000 n 
+0000135142 00000 n 
+0000135202 00000 n 
+0000135261 00000 n 
+0000135321 00000 n 
+0000135380 00000 n 
+0000135440 00000 n 
+0000135499 00000 n 
+0000135559 00000 n 
+0000135619 00000 n 
+0000135679 00000 n 
+0000135739 00000 n 
+0000135798 00000 n 
+0000135858 00000 n 
+0000135917 00000 n 
+0000135976 00000 n 
+0000136036 00000 n 
+0000136095 00000 n 
+0000136155 00000 n 
+0000136215 00000 n 
+0000136274 00000 n 
+0000136334 00000 n 
+0000136393 00000 n 
+0000136453 00000 n 
+0000136512 00000 n 
+0000136572 00000 n 
+0000136631 00000 n 
+0000136691 00000 n 
+0000139272 00000 n 
+0000134116 00000 n 
+0000134248 00000 n 
+0000127759 00000 n 
+0000134094 00000 n 
+0000139331 00000 n 
+0000139389 00000 n 
+0000139448 00000 n 
+0000139507 00000 n 
+0000139566 00000 n 
+0000139061 00000 n 
+0000139154 00000 n 
+0000136750 00000 n 
+0000139039 00000 n 
+0000139869 00000 n 
+0000139908 00000 n 
+0000139625 00000 n 
+0000139848 00000 n 
+0000140026 00000 n 
+0000143478 00000 n 
+0000143571 00000 n 
+0000143700 00000 n 
+0000143838 00000 n 
+0000143976 00000 n 
+0000144114 00000 n 
+0000144252 00000 n 
+0000144390 00000 n 
+0000144528 00000 n 
+0000144666 00000 n 
+0000144804 00000 n 
+0000144942 00000 n 
+0000145080 00000 n 
+0000145218 00000 n 
+0000145356 00000 n 
+0000145494 00000 n 
+0000145632 00000 n 
+0000145770 00000 n 
+0000145908 00000 n 
+0000146046 00000 n 
+0000146184 00000 n 
+0000146322 00000 n 
+0000146460 00000 n 
+0000146598 00000 n 
+0000146736 00000 n 
+0000146874 00000 n 
+0000147012 00000 n 
+0000147150 00000 n 
+0000147285 00000 n 
+0000147423 00000 n 
+0000147558 00000 n 
+0000147693 00000 n 
+0000147831 00000 n 
+0000147966 00000 n 
+0000148104 00000 n 
+0000148242 00000 n 
+0000148377 00000 n 
+0000148515 00000 n 
+0000148651 00000 n 
+0000148786 00000 n 
+0000148924 00000 n 
+0000149060 00000 n 
+0000149198 00000 n 
+0000149334 00000 n 
+0000149472 00000 n 
+0000149607 00000 n 
+0000149742 00000 n 
+0000149880 00000 n 
+0000150016 00000 n 
+0000150154 00000 n 
+0000150290 00000 n 
+0000150428 00000 n 
+0000150564 00000 n 
+0000150702 00000 n 
+0000150840 00000 n 
+0000150976 00000 n 
+0000151114 00000 n 
+0000151250 00000 n 
+0000151388 00000 n 
+0000151524 00000 n 
+0000151662 00000 n 
+0000151797 00000 n 
+0000151932 00000 n 
+0000152070 00000 n 
+0000152206 00000 n 
+0000152344 00000 n 
+0000152480 00000 n 
+0000152618 00000 n 
+0000152753 00000 n 
+0000152888 00000 n 
+0000153026 00000 n 
+0000153162 00000 n 
+0000153300 00000 n 
+0000153436 00000 n 
+0000153574 00000 n 
+0000153706 00000 n 
+0000153834 00000 n 
+0000153961 00000 n 
+0000154085 00000 n 
+0000154209 00000 n 
+0000154333 00000 n 
+0000154457 00000 n 
+0000154581 00000 n 
+0000154682 00000 n 
+0000154781 00000 n 
+0000154882 00000 n 
+0000154983 00000 n 
+0000155084 00000 n 
+0000155185 00000 n 
+0000155286 00000 n 
+0000155387 00000 n 
+0000155488 00000 n 
+0000155589 00000 n 
+0000155690 00000 n 
+0000155791 00000 n 
+0000155891 00000 n 
+0000155991 00000 n 
+0000156081 00000 n 
+0000156180 00000 n 
+0000156281 00000 n 
+0000156356 00000 n 
+0000156411 00000 n 
+0000156449 00000 n 
+0000156562 00000 n 
+trailer
+<<
+/Size 725
+/Root 723 0 R
+/Info 724 0 R
+>>
+startxref
+156762
+%%EOF
