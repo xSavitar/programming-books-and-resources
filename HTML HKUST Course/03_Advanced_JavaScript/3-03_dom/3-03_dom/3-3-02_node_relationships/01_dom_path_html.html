@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        After the user clicks on something in the web page
+        the DOM path is shown, from the top node (the root)
+        downwards.
+        -->
+
+        <title>DOM Path</title>
+
+        <script>
+        <!--
+
+        // Repeatedly go up the DOM structure
+        function handleClick(event) {
+            event.stopPropagation();
+
+            var node = event.target
+            var thisPath = node.nodeName;
+
+            while (node.parentNode) {
+                node = node.parentNode;
+                thisPath = node.nodeName + " > " + thisPath;
+            }
+            alert(thisPath);
+        }
+
+
+        // Register the click event handler for all nodes
+        function attachHandler(node) {
+            if(node == null) return;
+            node.onclick = handleClick;
+
+            for(var i = 0; i < node.childNodes.length; ++i) {
+                visit(node.childNodes[i]);
+            }
+        }
+
+        // Register the click event handler for the links and form elements
+        function init() {
+            attachHandler(document.getElementsByTagName("body")[0]);
+        }
+
+        // -->
+        </script>
+    </head>
+    <body onload="init()">
+
+        <p>Click on the link or form elements to see the DOM
+        path to that node</p>
+
+        <p>(The html that you see below is just some 'random' html which
+        helps to demonstrate the technique).</p>
+
+        <b>LISTS</b>
+
+        <ul>
+
+            <li><a href="">List 1</a></li>
+            <li><a href="">List 2</a></li>
+            <li><a href="">List 3</a></li>
+            <li><a href="">List 4</a>
+
+                <ol>
+                    <li><a href="">Order List 1</a></li>
+                    <li><a href="">Order List 2</a></li>
+                    <li><a href="">Order List 3</a></li>
+                    <li><a href="">Order List 4</a></li>
+                </ol>
+
+            </li>
+        </ul>
+
+        <p><b>TABLES</b></p>
+        
+        <table border="3">
+            <tbody>
+                <tr>
+                    <td><a href="">Cell 1</a></td>
+                    <td><a href="">Cell 2</a></td>
+                    <td><a href="">Cell 3</a></td>
+                    <td><a href="">Cell 4</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                    <form>
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="button" value="Click!"></td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

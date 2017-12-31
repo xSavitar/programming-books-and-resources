@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function myFunction() {
+                var the_node = document.getElementById("myList").lastChild;
+                var the_clone = the_node.cloneNode(true);
+                document.getElementById("myList").appendChild(the_clone);
+            }
+        </script>
+        <ul id="myList"><li>Good morning</li><li>Hello</li></ul>
+        <p>Click on the button to cloneNode(true)</p>
+        <button onclick="myFunction()">
+            Copy it!
+        </button>
+    </body>
+</html>

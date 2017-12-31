@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <body>
+        <button id="btn0" onclick=" alert('Hello!') ">
+            Click Me!</button><br>
+        <button id="btn1">Remove Listener</button>
+        <script>
+            function do_something() { alert('Clicked'); }
+
+            var btn0 = document.getElementById("btn0");
+            btn0.addEventListener("click", do_something);
+
+            var btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click", function() {
+              btn0.removeEventListener("click", do_something);
+            });
+        </script>
+    </body>
+</html>

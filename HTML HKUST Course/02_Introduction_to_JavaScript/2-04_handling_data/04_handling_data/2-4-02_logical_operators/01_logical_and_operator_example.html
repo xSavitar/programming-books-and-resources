@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+            var you_are_rich = false;
+            var you_have_partner = true;
+            var you_have_flat = true;
+            var life_is_fantastic = you_are_rich 
+                                    && you_have_partner 
+                                    && you_have_flat;
+            
+            alert("life is fantastic is " +
+                   life_is_fantastic);
+            you_are_rich = true;
+            life_is_fantastic = you_are_rich 
+                                && you_have_partner 
+                                && you_have_flat;
+            alert("life is fantastic is now " + 
+                   life_is_fantastic);
+        </script>
+    </body>
+</html>

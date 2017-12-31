@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <script>
+            function delete_all_children() {
+                var theNode = document.getElementById("theBody"); 
+                while (theNode.firstChild) 
+                    theNode.removeChild(theNode.firstChild);
+            }
+        </script> 
+    </head> 
+    
+    <body id="theBody">
+        <p id="firstP">Hello.</p>
+        How are you?
+        <br>
+        <p id="secondP">It's a nice day!</p>
+        <button type="button" onclick="delete_all_children()">
+            Delete children
+        </button>
+    </body> 
+</html>

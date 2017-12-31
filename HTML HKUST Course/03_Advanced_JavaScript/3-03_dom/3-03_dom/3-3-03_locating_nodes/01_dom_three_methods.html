@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <script>
+            function change_color1() {
+                document.childNodes[1].childNodes[2].childNodes[1].style.color="red";
+            }
+
+            function change_color2() {
+                document.getElementsByTagName("h2")[0].style.color="yellow";
+            }
+
+            function change_color3() {
+                document.getElementById("cute_text").style.color="blue";
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2 style="color:black" id="cute_text">
+            Click on a button to change the colour of this text
+        </h2>
+        <form>
+            <input onclick="change_color1()" type="button" value="Change using method 1">
+            <input onclick="change_color2()" type="button" value="Change using method 2">
+            <input onclick="change_color3()" type="button" value="Change using method 3">
+        </form>
+    </body>
+</html>

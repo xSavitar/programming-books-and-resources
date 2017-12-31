@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function counter() {
+                var count = 0;
+
+                return function() {
+                    count++;
+                    alert(count);
+                }
+
+            }
+            var count = counter();
+            count();
+            count();
+            count();
+        </script>
+    </head>
+</html>

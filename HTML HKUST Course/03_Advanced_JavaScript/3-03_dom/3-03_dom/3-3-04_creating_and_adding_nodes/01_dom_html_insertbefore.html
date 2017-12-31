@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function insert_new_text() {
+                var newItem = document.createElement("hr");
+                var destParent = document.getElementsByTagName("body")[0];
+                destParent.insertBefore(newItem, destParent.firstChild);
+            }
+        </script>
+    </head>
+    
+    <body onclick="insert_new_text()">
+        <h1 id="my_text">Please click on the page</h1>
+    </body> 
+</html>

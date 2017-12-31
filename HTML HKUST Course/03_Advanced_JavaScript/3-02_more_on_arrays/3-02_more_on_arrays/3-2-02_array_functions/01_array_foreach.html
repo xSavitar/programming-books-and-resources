@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+            var numbers = [1, 2, 3, 4, 5];
+            
+            numbers.forEach( function(elem, idx, arr) {
+                                arr[idx] = elem * elem;
+            });
+            alert(numbers); // This shows [1,4,9,16,25];
+        </script>
+    </body>
+</html>

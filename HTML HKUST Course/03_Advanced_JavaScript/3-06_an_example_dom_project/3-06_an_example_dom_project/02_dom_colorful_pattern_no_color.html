@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div{position:absolute ; border:1px solid} 
+        </style>
+    </head>
+    <body id="theBody" onload="show_pattern()">
+        <title>An Example Project</title>
+        <script>
+            function show_pattern(){
+                var top_position = 25; 
+                var left_position = 25; 
+                var width = 500; 
+                var height = 500;
+                var color_list=["red","orange","yellow","green","blue","indigo","violet"];
+                var the_body = document.getElementById("theBody");
+                
+                while(width > 50) {
+                    var this_div = document.createElement("div");                  
+                    this_div.style.top = top_position + "px";
+                    this_div.style.left = left_position + "px";
+                    this_div.style.width = width + "px";
+                    this_div.style.height = height + "px";
+                    the_body.appendChild(this_div);
+                    top_position += 10; left_position += 10;
+                    width -= 20; height -= 20;
+                }
+            }
+        </script>
+    </body>
+</html>
