@@ -6,8 +6,8 @@ The books will be classified in terms of programming languages and technologies 
 the field of computing.
 
 # Sources
-These resources are downloaded from various sources online. We am not 
-the author of any of these books but we are just helping to make sure that 
+These resources are downloaded from various sources online. We are not 
+the authors of any of these books or ressources, but we are just helping to make sure that 
 people who are instested in learning these technologies should have resources 
 at their disposals.
 
