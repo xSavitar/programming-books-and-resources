@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+            var you_are_rich = false;
+            var you_have_partner = true;
+            var you_have_flat = false;
+            var life_is_good = you_are_rich 
+                               || you_have_partner 
+                               || you_have_flat;
+            
+            alert("life is good is " + life_is_good); 
+            you_have_partner = false;
+            life_is_good = you_are_rich 
+                           || you_have_partner 
+                           || you_have_flat;
+            alert("life is good is now " + life_is_good);     
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function delete1()
+            {
+                var the_node=document.getElementById("firstP");
+                the_node.parentNode.removeChild(the_node);
+            }
+            function delete2()
+            {
+                var the_node=document.getElementsByTagName("p")[0];
+                the_node.parentNode.removeChild(the_node);
+            }
+            function delete3()
+            {	
+                var the_parent=document.getElementById("theBody");
+                the_parent.removeChild(the_parent.firstChild);
+            }
+        </script>
+    </head>
+
+    <body id="theBody"><p id="firstP">
+        Hello.
+        </p>
+        How are you?
+        <br>
+        <p id="secondP">
+        It's a nice day!
+        </p>
+
+        <button type="button" onclick="delete1()">Example 1</button>
+        <button type="button" onclick="delete2()">Example 2</button>
+        <button type="button" onmousedown="delete3()">Example 3</button>
+        <p>
+        Reload the page to reset the DOM.
+        </p>
+    </body>
+</html>

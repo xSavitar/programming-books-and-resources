@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+          var the_timer, x_position = 0, the_image;
+          
+          function do_timer(){
+            the_image = document.getElementById("stones_img");
+            x_position = x_position + 1;
+            the_image.style.left = x_position;
+          }
+        </script>
+    </head>
+    <body onload="the_timer=setInterval(do_timer, 50)">
+        <img src="stones.png" id="stones_img"
+             style="position:absolute; left:0">
+        <button onclick="clearInterval(the_timer)">
+            Stop!
+        </button>
+    </body>
+</html>

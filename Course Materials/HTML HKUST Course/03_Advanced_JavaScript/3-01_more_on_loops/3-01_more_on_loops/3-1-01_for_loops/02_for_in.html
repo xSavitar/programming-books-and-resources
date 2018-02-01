@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            var continents = ["Australia", "Africa", 
+                              "Antarctica", "Eurasia", "America"];
+            var response, count=0;
+            
+            for (var index in continents) {
+                response = confirm("Have you been to "
+                                   + continents[index] + "?");  
+                if (response) count++;
+            }
+            alert("You have been to " + count +
+                  " continents!");
+        </script>
+    </head>
+</html>

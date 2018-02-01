@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="30" 
+      style="font-weight:bold; font-size:34">My Web Page</text> 
+    <text x="10" y="80" 
+      style="font-size:34">This web page is so awesome!</text>
+</svg>

@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title>Syllabus | Practical Programming in C | Electrical Engineering and Computer Science | MIT OpenCourseWare</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="6-087-practical-programming-in-c-january-iap-2010" name="WT.cg_n">
+<meta content="Syllabus" name="WT.cg_s">
+<meta content="This syllabus section provides the course description and information on meeting times, texts, lectures and lab sessions, homework, projects, grading, and collaboration and cheating policy." name="Description">
+<meta content="Weller, Daniel" name="Author">
+<meta content="Chikkerur, Sharat" name="Author">
+<meta content="writing C programs,compiling C programs,variables and datatypes,control flow,input and output,pointers and memory addressing,arrays and pointer arithmetic,memory allocation,stacks and queues,hash tables,C standard library,dynamic memory allocation,multithreading,concurrency,asynchronous input/output,Programming Languages,Software Design and Engineering" name="keywords">
+<meta content="6.087 Practical Programming in C | Syllabus" name="Search_Display">
+<meta content="Programming Languages" itemprop="about">
+<meta content="Software Design and Engineering" itemprop="about">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../common/styles/courses_new.css">
+<link href="http://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<link rel="canonical" href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/syllabus">
+<link rel="apple-touch-icon" href="../../common/images/apple-touch-icon.png">
+<script type="text/javascript" src="../../common/scripts/jquery.js"></script><script type="text/javascript" src="../../common/scripts/ocw-media-utils-offline.js"></script><script type="text/javascript" src="../../common/scripts/ocw-offline.js"></script><script type="text/javascript" src="../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../common/scripts/bubble-popup-offline.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+        
+	
+
+        <div id="top">
+			<div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<div id="banner" role="banner" class="grid_6 alpha"><a href="http://ocw.mit.edu/"><img src="../../common/images/ocw_mast.png" alt="MIT OpenCourseWare, Massachusetts Institute of Technology" class="logo"></a></div> <div id="subscribe" role="form toolbar" class="grid_6 omega">
+<div class="module"><table class="social"><tbody><tr>
+<td class="socialbutton"><a href="http://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img alt="An icon depicting an envelope." src="../../common/images/trans.gif">Subscribe to the OCW Newsletter</a></td>             <td>
+<a href="https://plus.google.com/104567381989352550847/posts"><img src="../../common/images/icon_gp.png" alt="Click to visit our Google+ page."></a><a href="https://www.pinterest.com/mitocw/pins/"><img src="../../common/images/icon_pin.png" alt="Click to visit our Pinterest page."></a><a href="http://facebook.com/mitocw"><img src="../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a><a href="http://twitter.com/mitocw"><img src="../../common/images/icon_tw.png" alt="Click to visit our Twitter feed."></a>
+</td>         </tr></tbody></table></div> <p class="helplinks"><a href="http://ocw.mit.edu/help">Help</a>   |   <a href="../../common/jsp/feedback.htm">Contact Us</a></p>
+</div> <div class="clear"> </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="mega" role="navigation" class="grid_8 alpha">        
+	<ul id="menu">
+<li id="menu_home">
+            <a href="http://ocw.mit.edu/"><img src="../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+        </li>
+<!-- End Home Item -->        
+        <li class="selected">
+            <a href="#" class="drop">Courses</a><!-- Begin 5 columns Item -->
+            <div class="dropdown_5columns-a mega-courses">                    
+                <div class="col_1a">
+                    <div class="row_1a">
+                        <div class="quart">
+                            <h2 class="nav">Find courses by:</h2>
+                            <ul class="nav-bullet find_by">
+<li><a href="http://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+                            </ul>
+</div>
+                        <div class="quart">
+                            <h2 class="nav">Collections</h2>
+                            <ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+                                <li><a href="http://ocw.mit.edu/courses/this-course-at-mit/">This Course at MIT</a></li>
+                                <li><a href="http://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+                            </ul>
+</div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="row_1b">
+                        <h2 class="nav">Cross-Disciplinary Topic Lists</h2>
+                        <div class="quart">
+                        <ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+                            <li><a href="http://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+                            <li><a href="http://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+                        </ul>
+</div>    
+                        <div class="quart">
+                        <ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+                            <li><a href="http://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+                            <li><a href="http://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+                        </ul>
+</div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="col_1b">
+                    <h2 class="nav">Translated Courses</h2>
+                    <ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/courses/translated-courses/traditional-chinese">繁體字 / Traditional Chinese</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses/spanish">Español / Spanish</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses/portuguese">Português / Portuguese</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses/persian">فارسی / Persian</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses/turkish">Türkçe / Turkish</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses/korean">(비디오)한국 / Korean</a></li>
+                        <li><a href="http://ocw.mit.edu/courses/translated-courses">More...</a></li>
+                    </ul>
+</div>
+            </div>
+        </li>
+        <li>
+            <a href="" class="drop">About</a>
+            <div class="dropdown_1column-a">
+                <div class="col_1">
+                    <ul class="nav-bullet mega-div-bottom">
+<li><a href="http://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+                    </ul>
+<ul class="nav-bullet mega-div-bottom">
+<li><a href="http://ocw.mit.edu/about/site-statistics/">Site Stats</a></li>
+                        <li><a href="http://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>                        
+                    </ul>
+<ul class="nav-bullet mega-div-bottom">
+<li><a href="http://ocw.mit.edu/about/media-coverage/">Media Coverage</a></li>
+                        <li><a href="http://ocw.mit.edu/about/newsletter/">Newsletter</a></li>
+                        <li><a href="http://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>
+                    </ul>
+<ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/about/next-decade/">OCW's Next Decade</a></li>
+                    </ul>
+</div>
+            </div>  
+        </li>    
+        <li>
+            <a href="" class="drop">Donate</a>        
+            <div class="dropdown_1column-a">
+                    <div class="col_1">
+                        <ul class="nav-bullet mega-div-bottom">
+<li><a href="http://ocw.mit.edu/donate/">Make a Donation</a></li>
+                            <li><a href="http://ocw.mit.edu/donate/why-donate/">Why Donate?</a></li>
+                            <li><a href="http://ocw.mit.edu/donate/ocw-course-champions-program/">Become a Course Champion</a></li>
+                            <li><a href="http://ocw.mit.edu/donate/our-supporters/">Our Supporters</a></li>
+                            <li><a href="http://ocw.mit.edu/donate/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+                            <li><a href="http://ocw.mit.edu/donate/shop-ocw">Shop OCW</a></li>
+                        </ul>
+<ul class="nav-bullet">
+<li><a href="http://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+                        </ul>
+</div>
+            </div>            
+        </li>        
+        <li>
+            <a href="" class="drop">Featured Sites</a>        
+            <div class="dropdown_1column-a">
+                <div class="col_1">
+                    <ul class="nav-bullet mega-div-bottom">
+<li><a href="http://ocw.mit.edu/high-school/">Highlights for High School</a></li>
+                        <li><a href="http://ocw.mit.edu/educator/">OCW Educator</a></li>
+                    </ul>
+<ul class="nav-bullet mega-div-top">
+<li><a href="http://ocw.mit.edu/ans7870/featured/mitx-courses-on-edx.htm">MITx Courses on edX</a></li>
+                        <li><a href="http://teachingexcellence.mit.edu/">Teaching Excellence at MIT</a></li>
+						<li><a href="http://www.oeconsortium.org/">Open Education Consortium</a></li>
+                    </ul>
+</div>
+            </div>            
+        </li>
+    </ul>
+</div>
+<div id="search" role="search" class="grid_4 omega">
+    
+    <form method="get" action="../../common/search/AdvancedSearch.htm">
+     	 <table class="search"><tbody><tr>
+<td class="black"><input type="text" onblur="fillSearchBox()" onfocus="clearSearchBox()" maxlength="255" value="Search" name="q" class="greytext searchField" id="terms"></td> 			 
+                    <td class="black"><input type="image" src="../../common/images/button_search.png" name="btnG" class="sub_button"></td>			 
+                    <td class="text2"><a href="../../common/search/AdvancedSearch.htm">Advanced<br>Search</a></td>
+                </tr></tbody></table>
+</form>
+</div>
+<div class="clear"></div>
+<!-- *end header* -->  
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</div>
+<!-- top end -->
+			
+		<div id="center">
+         <div id="grid">
+		     <div id="left-section">
+                 <div id="breadcrumb">
+                      <p>
+
+    <a href="http://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="http://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science">Electrical Engineering and Computer Science</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../contents/index.htm">Practical Programming in C</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Syllabus
+         
+    
+</p>
+
+                 </div>
+                 <div class="clear"></div>
+                 <div id="section_title">
+           			<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Syllabus
+        </span>
+    </h1>
+           	     </div>
+           	     <div class="clear"></div>
+           	     <div id="course_wrapper_section">
+           	     	 <div id="course_nav">
+           			 	
+
+
+
+<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><ul>
+<li class="">
+			   			<a href="../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="selected">
+			   			<a href="../../contents/syllabus/index.htm">
+		                  Syllabus  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../contents/calendar/index.htm">
+		                  Calendar  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../contents/lecture-notes/index.htm">
+		                  Lecture Notes  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../contents/labs/index.htm">
+		                  Labs  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../contents/assignments/index.htm">
+		                  Assignments  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+<!--Left Nav Ends -->
+</div>
+           		     <div id="course_inner_section">
+           		     	 
+	       		     	<p class="instruction">This course makes use of Athena, MIT's UNIX-based computing environment. OCW does not provide access to this environment.</p> <h2 class="subhead">Course Meeting Times</h2> <p>Lectures: 5 sessions / week for 3 weeks, 1.5 hours / session</p> <p>Labs: 1 session / week for 3 weeks, 3 hours / session</p> <h2 class="subhead">Prerequisites</h2> <p>This course assumes a basic understanding of the principles of programming. Prior knowledge of C is neither expected nor desired. The primary prerequisite of this course is 6.00 <em>Introduction to Computer Science and Programming</em>, 1.00 <em>Introduction to Computers and Engineering Problem Solving</em>, 6.01 <em>Introduction to Electrical Engineering and Computer Science I</em>, or another introductory programming course at MIT. If you are unsure of the adequacy of your programming background, please speak to a member of the course staff as soon as possible. As the duration of this course is only three weeks, the material will be covered at a relatively fast pace, and catching up will be difficult.</p> <h2 class="subhead">Texts</h2> <p>There is no required text for the course. However, the following text is highly recommended:</p> <p><a href="http://www.amazon.com/exec/obidos/ASIN/0131103628/ref=nosim/mitopencourse-20"><img border="0" align="absMiddle" src="http://ocw.mit.edu/images/a_logo_17.gif" alt="Buy at Amazon"></a> Kernighan, Brian, and Dennis Ritchie. <em>The C Programming Language</em>. 2nd ed. Upper Saddle River, NJ: Prentice Hall, 1988. ISBN: 9780131103627.</p> <p>This text provides a concise and thorough coverage of the C programming language, including exercises. Suggested readings from this book may enhance your understanding of the material covered in lectures.</p> <h2 class="subhead">Lectures and Lab Sessions</h2> <p>While attendance will not be formally taken at the lectures, attending every lecture is crucial to learning the material necessary to complete the assignments and projects. Handouts generally will not be provided in printed form. However, slides will be posted before lectures, and you are welcome to print them yourselves. Some students may seek to take another course that overlaps with the lecture time and either come late to lecture or leave early. This should be avoided, as it disrupts the lectures and distracts the rest of the class. <em>Please avoid interrupting the class by arriving late or leaving early</em>.</p> <p>Due to space constraints, the laboratory sessions are only open to those students taking the class for credit. The weekly laboratory sessions are mandatory to attend (for those receiving credit). As explained later, the projects will have both in-lab and out-of-class components, and it is expected that you will complete the in-lab portions during the three hours on Wednesday night. During the lab sessions, you will work in pairs to complete programming exercises that are connected to the overall programming project for that week. Lab assistants will be in lab at the time to assist you and verify that you have completed the in-lab exercises. While students are welcome to bring their laptops to the lab, the staff encourages students to use the Athena Linux computing environment present on the machines in the lab. Using a single standardized development environment will make debugging easier and ensure consistent results across machines.</p> <h2 class="subhead">Homework</h2> <p>Homework will be assigned daily through the first two weeks (7 assignments) and generally must be handed in at the beginning of the next lecture. Like any programming language, C is most easily mastered by using it to write programs. Therefore, the assignments will include small programming exercises. Homework will be graded coarsely (on a scale of 0-2), where 0 = minimal understanding demonstrated or inadequate effort shown in completing the problems, 1 = basic understanding of the concepts, but too many missed details, and 2 = thorough understanding of the concepts. Solutions to the homework will be provided after the assignment is due, so no late homework will be accepted or graded. If you have questions or desire additional feedback about a homework problem, please go to any of the staff's office hours for assistance. Because of the course grading scale, there will be no re-grades on homework.</p> <h2 class="subhead">Projects</h2> <p>In addition to the small programming exercises in homework assignments, this course will include three more extensive programming assignments in the form of projects. The first two projects will consist of an in-lab component composed of more structured programming problems dealing with specific concepts and an out-of-class component that will tie these concepts together to form a larger program. The in-lab component will be completed in pairs, and will require a lab assistant's signature verifying satisfactory completion of the in-lab exercises to receive credit. The out-of-class component should be completed alone, and the final program will be due at the beginning of the following week.</p> <p>The third (final) project will be more open-ended, to give you a chance to express your creativity, and expose you to a more realistic programming experience. In teams of two, you will propose and implement a program that involves using one or more publicly available libraries to accomplish some non-trivial task. Suggestions of possible libraries and related programs are provided in the project handout. A written proposal must be submitted and approved by the instructors by the end of the second week of class. The final implementation and writeup of the project is due on the last day of class. The proposal and implementation should be completed as a team, but each student is expected to produce a final writeup and will be graded individually.</p> <p>These projects are intended to provide you with the opportunity to develop a level of sophistication in programming in C. Therefore, in addition to correctness, points will be awarded for elegance, coding style, and a demonstrated understanding of the practical issues. Although some competitions reward obfuscation, practical programming requires a balance of clarity and conciseness. Therefore, all code should be well-documented, with comments, and the structure of the code should be straightforward.</p> <h2 class="subhead">Course Grade</h2> <div class="maintabletemplate"><table summary="See table caption for summary." class="tablewidth50">
+<caption class="invisible">Grading criteria.</caption> <thead><tr>
+<th scope="col">ACTIVITIES</th> <th scope="col">PERCENTAGES</th> </tr></thead>
+<tbody>
+<tr class="row">
+<td>Homework</td> <td>20%</td> </tr>
+<tr class="alt-row">
+<td>Project 1</td> <td>15%</td> </tr>
+<tr class="row">
+<td>Project 2</td> <td>15%</td> </tr>
+<tr class="alt-row">
+<td>Project 3</td> <td>50%</td> </tr>
+</tbody>
+</table></div> <p>This course is graded on a Pass/D/Fail grading scale. Grades will be assigned based on the staff's best assessment of your understanding of the C programming language, roughly based on the grading scale above (Pass ≈ ≥ 70%). Failure to complete and turn in homework assignments or the projects on time impedes the staff's ability to assess your level of understanding and may result in a failing grade.</p> <h2 class="subhead">Collaboration and Cheating Policy</h2> <p>You are welcome to discuss assignments and laboratory projects with other students, provided that all work turned in must be your own. If you do discuss your work with other students on assignments, please list your collaborators at the top of your assignment, underneath your name. This does not excuse you from submitting your own work! For the in-lab parts of laboratory projects completed in teams, both team members should contribute equally and will be graded individually. The write-ups and out-of-class portions of labs must be completed independently.</p> <p>In summary, when you are turning in an assignment with your name on it, what you turn in must be your work, and yours alone. Cheating will not be tolerated.</p>
+	                    
+	        			
+	                    
+	                    
+	                    	
+	                       
+	                    
+            		 </div>
+<!--Course_inner_section tag close -->
+           		     <div class="clear"></div>
+ 				 </div>
+<!--Course_wrapper tag close -->             
+ 			 </div>
+<!--left tag close -->
+ 			                
+         </div>
+<!--grid tag close --> 
+      </div>
+		
+		<div id="bottom">
+			<div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="bottom"><div id="grid">
+<!-- *begin footer* --> <div role="navigation sitemap" id="footer">
+<div class="grid_2 alpha" id="foot-c1">
+<h4 class="footer">Courses</h4> <ul class="foot-bullet">
+<li><a href="http://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>     <li><a href="http://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>     <li><a href="http://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>     <li><a href="http://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>     <li><a href="http://ocw.mit.edu/courses/subtitled/">Courses with Subtitles</a></li>     <li><a href="http://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>     <li><a href="http://ocw.mit.edu/courses/new-courses/">New Courses</a></li>     <li><a href="http://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>     <li><a href="http://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>     <li><a href="http://ocw.mit.edu/courses/this-course-at-mit/">This Course at MIT</a></li>     <li><a href="http://ocw.mit.edu/resources/">Supplemental Resources</a></li>     <li><a href="http://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li> </ul>
+</div> <div class="grid_2" id="foot-c2">
+<h4 class="footer">About</h4> <ul class="foot-bullet">
+<li><a href="http://ocw.mit.edu/about/">About OpenCourseWare</a></li>     <li><a href="http://ocw.mit.edu/about/site-statistics/">Site Stats</a></li>     <li><a href="http://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>     <li><a href="http://ocw.mit.edu/about/media-coverage/">Media Coverage</a></li>     <li><a href="http://ocw.mit.edu/about/newsletter/">Newsletter</a></li>     <li><a href="http://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>     <li><a href="http://ocw.mit.edu/about/next-decade/">OCW's Next Decade</a></li> </ul>
+</div> <div class="grid_2" id="foot-c3">
+<h4 class="footer">Donate</h4> <ul class="foot-bullet">
+<li><a href="http://ocw.mit.edu/donate">Make a Donation</a></li>     <li><a href="http://ocw.mit.edu/donate/why-donate/">Why Donate?</a></li>     <li><a href="http://ocw.mit.edu/donate/ocw-course-champions-program/">Become a Course Champion</a></li>     <li><a href="http://ocw.mit.edu/donate/our-supporters/">Our Supporters</a></li>     <li><a href="http://ocw.mit.edu/donate/other-ways-to-contribute/">Other Ways to Contribute</a></li>     <li><a href="http://ocw.mit.edu/donate/shop-ocw/">Shop OCW</a></li>     <li><a href="http://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li> </ul>
+</div> <div class="grid_2" id="foot-c4">
+<h4 class="footer">Featured Sites</h4> <ul class="foot-bullet">
+<li><a href="http://ocw.mit.edu/high-school/">Highlights for High School</a></li>     <li><a href="http://ocw.mit.edu/educator/">OCW Educator</a></li>     <li><a href="http://ocw.mit.edu/ans7870/featured/mitx-courses-on-edx.htm">MITx Courses on edX</a></li>     <li><a href="http://teachingexcellence.mit.edu/">Teaching Excellence at MIT</a></li>     <li><a href="http://www.oeconsortium.org/">Open Education Consortium</a></li> </ul>
+<h4 style="margin-top: 14px;" class="footer">Tools</h4> <ul class="foot-bullet">
+<li><a href="http://ocw.mit.edu/help/">Help &amp; FAQs</a></li>     <li><a href="../../common/jsp/feedback.htm">Contact Us</a></li>     <li><a href="../../common/search/AdvancedSearch.htm">Advanced Search</a></li>     <li><a href="http://ocw.mit.edu/help/site-map/">Site Map</a></li>     <li><a href="../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>     <li><a href="http://ocw.mit.edu/help/rss/">RSS Feeds</a></li> </ul>
+</div> <div itemtype="http://schema.org/CollegeOrUniversity" itemscope="" itemprop="publisher" class="grid_4 omega" id="foot-c5">
+<h4 class="footer">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4> <p itemprop="description" class="accent">MIT OpenCourseWare makes the materials used in the teaching of almost all of MIT's subjects available on the Web, free of charge. With more than 2,200 courses available, OCW is delivering on the promise of open sharing of knowledge.</p>
+</div> <div class="grid_8 alpha" id="foot-copy">
+<a href="http://web.mit.edu"><img style="width: 195; height: 44;" alt="Massachusetts Institute of Technology logo and name." src="../../common/images/logo_mit.png"></a>                 <a href="http://www.oeconsortium.org/"><img style="width: 219px; height: 59px; vertical-align: top;" alt="Open Education Consortium logo." src="http://ocw.mit.edu/images/logo_oec.png"></a>                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" itemprop="useRightsUrl" rel="license"><img style="width: 126px; height: 44px; margin-right: 0;" alt="Creative Commons logo with terms BY-NC-SA." src="../../common/images/cc_by-nc-sa.png"></a> <p class="copyright">© 2001–2015<br> Massachusetts Institute of Technology</p> <p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons License</a> and other <a rel="cc:morePermissions" href="../../common/terms/index.htm">terms of use</a>.</p>
+</div> <div class="grid_4 omega" id="foot-support">
+<h4 class="footer">Our Corporate Supporters</h4> <!-- HOME_CORP_LOGO_1 --> <div class="sponsors_google_ads_even" id="div-gpt-ad-1388181177156-0"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+</script></div> <!-- HOME_CORP_LOGO_2 --> <div class="sponsors_google_ads_odd" id="div-gpt-ad-1388181177156-1"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+</script></div> <!-- HOME_CORP_LOGO_3 --> <div class="sponsors_google_ads_even" id="div-gpt-ad-1388181177156-2"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+</script></div> <!-- HOME_CORP_LOGO_4 --> <div class="sponsors_google_ads_odd" id="div-gpt-ad-1388181177156-3"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+</script></div> <!-- HOME_CORP_LOGO_5 --> <div class="sponsors_google_ads_even" id="div-gpt-ad-1388181177156-4"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+</script></div> <!-- HOME_CORP_LOGO_6 --> <div class="sponsors_google_ads_odd" id="div-gpt-ad-1388181177156-5"><script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+</script></div>
+</div>
+</div>
+</div></div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</div>
+<!-- bottom end -->
+		
+		
+   </body>
+</html>

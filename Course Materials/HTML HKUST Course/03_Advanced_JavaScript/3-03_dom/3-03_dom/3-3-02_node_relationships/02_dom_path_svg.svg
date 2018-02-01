@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+     onload="init()" >
+	<script><![CDATA[
+
+		// Repeatedly go up the DOM structure
+
+function handleClick(event) {
+    event.stopPropagation();
+
+    var node = event.target
+    var thisPath = node.nodeName;
+
+    while (node.parentNode) {
+        node = node.parentNode;
+        thisPath = node.nodeName + " > " + thisPath;
+    }
+    alert(thisPath);
+}
+
+		// Register the click event handler for all nodes
+		function attachHandler(node) {
+			if(node == null) return;
+            node.onclick = handleClick;
+
+			for (var i = 0; i < node.childNodes.length; ++i) {
+				attachHandler(node.childNodes[i]);
+			}
+		}
+
+        // Initialize the whole document
+		function init() {
+			attachHandler(document.documentElement);
+		}
+
+	]]></script>
+<g transform="scale(1.5 1.5)">
+	<defs>
+		<filter id="pointillist" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feTurbulence baseFrequency="0.1" numOctaves="2" type="turbulence" result="I1"/>
+			<feMorphology in="I1" radius="5" operator="dilate" result="I2"/>
+			<feColorMatrix in="I2" type="matrix"
+				values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" result="I3"/>
+			<feComposite in="I3" in2="SourceGraphic" operator="in"/>
+		</filter>
+		<filter id="Turbulence" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feTurbulence baseFrequency="0.03 0.02" numOctaves="2" type="turbulence"
+				result="turbulenceOutput"/>
+			<feComposite in="turbulenceOutput" in2="SourceAlpha" operator="in"/>
+		</filter>
+		<filter id="Bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+			<feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.5"
+				specularExponent="10" result="specOut"
+				 style="lighting-color:rgb(255,128,128)">
+				<fePointLight x="-5000" y="-10000" z="20000"/>
+			</feSpecularLighting>
+			<feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
+			<feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0"
+				k2="1" k3="1" k4="0" result="litPaint"/>
+		</filter>
+		<line id="line" x2="120" y2="180" style="stroke-linecap:round;stroke-width:10;stroke:rgb(0,255,0)"/>
+	</defs>
+	<rect x="0" y="0" width="640" height="480"
+		 style="fill:rgb(255,255,192)"/>
+	<text x="17px" y="50px" transform="translate(-10 -27)"
+		 style="fill:rgb(255,64,64);font-size:16px;font-family:Comic Sans MS">Click on any object to see the DOM path to that node</text>
+	<g>
+		<text x="81px" y="87px"
+			transform="translate(-15 57) rotate(340.424 201.27 66.6)"
+			 style="fill:rgb(64,64,255);font-size:60px;font-family:Times New
+Roman;fill-opacity:0.5">Click Me!</text>
+		<text x="247px" y="188px" transform="translate(-69 -34)"
+			 style="fill:rgb(192,0,192);font-size:50px;font-family:Lucida
+Handwriting;fill-opacity:0.25;
+			">Please click ME!</text>
+	</g>
+	<g>
+		<polygon
+			points="246.5,202 260.926,248.478 309.588,247.836 269.842,275.919 285.49,322 246.5,292.878
+				207.51,322 223.158,275.919 183.412,247.836 232.074,248.478"
+			transform="matrix(1.03824 0 0 1 -9.42535 0)"
+			 style="fill:rgb(255,255,64);stroke:rgb(0,0,0);stroke-width:3"/>
+		<g>
+			<polygon
+				points="302.5,195 306.711,209.104 321.426,208.751 309.313,217.114 314.197,231 302.5,222.064
+					290.803,231 295.687,217.114 283.574,208.751 298.289,209.104"
+				transform="matrix(1.03031 0 0 1 -9.16915 0)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+			<polygon
+				points="167,202.185 170.115,212.618 181,212.357 172.04,218.543 175.652,228.815 167,222.205
+					158.348,228.815 161.96,218.543 153,212.357 163.885,212.618"
+				transform="matrix(1 0 0 1.23922 0 -51.5526)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+			<polygon
+				points="174.5,328 177.424,337.795 187.643,337.549 179.232,343.357 182.623,353 174.5,346.795
+					166.377,353 169.768,343.357 161.357,337.549 171.576,337.795"
+				transform="matrix(1.02714 0 0 1 -4.73611 0)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+			<polygon
+				points="252.5,361.259 255.949,372.81 268,372.52 258.08,379.369 262.08,390.741 252.5,383.423
+					242.92,390.741 246.92,379.369 237,372.52 249.051,372.81"
+				transform="matrix(1 0 0 1.15322 0 -57.6095)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+			<polygon
+				points="342,266.989 344.225,274.442 352,274.255 345.6,278.674 348.18,286.011 342,281.289
+					335.82,286.011 338.4,278.674 332,274.255 339.775,274.442"
+				transform="matrix(1 0 0 1.31433 0 -86.9116)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+			<polygon
+				points="233,171.343 234.557,176.559 240,176.428 235.52,179.522 237.326,184.657 233,181.353
+					228.674,184.657 230.48,179.522 226,176.428 231.443,176.559"
+				transform="matrix(1 0 0 1.20167 0 -35.8975)"
+				 style="fill:rgb(255,255,128);stroke:rgb(255,0,0);stroke-width:2"/>
+		</g>
+	</g>
+	<g>
+		<use xlink:href="#line"
+			transform="translate(40 250) translate(-6 15) scale(0.544444 0.544444) translate(34.898 51.4286)"
+			/>
+		<use xlink:href="#line"
+			transform="translate(20 250) translate(-7 37) scale(0.594444 0.594444) translate(6.72897 94.2056)"
+			/>
+		<use xlink:href="#line"
+			transform="translate(30 250) translate(65 40) translate(-46 -66)"/>
+		<use xlink:href="#line"
+			transform="translate(50 250) translate(-17 27) translate(-13 11)"/>
+	</g>
+	<path
+		d="M416.051 302 C421.822 292.338 446 277.388 446 261.92 C446 235.146 420.817 241.517
+			415.82 252.091 C410.512 241.192 386 236.842 386 261.92 C386 277.764 411.005
+			292.417 416.051 302 z" transform="translate(29 -35)"
+		 style="fill:rgb(255,0,0);filter:url(#Bevel)"/>
+	<g>
+		<g>
+			<g>
+				<g>
+					<ellipse cx="506" cy="348" rx="14" ry="13"
+						 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:3"/>
+					<circle cx="512" cy="352.5" r="4" style="fill:rgb(0,0,0)"/>
+				</g>
+				<g>
+					<ellipse cx="320" cy="240" rx="14" ry="13" transform="translate(263 107)"
+						 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:3"/>
+					<circle cx="577" cy="351.5" r="4" style="fill:rgb(0,0,0)"/>
+				</g>
+			</g>
+			<g>
+				<circle cx="559" cy="427.5" r="40"
+					transform="translate(-12 -5) translate(-1 0) translate(-1 0) translate(0 -1) translate(0 -1) translate(0 -1) translate(0 -1) translate(0 -1)"
+
+					 style="fill:rgb(128,0,0);stroke:rgb(255,64,64);stroke-width:5"/>
+				<g>
+					<rect x="532" y="382" width="11" height="29" transform="translate(1 0)"
+						 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+					<rect x="315" y="226" width="11" height="29"
+						transform="translate(233 156) translate(0 -1) translate(-1 0) translate(0 1) translate(-1 0)"
+
+						 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<path
+				d="M476.136 387.364 C475.383 387.364 474.773 387.364 474.773 387.364 C474.773 388.87
+					475.383 390.091 476.136 390.091 C478.396 390.091 480.227 388.87 480.227 387.364
+					C480.227 384.351 478.396 381.909 476.136 381.909 C472.371 381.909 469.318
+					384.351 469.318 387.364 C469.318 391.882 472.371 395.545 476.136 395.545
+					C481.408 395.545 485.682 391.882 485.682 387.364 C485.682 381.339 481.408
+					376.455 476.136 376.455 C469.358 376.455 463.864 381.339 463.864 387.364
+					C463.864 394.895 469.358 401 476.136 401 C484.421 401 491.136 394.895 491.136
+					387.364 C491.136 378.326 484.421 371 476.136 371"
+				transform="matrix(1.06333 0 0 1 -30.2417 -5.68434e-014)"
+				 style="stroke:rgb(255,192,192);stroke-width:2;fill:none"/>
+			<path
+				d="M476.136 387.364 C475.383 387.364 474.773 387.364 474.773 387.364 C474.773 388.87
+					475.383 390.091 476.136 390.091 C478.396 390.091 480.227 388.87 480.227 387.364
+					C480.227 384.351 478.396 381.909 476.136 381.909 C472.371 381.909 469.318
+					384.351 469.318 387.364 C469.318 391.882 472.371 395.545 476.136 395.545
+					C481.408 395.545 485.682 391.882 485.682 387.364 C485.682 381.339 481.408
+					376.455 476.136 376.455 C469.358 376.455 463.864 381.339 463.864 387.364
+					C463.864 394.895 469.358 401 476.136 401 C484.421 401 491.136 394.895 491.136
+					387.364 C491.136 378.326 484.421 371 476.136 371"
+				transform="matrix(1.06333 0 0 1 -187.242 -146) translate(268.026 146) translate(0.940442 0) translate(0.940442 0) translate(0.940442 0)"
+
+				 style="stroke:rgb(255,192,192);stroke-width:2;fill:none"/>
+		</g>
+	</g>
+	<path
+		d="M618 315 C517.148 268.453 447.9 311.791 453 424 C453.836 442.386 445.573 450.676
+			457 467" transform="translate(2 0)"
+		 style="stroke:rgb(0,0,0);stroke-width:2;fill:none"/>
+	<g>
+		<path
+			d="M347.385 382.248 C350.946 382.248 350.307 362.912 353.833 365.086 C357.359 367.26
+				350.784 382.517 355.053 383.133 C359.321 383.749 358.809 374.47 363.226 377.067
+				C367.643 379.664 354.593 389.318 360.42 389.64 C366.248 389.961 379.154
+				373.035 378 380.01 C376.846 386.985 364.379 389.376 362.287 395.332 C360.195
+				401.288 381.722 405.279 374.006 412.503 C366.289 419.728 361.771 403.488 355.301
+				404.221 C353.243 404.454 365.464 423.816 358.767 426.769 C352.071 429.723
+				352.877 412.393 349.539 412.713 C346.2 413.033 349.291 428.201 343.303
+				424.61 C337.316 421.019 347.48 406.212 342.013 404.518 C336.546 402.824 329.544
+				414.751 326.164 410.47 C323.519 407.119 339.986 396.776 340.853 388.736
+				C341.72 380.695 317.435 372.378 328.783 365.303 C340.132 358.228 336.596 382.248
+				347.385 382.248 z"
+			 style="fill-opacity:0.25;filter:url(#Turbulence)"/>
+		<path
+			d="M405.722 363.237 C408.998 362.637 406.531 365.332 411.128 368.279 C415.724 371.227
+				423.482 349.351 428.163 352 C432.843 354.649 416.172 368.627 420.676 373.916
+				C425.179 379.206 427.52 374.773 427.52 379.223 C427.52 383.673 421.575 379.986
+				421.484 383.579 C421.393 387.172 429.006 389.932 425.828 394.159 C422.651
+				398.386 419.09 388.688 416.591 391.563 C414.093 394.438 416.406 406 411.92
+				406 C407.434 406 412.295 395.443 405.818 394.171 C399.34 392.899 402.134
+				409.019 394.021 405.326 C385.908 401.634 402.267 393.299 399.491 388.714 C396.716
+				384.129 388.675 389.06 388.469 385.617 C388.262 382.175 392.955 384.52
+				396.582 380.197 C400.208 375.874 382.92 372.99 384 369.125 C385.08 365.26 395.308
+				372.846 400.851 370.848 C406.393 368.85 402.445 363.836 405.722 363.237 z"
+			 style="filter:url(#pointillist);fill-opacity:0.5"/>
+	</g>
+	</g>
+</svg>

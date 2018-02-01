@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example of do .. while()</title>
+        <script>
+            var response, finished;
+            finished=false;
+            alert("Rossiter is a great name.");
+            do {
+                response=prompt("Do you agree?");  
+                if (response.indexOf("y")==0)  
+                    finished=true; 
+            } while (!finished);
+        </script>
+    </head>
+</html>
